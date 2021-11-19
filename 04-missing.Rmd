@@ -78,10 +78,10 @@ plot_missing <- function(data, percent) {
   
   
   if (percent == TRUE){
-    p4 + plot_spacer()+  p2 + p5 + plot_layout(ncol = 2,widths = c(15, 5),heights=c(5,20)) + plot_annotation(title = 'Missing Value Pattern')
+    p4 + plot_spacer()+  p2 + p5 + plot_layout(ncol = 2,widths = c(15, 5),heights=c(5,20)) + plot_annotation(title = 'Missing Value Pattern', caption = 'Note: darker colors indicate the complete case')
   }
   else{
-    p1 + plot_spacer()+  p2 + p3 + plot_layout(ncol = 2,widths = c(15, 5),heights=c(5,20)) + plot_annotation(title = 'Missing Value Pattern')
+    p1 + plot_spacer()+  p2 + p3 + plot_layout(ncol = 2,widths = c(15, 5),heights=c(5,20)) + plot_annotation(title = 'Missing Value Pattern', caption = 'Note: darker colors indicate the complete case')
 }
   }
 
@@ -103,7 +103,7 @@ cat("Number of variables", numvar,".  Num of observations", numrows )
 
 
 ```
-We choose 2018 data as the data file to analyze and notice the data set which have 25 variables and 142 observations.
+We start with a subset of our data, the year 2018, to analyze missing patterns. Notice the data set has 25 variables and 142 observations.
 
 ### Calculate Missing number of each variable
 
@@ -113,80 +113,29 @@ colSums(is.na(X2018_Sample)) %>%
 ```
 
 
-No row has data of "Gini index" and "Trust of Gallup", so it is possible that these data have not been collected, which could be used in future.
+"Gini index" and "Trust of Gallup" are missing for all observations. It is possible that these columns are placeholders saved for future use. 
 
-We notice the data set missed a lot of Trust data, which is the "Most people can be trusted". These data is collect by survey which is hard to gather all over the world. Noticed that the number of missing data is decreasing as years getting closer to present, we think that with the completion of the preparations, more people began to carry out this investigation. 
+We notice that a large percentage of observations are missing the "Trust" data (i.e., "Most people can be trusted"). These are survey data collected by GWP and it is noted in our source's appendix that "this indicator has a limited coverage", which makes sense since survey data is hard to be gathered all over the world. We also find that the number of missing "Trust" data is decreasing over time. We think this is a sign that with the development of technology, this survey is carried in more countries. 
 
-About the "Average Gini between 2000 and 2017", some countries are still in a state of war or instability, such as Afghanistan, so it is difficult to collect data such as confidence in the government.
+As for "Average Gini between 2000 and 2017", countries missing this indicator are usually those still in a state of war or instability, such as Afghanistan and Libya. So it is difficult to collect data.
 
-And missing of "Confidence in government" may be due to political and religious reasons.
+And "Confidence in government" is another survey data from GWP. Missing this variable may be due to political and religious reasons (e.g., China, Libya).
 
-```{r,  fig.height=10,  fig.width=16}
 
-missing_patterns <- data.frame(is.na(X2018_Sample)) %>%
-                      group_by_all() %>%
-                      count(name = "count", sort = TRUE) %>%
-                      ungroup()
-  
-missing_patterns$count_per <- missing_patterns$count / sum(missing_patterns$count) * 100
-na_count <-sapply(X2018_Sample, function(y) sum(length(which(is.na(y)))))
-na_count <- data.frame(na_count)
-na_count$features <- row.names(na_count)
-colnames(na_count) <- c('count','features')
-  
-na_count$na_per <- na_count$count / numrows * 100
-  
-missing_patterns["Pattern"] <- rownames(missing_patterns)
-missing_patterns[1:numvar] <- missing_patterns[1:numvar]*1
-  
-numrow <- length(rownames(missing_patterns))
-  
-mp_temp <- missing_patterns[1:numvar]
-unique_temp <- apply(mp_temp,1,function(x) length(unique(x)))
-  
-  for (i in 1:nrow(mp_temp)) {
-    if (unique_temp[i] == 1){
-      mp_temp[i, ] <- -1
-    }
-  }
-    
-mp_temp["Pattern"] <- missing_patterns["Pattern"]
-mp_gathered <- mp_temp %>% select(1:(numvar+1)) %>% gather(key = "Variable", value = "Missing", 1:numvar)
-  
-  mp_gathered <- mp_gathered %>% mutate(Pattern = factor(Pattern , levels = c(1:numrow)))
-  missing_patterns <- missing_patterns %>% mutate(Pattern = factor(Pattern , levels = c(1:numrow)))
-  
-  temp <- levels(reorder(na_count$features,-na_count$count))
-  
-  p2 <- ggplot(mp_gathered, aes(x = factor(Variable, levels = temp), y = fct_rev(Pattern), fill = factor(Missing))) +
-    geom_tile(colour = 'dark gray') +
-    scale_fill_manual(values = c('0' = 'snow3', '1' = 'plum3', '-1' = 'gray'))+
-    ylab("Pattern")+
-    xlab("Variable")+
-    theme_bw()+
-    theme(legend.position="none") 
-    
-  
-p2  
-
-```
-
-We found 51 missing patterns.
-
-1. We first notice that no observations have data of "Gini index" and "Trust of Gallup"
-2. The most representative is the first model where all "Most People can be trusted" are missed which are the only missing variables except "Gini index".
-3. We notice the 13 most common missing patterns are aroused by the missing data of "Most People can be trusted" and "Gini index" and "Trust of Gallup"
-4. There is a strong correlation  between "Log of GDP" and "Generosity quality".
-5. For several patterns, the data of "Confidence.in.government" and corruption are usually missed at the same time.
-6. Another interest found is that there are no mode miss both the "average Gini between 2000 and 2017" and the "Gini of household income".
-
- 
 ```{r, fig.height=20,  fig.width=20}
 plot_missing(X2018_Sample, percent = FALSE)
 plot_missing(X2018_Sample, percent = TRUE)
 
 ```
 
+We found 51 missing patterns.
+
+1. The most representative one is the first pattern where all six of "Most People can be trusted" variables, as well as "Gini index" and "Trust of Gallup" are missing. Over 25% of observations are of this pattern.
+2. It's clear from the graph that many patterns emerge because of different levels of missing the six "Trust" survey data.
+3. "Log of GDP" and "Generosity quality" are always missing at the same time.
+4. For several patterns, "Confidence in government" and "Perception of Corruption" are missing at the same time.
+5. Another interesting insight is that there is no observation missing "average Gini between 2000 and 2017" and "Gini of household income" at the same time.
+
 ### Summary
 
-Based on the above analysis, we definitely should drop the "Gini index" and "Trust of Gallup" columns, and we probably should also drop the "most people can trust" column, because they are missing in a large area, so the information provided is very limited, and because the missing decreases over time, it is difficult for us to judge Whether the survey standards of the questionnaire are consistent, so these columns may even provide noise or misleading information.
+Based on the above analysis, we definitely should drop the "Gini index" and "Trust of Gallup" columns since these are essentially empty columns. As for the six "Trust" columns, there are two reasons why we should also drop them. First, even the most complete one has over 50% missing, so the information provided is very limited. Second, because it shows a clear decreasing pattern, it is difficult for us to judge Whether the survey standards of the questionnaire are consistent, so these columns may even provide noise or misleading information.
