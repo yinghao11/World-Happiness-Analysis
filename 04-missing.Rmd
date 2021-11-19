@@ -1,9 +1,5 @@
 # Missing values
 
-## Plot_missing function
-
-### Q2 function from HW4
-
 
 ```{r 2}
 plot_missing <- function(data, percent) {
@@ -91,7 +87,6 @@ plot_missing <- function(data, percent) {
 
 ```
 
-## Missing data of 2018_Sample.csv
 
 ### Load Data
 
@@ -108,7 +103,7 @@ cat("Number of variables", numvar,".  Num of observations", numrows )
 
 
 ```
-We fist choose 2018 data as the data file to analyze and notice the data set which have 20 variables and 142 observations.
+We choose 2018 data as the data file to analyze and notice the data set which have 25 variables and 142 observations.
 
 ### Calculate Missing number of each variable
 
@@ -116,7 +111,15 @@ We fist choose 2018 data as the data file to analyze and notice the data set whi
 colSums(is.na(X2018_Sample)) %>%
   sort(decreasing = TRUE)
 ```
-We notice the data set missed a lot of Trust data, which is the "Most people can be trusted". These data is collect by survey which is hard to gather all over the world. Noticed that the number of missing data is decreasing as years getting closer to present, we think that with the completion of the preparations, more people began to carry out this investigation. About the Confidence.in.government column, some countries are still in a state of war or instability, such as Afghanistan, so it is difficult to collect data such as confidence in the government.
+
+
+No row has data of "Gini index" and "Trust of Gallup", so it is possible that these data have not been collected, which could be used in future.
+
+We notice the data set missed a lot of Trust data, which is the "Most people can be trusted". These data is collect by survey which is hard to gather all over the world. Noticed that the number of missing data is decreasing as years getting closer to present, we think that with the completion of the preparations, more people began to carry out this investigation. 
+
+About the "Average Gini between 2000 and 2017", some countries are still in a state of war or instability, such as Afghanistan, so it is difficult to collect data such as confidence in the government.
+
+And missing of "Confidence in government" may be due to political and religious reasons.
 
 ```{r}
 
@@ -162,17 +165,21 @@ mp_gathered <- mp_temp %>% select(1:(numvar+1)) %>% gather(key = "Variable", val
     xlab("Variable")+
     theme_bw()+
     theme(legend.position="none") 
+    
   
 p2  
 
 ```
 
-We found 23 missing patterns.
+We found 51 missing patterns.
 
-1. We notice the three most common missing patterns are aroused by the missing data of "Most People can be trusted"
-2. Another interest found is that there are no mode miss both the "average Gini between 2000 and 2017" and the "Gini of household income".
-3. There is a strong correlation  between "Log of GDP" and "Generosity quality".
-4. For several patterns, the data of "Confidence.in.government" and corruption are usually missed at the same time.
+1. We first notice that no observations have data of "Gini index" and "Trust of Gallup"
+2. The most representative is the first model where all "Most People can be trusted" are missed which are the only missing variables except "Gini index".
+3. We notice the 13 most common missing patterns are aroused by the missing data of "Most People can be trusted" and "Gini index" and "Trust of Gallup"
+4. There is a strong correlation  between "Log of GDP" and "Generosity quality".
+5. For several patterns, the data of "Confidence.in.government" and corruption are usually missed at the same time.
+6. Another interest found is that there are no mode miss both the "average Gini between 2000 and 2017" and the "Gini of household income".
+
  
 ```{r, fig.width= 20}
 plot_missing(X2018_Sample, percent = FALSE)
@@ -182,4 +189,4 @@ plot_missing(X2018_Sample, percent = TRUE)
 
 ### Summary
 
-Based on the above analysis, Maybe we should ignore the "most people can trust" column or at least "trust 81-84", because they are missing in a large area, so the information provided is very limited, and because the missing decreases over time, it is difficult for us to judge Whether the survey standards of the questionnaire are consistent, so these columns may even provide noise or misleading information.
+Based on the above analysis, we definitely should drop the "Gini index" and "Trust of Gallup" columns, and we probably should also drop the "most people can trust" column, because they are missing in a large area, so the information provided is very limited, and because the missing decreases over time, it is difficult for us to judge Whether the survey standards of the questionnaire are consistent, so these columns may even provide noise or misleading information.

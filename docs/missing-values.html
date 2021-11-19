@@ -78,16 +78,9 @@
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation</a></li>
 <li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="missing-values.html"><a href="missing-values.html#plot_missing-function"><i class="fa fa-check"></i><b>4.1</b> Plot_missing function</a>
-<ul>
-<li class="chapter" data-level="4.1.1" data-path="missing-values.html"><a href="missing-values.html#q2-function-from-hw4"><i class="fa fa-check"></i><b>4.1.1</b> Q2 function from HW4</a></li>
-</ul></li>
-<li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#missing-data-of-2018_sample.csv"><i class="fa fa-check"></i><b>4.2</b> Missing data of 2018_Sample.csv</a>
-<ul>
-<li class="chapter" data-level="4.2.1" data-path="missing-values.html"><a href="missing-values.html#load-data"><i class="fa fa-check"></i><b>4.2.1</b> Load Data</a></li>
-<li class="chapter" data-level="4.2.2" data-path="missing-values.html"><a href="missing-values.html#calculate-missing-number-of-each-variable"><i class="fa fa-check"></i><b>4.2.2</b> Calculate Missing number of each variable</a></li>
-<li class="chapter" data-level="4.2.3" data-path="missing-values.html"><a href="missing-values.html#summary"><i class="fa fa-check"></i><b>4.2.3</b> Summary</a></li>
-</ul></li>
+<li class="chapter" data-level="4.0.1" data-path="missing-values.html"><a href="missing-values.html#load-data"><i class="fa fa-check"></i><b>4.0.1</b> Load Data</a></li>
+<li class="chapter" data-level="4.0.2" data-path="missing-values.html"><a href="missing-values.html#calculate-missing-number-of-each-variable"><i class="fa fa-check"></i><b>4.0.2</b> Calculate Missing number of each variable</a></li>
+<li class="chapter" data-level="4.0.3" data-path="missing-values.html"><a href="missing-values.html#summary"><i class="fa fa-check"></i><b>4.0.3</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a></li>
 <li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component</a></li>
@@ -113,47 +106,43 @@
             <section class="normal" id="section-">
 <div id="missing-values" class="section level1" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Missing values</h1>
-<div id="plot_missing-function" class="section level2" number="4.1">
-<h2><span class="header-section-number">4.1</span> Plot_missing function</h2>
-<div id="q2-function-from-hw4" class="section level3" number="4.1.1">
-<h3><span class="header-section-number">4.1.1</span> Q2 function from HW4</h3>
+<div id="load-data" class="section level3" number="4.0.1">
+<h3><span class="header-section-number">4.0.1</span> Load Data</h3>
+<pre><code>## Number of variables 25 .  Num of observations 142</code></pre>
+<p>We choose 2018 data as the data file to analyze and notice the data set which have 25 variables and 142 observations.</p>
 </div>
-</div>
-<div id="missing-data-of-2018_sample.csv" class="section level2" number="4.2">
-<h2><span class="header-section-number">4.2</span> Missing data of 2018_Sample.csv</h2>
-<div id="load-data" class="section level3" number="4.2.1">
-<h3><span class="header-section-number">4.2.1</span> Load Data</h3>
-<pre><code>## Number of variables 18 .  Num of observations 142</code></pre>
-<p>We fist choose 2018 data as the data file to analyze and notice the data set which have 20 variables and 142 observations.</p>
-</div>
-<div id="calculate-missing-number-of-each-variable" class="section level3" number="4.2.2">
-<h3><span class="header-section-number">4.2.2</span> Calculate Missing number of each variable</h3>
-<pre><code>##       Trust.81.84.       Trust.94.98.       Trust.05.09.       Confi.in.gov 
-##                132                 91                 90                 15 
-##         GINI.00.17        Corruption.            Log.GDP         Generosity 
-##                 11                  8                  5                  5 
-##           life.exp gini.hhold.income.        Posi.affect        Nega.affect 
-##                  4                  3                  2                  2 
-##   Free.Life.choice         Democratic           Delivery               year 
-##                  1                  1                  1                  0 
-##        Life.Ladder     Social.support 
-##                  0                  0</code></pre>
-<p>We notice the data set missed a lot of Trust data, which is the “Most people can be trusted”. These data is collect by survey which is hard to gather all over the world. Noticed that the number of missing data is decreasing as years getting closer to present, we think that with the completion of the preparations, more people began to carry out this investigation. About the Confidence.in.government column, some countries are still in a state of war or instability, such as Afghanistan, so it is difficult to collect data such as confidence in the government.</p>
+<div id="calculate-missing-number-of-each-variable" class="section level3" number="4.0.2">
+<h3><span class="header-section-number">4.0.2</span> Calculate Missing number of each variable</h3>
+<pre><code>##    GINI.idx     Trust.G Trust.81.84 Trust.89.93 Trust.99.04 Trust.94.98 
+##         142         142         132         124         102          91 
+## Trust.05.09 Trust.10.14        Conf  GINI.00.17        Perc     Log.GDP 
+##          90          89          15          11           8           5 
+##  Generosity    Life.exp  gini.hhold        Posi        Nega     Freedom 
+##           5           4           3           2           2           1 
+##  Democratic    Delivery        year        Life  Social.sup  ladder.sig 
+##           1           1           0           0           0           0 
+##    ladder.m 
+##           0</code></pre>
+<p>No row has data of “Gini index” and “Trust of Gallup”, so it is possible that these data have not been collected, which could be used in future.</p>
+<p>We notice the data set missed a lot of Trust data, which is the “Most people can be trusted”. These data is collect by survey which is hard to gather all over the world. Noticed that the number of missing data is decreasing as years getting closer to present, we think that with the completion of the preparations, more people began to carry out this investigation.</p>
+<p>About the “Average Gini between 2000 and 2017”, some countries are still in a state of war or instability, such as Afghanistan, so it is difficult to collect data such as confidence in the government.</p>
+<p>And missing of “Confidence in government” may be due to political and religious reasons.</p>
 <p><img src="finalproj_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<p>We found 23 missing patterns.</p>
+<p>We found 51 missing patterns.</p>
 <ol style="list-style-type: decimal">
-<li>We notice the three most common missing patterns are aroused by the missing data of “Most People can be trusted”</li>
-<li>Another interest found is that there are no mode miss both the “average Gini between 2000 and 2017” and the “Gini of household income”.</li>
+<li>We first notice that no observations have data of “Gini index” and “Trust of Gallup”</li>
+<li>The most representative is the first model where all “Most People can be trusted” are missed which are the only missing variables except “Gini index”.</li>
+<li>We notice the 13 most common missing patterns are aroused by the missing data of “Most People can be trusted” and “Gini index” and “Trust of Gallup”</li>
 <li>There is a strong correlation between “Log of GDP” and “Generosity quality”.</li>
 <li>For several patterns, the data of “Confidence.in.government” and corruption are usually missed at the same time.</li>
+<li>Another interest found is that there are no mode miss both the “average Gini between 2000 and 2017” and the “Gini of household income”.</li>
 </ol>
 <p><img src="finalproj_files/figure-html/unnamed-chunk-8-1.png" width="1920" /><img src="finalproj_files/figure-html/unnamed-chunk-8-2.png" width="1920" /></p>
 </div>
-<div id="summary" class="section level3" number="4.2.3">
-<h3><span class="header-section-number">4.2.3</span> Summary</h3>
-<p>Based on the above analysis, Maybe we should ignore the “most people can trust” column or at least “trust 81-84”, because they are missing in a large area, so the information provided is very limited, and because the missing decreases over time, it is difficult for us to judge Whether the survey standards of the questionnaire are consistent, so these columns may even provide noise or misleading information.</p>
+<div id="summary" class="section level3" number="4.0.3">
+<h3><span class="header-section-number">4.0.3</span> Summary</h3>
+<p>Based on the above analysis, we definitely should drop the “Gini index” and “Trust of Gallup” columns, and we probably should also drop the “most people can trust” column, because they are missing in a large area, so the information provided is very limited, and because the missing decreases over time, it is difficult for us to judge Whether the survey standards of the questionnaire are consistent, so these columns may even provide noise or misleading information.</p>
 
-</div>
 </div>
 </div>
             </section>
