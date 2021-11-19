@@ -1,6 +1,6 @@
 --- 
 title: "World-Happiness-Analysis"
-author: "Yanyun Chen, Siqing Shen, Yinghao Li"
+author: "Yanyun Chen, Siqin Shen, Yinghao Li"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---

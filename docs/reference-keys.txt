@@ -5,3 +5,5 @@ missing-values
 results
 interactive-component
 conclusion
+q2-function
+calculate-missing-number-of-each-variable
