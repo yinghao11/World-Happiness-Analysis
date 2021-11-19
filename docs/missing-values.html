@@ -78,9 +78,9 @@
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation</a></li>
 <li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values</a>
 <ul>
-<li class="chapter" data-level="4.0.1" data-path="missing-values.html"><a href="missing-values.html#load-data"><i class="fa fa-check"></i><b>4.0.1</b> Load Data</a></li>
-<li class="chapter" data-level="4.0.2" data-path="missing-values.html"><a href="missing-values.html#calculate-missing-number-of-each-variable"><i class="fa fa-check"></i><b>4.0.2</b> Calculate Missing number of each variable</a></li>
-<li class="chapter" data-level="4.0.3" data-path="missing-values.html"><a href="missing-values.html#summary"><i class="fa fa-check"></i><b>4.0.3</b> Summary</a></li>
+<li class="chapter" data-level="4.1" data-path="missing-values.html"><a href="missing-values.html#load-data"><i class="fa fa-check"></i><b>4.1</b> Load Data</a></li>
+<li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#explore-missing-patterns"><i class="fa fa-check"></i><b>4.2</b> Explore Missing Patterns</a></li>
+<li class="chapter" data-level="4.3" data-path="missing-values.html"><a href="missing-values.html#summary"><i class="fa fa-check"></i><b>4.3</b> Summary</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a></li>
 <li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component</a></li>
@@ -106,13 +106,13 @@
             <section class="normal" id="section-">
 <div id="missing-values" class="section level1" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Missing values</h1>
-<div id="load-data" class="section level3" number="4.0.1">
-<h3><span class="header-section-number">4.0.1</span> Load Data</h3>
+<div id="load-data" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Load Data</h2>
 <pre><code>## Number of variables 25 .  Num of observations 142</code></pre>
 <p>We start with a subset of our data, the year 2018, to analyze missing patterns. Notice the data set has 25 variables and 142 observations.</p>
 </div>
-<div id="calculate-missing-number-of-each-variable" class="section level3" number="4.0.2">
-<h3><span class="header-section-number">4.0.2</span> Calculate Missing number of each variable</h3>
+<div id="explore-missing-patterns" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Explore Missing Patterns</h2>
 <pre><code>##    GINI.idx     Trust.G Trust.81.84 Trust.89.93 Trust.99.04 Trust.94.98 
 ##         142         142         132         124         102          91 
 ## Trust.05.09 Trust.10.14        Conf  GINI.00.17        Perc     Log.GDP 
@@ -128,7 +128,7 @@
 <p>As for “Average Gini between 2000 and 2017”, countries missing this indicator are usually those still in a state of war or instability, such as Afghanistan and Libya. So it is difficult to collect data.</p>
 <p>And “Confidence in government” is another survey data from GWP. Missing this variable may be due to political and religious reasons (e.g., China, Libya).</p>
 <p><img src="finalproj_files/figure-html/unnamed-chunk-7-1.png" width="1920" /><img src="finalproj_files/figure-html/unnamed-chunk-7-2.png" width="1920" /></p>
-<p>We found 51 missing patterns.</p>
+<p>We found 51 missing patterns. And from the patterns we observe that:</p>
 <ol style="list-style-type: decimal">
 <li>The most representative one is the first pattern where all six of “Most People can be trusted” variables, as well as “Gini index” and “Trust of Gallup” are missing. Over 25% of observations are of this pattern.</li>
 <li>It’s clear from the graph that many patterns emerge because of different levels of missing the six “Trust” survey data.</li>
@@ -137,9 +137,9 @@
 <li>Another interesting insight is that there is no observation missing “average Gini between 2000 and 2017” and “Gini of household income” at the same time.</li>
 </ol>
 </div>
-<div id="summary" class="section level3" number="4.0.3">
-<h3><span class="header-section-number">4.0.3</span> Summary</h3>
-<p>Based on the above analysis, we definitely should drop the “Gini index” and “Trust of Gallup” columns since these are essentially empty columns. As for the six “Trust” columns, there are two reasons why we should also drop them. First, even the most complete one has over 50% missing, so the information provided is very limited. Second, because it shows a clear decreasing pattern, it is difficult for us to judge Whether the survey standards of the questionnaire are consistent, so these columns may even provide noise or misleading information.</p>
+<div id="summary" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Summary</h2>
+<p>Based on the above analysis, we definitely should drop the “Gini index” and “Trust of Gallup” columns since these are essentially empty columns. As for the six “Trust” columns, there are two reasons why we should also drop them. First, even the most complete pattern would have over 50% missing in “Trust”, so the information provided is very limited. Second, it shows a clear decreasing pattern of missing percentage for the “Trust” column as time goes by, but it is difficult for us to judge whether the survey standards of the questionnaire are consistent, so these columns may even provide noise or misleading information.</p>
 
 </div>
 </div>

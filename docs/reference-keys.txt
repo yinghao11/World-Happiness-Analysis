@@ -3,7 +3,7 @@ data-sources
 data-transformation
 missing-values
 load-data
-calculate-missing-number-of-each-variable
+explore-missing-patterns
 summary
 results
 interactive-component
