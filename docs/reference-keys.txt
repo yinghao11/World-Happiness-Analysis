@@ -9,3 +9,6 @@ q2-function
 calculate-missing-number-of-each-variable
 load-data
 summary
+plot_missing-function
+q2-function-from-hw4
+missing-data-of-2018_sample.csv

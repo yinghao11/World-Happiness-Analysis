@@ -78,10 +78,16 @@
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation</a></li>
 <li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values</a>
 <ul>
-<li class="chapter" data-level="4.0.1" data-path="missing-values.html"><a href="missing-values.html#q2-function"><i class="fa fa-check"></i><b>4.0.1</b> Q2 function</a></li>
-<li class="chapter" data-level="4.0.2" data-path="missing-values.html"><a href="missing-values.html#load-data"><i class="fa fa-check"></i><b>4.0.2</b> Load Data</a></li>
-<li class="chapter" data-level="4.0.3" data-path="missing-values.html"><a href="missing-values.html#calculate-missing-number-of-each-variable"><i class="fa fa-check"></i><b>4.0.3</b> Calculate Missing number of each variable</a></li>
-<li class="chapter" data-level="4.0.4" data-path="missing-values.html"><a href="missing-values.html#summary"><i class="fa fa-check"></i><b>4.0.4</b> Summary</a></li>
+<li class="chapter" data-level="4.1" data-path="missing-values.html"><a href="missing-values.html#plot_missing-function"><i class="fa fa-check"></i><b>4.1</b> Plot_missing function</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="missing-values.html"><a href="missing-values.html#q2-function-from-hw4"><i class="fa fa-check"></i><b>4.1.1</b> Q2 function from HW4</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#missing-data-of-2018_sample.csv"><i class="fa fa-check"></i><b>4.2</b> Missing data of 2018_Sample.csv</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="missing-values.html"><a href="missing-values.html#load-data"><i class="fa fa-check"></i><b>4.2.1</b> Load Data</a></li>
+<li class="chapter" data-level="4.2.2" data-path="missing-values.html"><a href="missing-values.html#calculate-missing-number-of-each-variable"><i class="fa fa-check"></i><b>4.2.2</b> Calculate Missing number of each variable</a></li>
+<li class="chapter" data-level="4.2.3" data-path="missing-values.html"><a href="missing-values.html#summary"><i class="fa fa-check"></i><b>4.2.3</b> Summary</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a></li>
 <li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component</a></li>
@@ -107,16 +113,21 @@
             <section class="normal" id="section-">
 <div id="missing-values" class="section level1" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Missing values</h1>
-<div id="q2-function" class="section level3" number="4.0.1">
-<h3><span class="header-section-number">4.0.1</span> Q2 function</h3>
+<div id="plot_missing-function" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Plot_missing function</h2>
+<div id="q2-function-from-hw4" class="section level3" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Q2 function from HW4</h3>
 </div>
-<div id="load-data" class="section level3" number="4.0.2">
-<h3><span class="header-section-number">4.0.2</span> Load Data</h3>
+</div>
+<div id="missing-data-of-2018_sample.csv" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Missing data of 2018_Sample.csv</h2>
+<div id="load-data" class="section level3" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Load Data</h3>
 <pre><code>## Number of variables 18 .  Num of observations 142</code></pre>
 <p>We fist choose 2018 data as the data file to analyze and notice the data set which have 20 variables and 142 observations.</p>
 </div>
-<div id="calculate-missing-number-of-each-variable" class="section level3" number="4.0.3">
-<h3><span class="header-section-number">4.0.3</span> Calculate Missing number of each variable</h3>
+<div id="calculate-missing-number-of-each-variable" class="section level3" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Calculate Missing number of each variable</h3>
 <pre><code>##       Trust.81.84.       Trust.94.98.       Trust.05.09.       Confi.in.gov 
 ##                132                 91                 90                 15 
 ##         GINI.00.17        Corruption.            Log.GDP         Generosity 
@@ -138,10 +149,11 @@
 </ol>
 <p><img src="finalproj_files/figure-html/unnamed-chunk-8-1.png" width="1920" /><img src="finalproj_files/figure-html/unnamed-chunk-8-2.png" width="1920" /></p>
 </div>
-<div id="summary" class="section level3" number="4.0.4">
-<h3><span class="header-section-number">4.0.4</span> Summary</h3>
+<div id="summary" class="section level3" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Summary</h3>
 <p>Based on the above analysis, Maybe we should ignore the “most people can trust” column or at least “trust 81-84”, because they are missing in a large area, so the information provided is very limited, and because the missing decreases over time, it is difficult for us to judge Whether the survey standards of the questionnaire are consistent, so these columns may even provide noise or misleading information.</p>
 
+</div>
 </div>
 </div>
             </section>

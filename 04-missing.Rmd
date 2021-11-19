@@ -1,6 +1,8 @@
 # Missing values
 
-### Q2 function
+## Plot_missing function
+
+### Q2 function from HW4
 
 
 ```{r 2}
@@ -88,6 +90,8 @@ plot_missing <- function(data, percent) {
   }
 
 ```
+
+## Missing data of 2018_Sample.csv
 
 ### Load Data
 
