@@ -128,7 +128,7 @@ plot_missing(X2018_Sample, percent = TRUE)
 
 ```
 
-We found 51 missing patterns.
+We found 51 missing patterns. And from the patterns we observe that:
 
 1. The most representative one is the first pattern where all six of "Most People can be trusted" variables, as well as "Gini index" and "Trust of Gallup" are missing. Over 25% of observations are of this pattern.
 2. It's clear from the graph that many patterns emerge because of different levels of missing the six "Trust" survey data.
@@ -138,4 +138,4 @@ We found 51 missing patterns.
 
 ## Summary
 
-Based on the above analysis, we definitely should drop the "Gini index" and "Trust of Gallup" columns since these are essentially empty columns. As for the six "Trust" columns, there are two reasons why we should also drop them. First, even the most complete one has over 50% missing, so the information provided is very limited. Second, because it shows a clear decreasing pattern, it is difficult for us to judge Whether the survey standards of the questionnaire are consistent, so these columns may even provide noise or misleading information.
+Based on the above analysis, we definitely should drop the "Gini index" and "Trust of Gallup" columns since these are essentially empty columns. As for the six "Trust" columns, there are two reasons why we should also drop them. First, even the most complete pattern would have over 50% missing in "Trust", so the information provided is very limited. Second, it shows a clear decrease in the "trst points" as time goes by, but it is difficult for us to judge whether the survey standards of the questionnaire are consistent, so these columns may even provide noise or misleading information.
