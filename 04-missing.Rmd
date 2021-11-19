@@ -121,7 +121,7 @@ About the "Average Gini between 2000 and 2017", some countries are still in a st
 
 And missing of "Confidence in government" may be due to political and religious reasons.
 
-```{r}
+```{r,  fig.height=10,  fig.width=16}
 
 missing_patterns <- data.frame(is.na(X2018_Sample)) %>%
                       group_by_all() %>%
@@ -181,7 +181,7 @@ We found 51 missing patterns.
 6. Another interest found is that there are no mode miss both the "average Gini between 2000 and 2017" and the "Gini of household income".
 
  
-```{r, fig.width= 20}
+```{r, fig.height=20,  fig.width=20}
 plot_missing(X2018_Sample, percent = FALSE)
 plot_missing(X2018_Sample, percent = TRUE)
 
