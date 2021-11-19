@@ -1,1 +1,181 @@
 # Missing values
+
+### Q2 function
+
+
+```{r 2}
+plot_missing <- function(data, percent) {
+  numvar <- length((colnames(data)))
+  numrows <- nrow(data)
+  missing_patterns <- data.frame(is.na(data)) %>%
+                      group_by_all() %>%
+                      count(name = "count", sort = TRUE) %>%
+                      ungroup()
+  
+  missing_patterns$count_per <- missing_patterns$count / sum(missing_patterns$count) * 100
+  na_count <-sapply(data, function(y) sum(length(which(is.na(y)))))
+  na_count <- data.frame(na_count)
+  na_count$features <- row.names(na_count)
+  colnames(na_count) <- c('count','features')
+  
+  na_count$na_per <- na_count$count / numrows * 100
+  p1 <- ggplot(data=na_count, aes(x=reorder(features,-count), y=count))+
+            geom_bar(stat="identity", fill="cornflowerblue", alpha=0.7)+
+            ylab(expression(paste("num rows \n missing:"))) +
+            scale_y_continuous(expand = c(0,0)) +
+            theme_bw() +
+            theme(axis.title.x=element_blank(), panel.grid.major.x = element_blank(),panel.grid.minor.x = element_blank())
+  missing_patterns["Pattern"] <- rownames(missing_patterns)
+  missing_patterns[1:numvar] <- missing_patterns[1:numvar]*1
+  
+  numrow <- length(rownames(missing_patterns))
+  
+  mp_temp <- missing_patterns[1:numvar]
+  unique_temp <- apply(mp_temp,1,function(x) length(unique(x)))
+  
+  for (i in 1:nrow(mp_temp)) {
+    if (unique_temp[i] == 1){
+      mp_temp[i, ] <- -1
+    }
+  }
+    
+  mp_temp["Pattern"] <- missing_patterns["Pattern"]
+  mp_gathered <- mp_temp %>% select(1:(numvar+1)) %>% gather(key = "Variable", value = "Missing", 1:numvar)
+  
+  mp_gathered <- mp_gathered %>% mutate(Pattern = factor(Pattern , levels = c(1:numrow)))
+  missing_patterns <- missing_patterns %>% mutate(Pattern = factor(Pattern , levels = c(1:numrow)))
+  
+  temp <- levels(reorder(na_count$features,-na_count$count))
+  
+  p2 <- ggplot(mp_gathered, aes(x = factor(Variable, levels=temp), y = fct_rev(Pattern), fill = factor(Missing))) +
+    geom_tile(colour = 'dark gray') +
+    scale_fill_manual(values = c('0' = 'snow3', '1' = 'plum3', '-1' = 'gray'))+
+    ylab("Pattern")+
+    xlab("Variable")+
+    theme_bw()+
+    theme(legend.position="none") 
+  
+  p3 <- ggplot(missing_patterns, aes(x = count, y = fct_rev(Pattern))) +
+  geom_bar(stat="identity", fill="cornflowerblue", aes(alpha = Pattern)) +
+  scale_alpha_manual(values = (1/unique_temp)) +
+  scale_x_continuous(expand = c(0,0)) +
+  xlab("row count")+
+  theme_bw() +
+  theme(legend.position="none", axis.title.y=element_blank(), panel.grid.major.y = element_blank(), panel.grid.minor.y = element_blank())
+  
+  p4 <- ggplot(data=na_count, aes(x=reorder(features,-na_per), y=na_per))+
+            geom_bar(stat="identity", fill="cornflowerblue", alpha=0.7)+
+            ylab(expression(paste("% rows \n missing:"))) +
+            scale_y_continuous(expand = c(0,0), limits = c(0,100)) +
+            theme_bw() +
+            theme(axis.title.x=element_blank(), panel.grid.major.x = element_blank(),panel.grid.minor.x = element_blank())
+  
+  p5 <- ggplot(missing_patterns, aes(x = count_per, y = fct_rev(Pattern))) +
+  geom_bar(stat="identity", fill="cornflowerblue", aes(alpha = Pattern)) +
+  scale_alpha_manual(values = (1/unique_temp)) +
+  scale_x_continuous(expand = c(0,0), limits = c(0,100)) +
+  xlab("% rows")+
+  theme_bw() +
+  theme(legend.position="none", axis.title.y=element_blank(), panel.grid.major.y = element_blank(), panel.grid.minor.y = element_blank())
+  
+  
+  if (percent == TRUE){
+    p4 + plot_spacer()+  p2 + p5 + plot_layout(ncol = 2,widths = c(15, 5),heights=c(5,20)) + plot_annotation(title = 'Missing Value Pattern')
+  }
+  else{
+    p1 + plot_spacer()+  p2 + p3 + plot_layout(ncol = 2,widths = c(15, 5),heights=c(5,20)) + plot_annotation(title = 'Missing Value Pattern')
+}
+  }
+
+```
+
+### Load Data
+
+```{r}
+library(tidyverse)
+library(patchwork)
+library(ggplot2)
+X2018_Sample <- read.csv("2018_Sample.csv")
+X2018_Sample <- X2018_Sample[,2:length((colnames(X2018_Sample)))]
+numvar <- length((colnames(X2018_Sample)))
+numrows <- nrow(X2018_Sample)
+
+cat("Number of variables", numvar,".  Num of observations", numrows )
+
+
+```
+We fist choose 2018 data as the data file to analyze and notice the data set which have 20 variables and 142 observations.
+
+### Calculate Missing number of each variable
+
+```{r}
+colSums(is.na(X2018_Sample)) %>%
+  sort(decreasing = TRUE)
+```
+We notice the data set missed a lot of Trust data, which is the "Most people can be trusted". These data is collect by survey which is hard to gather all over the world. Noticed that the number of missing data is decreasing as years getting closer to present, we think that with the completion of the preparations, more people began to carry out this investigation. About the Confidence.in.government column, some countries are still in a state of war or instability, such as Afghanistan, so it is difficult to collect data such as confidence in the government.
+
+```{r}
+
+missing_patterns <- data.frame(is.na(X2018_Sample)) %>%
+                      group_by_all() %>%
+                      count(name = "count", sort = TRUE) %>%
+                      ungroup()
+  
+missing_patterns$count_per <- missing_patterns$count / sum(missing_patterns$count) * 100
+na_count <-sapply(X2018_Sample, function(y) sum(length(which(is.na(y)))))
+na_count <- data.frame(na_count)
+na_count$features <- row.names(na_count)
+colnames(na_count) <- c('count','features')
+  
+na_count$na_per <- na_count$count / numrows * 100
+  
+missing_patterns["Pattern"] <- rownames(missing_patterns)
+missing_patterns[1:numvar] <- missing_patterns[1:numvar]*1
+  
+numrow <- length(rownames(missing_patterns))
+  
+mp_temp <- missing_patterns[1:numvar]
+unique_temp <- apply(mp_temp,1,function(x) length(unique(x)))
+  
+  for (i in 1:nrow(mp_temp)) {
+    if (unique_temp[i] == 1){
+      mp_temp[i, ] <- -1
+    }
+  }
+    
+mp_temp["Pattern"] <- missing_patterns["Pattern"]
+mp_gathered <- mp_temp %>% select(1:(numvar+1)) %>% gather(key = "Variable", value = "Missing", 1:numvar)
+  
+  mp_gathered <- mp_gathered %>% mutate(Pattern = factor(Pattern , levels = c(1:numrow)))
+  missing_patterns <- missing_patterns %>% mutate(Pattern = factor(Pattern , levels = c(1:numrow)))
+  
+  temp <- levels(reorder(na_count$features,-na_count$count))
+  
+  p2 <- ggplot(mp_gathered, aes(x = factor(Variable, levels = temp), y = fct_rev(Pattern), fill = factor(Missing))) +
+    geom_tile(colour = 'dark gray') +
+    scale_fill_manual(values = c('0' = 'snow3', '1' = 'plum3', '-1' = 'gray'))+
+    ylab("Pattern")+
+    xlab("Variable")+
+    theme_bw()+
+    theme(legend.position="none") 
+  
+p2  
+
+```
+
+We found 23 missing patterns.
+
+1. We notice the three most common missing patterns are aroused by the missing data of "Most People can be trusted"
+2. Another interest found is that there are no mode miss both the "average Gini between 2000 and 2017" and the "Gini of household income".
+3. There is a strong correlation  between "Log of GDP" and "Generosity quality".
+4. For several patterns, the data of "Confidence.in.government" and corruption are usually missed at the same time.
+ 
+```{r, fig.width= 20}
+plot_missing(X2018_Sample, percent = FALSE)
+plot_missing(X2018_Sample, percent = TRUE)
+
+```
+
+### Summary
+
+Based on the above analysis, Maybe we should ignore the "most people can trust" column or at least "trust 81-84", because they are missing in a large area, so the information provided is very limited, and because the missing decreases over time, it is difficult for us to judge Whether the survey standards of the questionnaire are consistent, so these columns may even provide noise or misleading information.

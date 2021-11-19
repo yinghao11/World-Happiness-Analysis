@@ -7,3 +7,5 @@ interactive-component
 conclusion
 q2-function
 calculate-missing-number-of-each-variable
+load-data
+summary

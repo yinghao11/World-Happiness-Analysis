@@ -21,7 +21,7 @@
   
   
 
-<meta name="author" content="Yanyun Chen, Siqing Shen, Yinghao Li" />
+<meta name="author" content="Yanyun Chen, Siqin Shen, Yinghao Li" />
 
 
 <meta name="date" content="2021-11-18" />
@@ -76,7 +76,13 @@
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
 <li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources</a></li>
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation</a></li>
-<li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values</a></li>
+<li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="missing-values.html"><a href="missing-values.html#q2-function"><i class="fa fa-check"></i><b>4.0.1</b> Q2 function</a></li>
+<li class="chapter" data-level="4.0.2" data-path="missing-values.html"><a href="missing-values.html#load-data"><i class="fa fa-check"></i><b>4.0.2</b> Load Data</a></li>
+<li class="chapter" data-level="4.0.3" data-path="missing-values.html"><a href="missing-values.html#calculate-missing-number-of-each-variable"><i class="fa fa-check"></i><b>4.0.3</b> Calculate Missing number of each variable</a></li>
+<li class="chapter" data-level="4.0.4" data-path="missing-values.html"><a href="missing-values.html#summary"><i class="fa fa-check"></i><b>4.0.4</b> Summary</a></li>
+</ul></li>
 <li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a></li>
 <li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component</a></li>
 <li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion</a></li>
@@ -101,7 +107,42 @@
             <section class="normal" id="section-">
 <div id="missing-values" class="section level1" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Missing values</h1>
+<div id="q2-function" class="section level3" number="4.0.1">
+<h3><span class="header-section-number">4.0.1</span> Q2 function</h3>
+</div>
+<div id="load-data" class="section level3" number="4.0.2">
+<h3><span class="header-section-number">4.0.2</span> Load Data</h3>
+<pre><code>## Number of variables 18 .  Num of observations 142</code></pre>
+<p>We fist choose 2018 data as the data file to analyze and notice the data set which have 20 variables and 142 observations.</p>
+</div>
+<div id="calculate-missing-number-of-each-variable" class="section level3" number="4.0.3">
+<h3><span class="header-section-number">4.0.3</span> Calculate Missing number of each variable</h3>
+<pre><code>##       Trust.81.84.       Trust.94.98.       Trust.05.09.       Confi.in.gov 
+##                132                 91                 90                 15 
+##         GINI.00.17        Corruption.            Log.GDP         Generosity 
+##                 11                  8                  5                  5 
+##           life.exp gini.hhold.income.        Posi.affect        Nega.affect 
+##                  4                  3                  2                  2 
+##   Free.Life.choice         Democratic           Delivery               year 
+##                  1                  1                  1                  0 
+##        Life.Ladder     Social.support 
+##                  0                  0</code></pre>
+<p>We notice the data set missed a lot of Trust data, which is the “Most people can be trusted”. These data is collect by survey which is hard to gather all over the world. Noticed that the number of missing data is decreasing as years getting closer to present, we think that with the completion of the preparations, more people began to carry out this investigation. About the Confidence.in.government column, some countries are still in a state of war or instability, such as Afghanistan, so it is difficult to collect data such as confidence in the government.</p>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>We found 23 missing patterns.</p>
+<ol style="list-style-type: decimal">
+<li>We notice the three most common missing patterns are aroused by the missing data of “Most People can be trusted”</li>
+<li>Another interest found is that there are no mode miss both the “average Gini between 2000 and 2017” and the “Gini of household income”.</li>
+<li>There is a strong correlation between “Log of GDP” and “Generosity quality”.</li>
+<li>For several patterns, the data of “Confidence.in.government” and corruption are usually missed at the same time.</li>
+</ol>
+<p><img src="finalproj_files/figure-html/unnamed-chunk-8-1.png" width="1920" /><img src="finalproj_files/figure-html/unnamed-chunk-8-2.png" width="1920" /></p>
+</div>
+<div id="summary" class="section level3" number="4.0.4">
+<h3><span class="header-section-number">4.0.4</span> Summary</h3>
+<p>Based on the above analysis, Maybe we should ignore the “most people can trust” column or at least “trust 81-84”, because they are missing in a large area, so the information provided is very limited, and because the missing decreases over time, it is difficult for us to judge Whether the survey standards of the questionnaire are consistent, so these columns may even provide noise or misleading information.</p>
 
+</div>
 </div>
             </section>
 
