@@ -1,1 +1,29 @@
 # Results
+
+## Related Factors
+
+### Overview (by all factors)
+
+### Most Relevant
+
+### Least Relevant
+
+
+
+## General Life Ladder Trend
+
+### Trend by Time
+
+### Trend by Geo
+
+### Trend by Development Level
+
+
+
+## COVID-19 Impact
+
+### Comparison between Time (Pre and Post Pandemic)
+
+### Comparison between Geo
+
+### Comparison between Development Level
