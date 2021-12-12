@@ -43,6 +43,10 @@ library(RColorBrewer)
 ## General Life Ladder Trend
 
 ### Trend by Time
+```{r}
+
+
+```
 
 ### Trend by Geo
 
