@@ -8,3 +8,15 @@ summary
 results
 interactive-component
 conclusion
+related-factors
+overview-by-all-factors
+most-relevant
+least-relevant
+general-life-ladder-trend
+trend-by-time
+trend-by-geo
+trend-by-development-level
+covid-19-impact
+comparison-between-time-pre-and-post-pandemic
+comparison-between-geo
+comparison-between-development-level

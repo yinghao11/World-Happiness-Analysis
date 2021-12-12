@@ -24,7 +24,7 @@
 <meta name="author" content="Yanyun Chen, Siqin Shen, Yinghao Li" />
 
 
-<meta name="date" content="2021-11-19" />
+<meta name="date" content="2021-12-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -82,7 +82,27 @@
 <li class="chapter" data-level="4.2" data-path="missing-values.html"><a href="missing-values.html#explore-missing-patterns"><i class="fa fa-check"></i><b>4.2</b> Explore Missing Patterns</a></li>
 <li class="chapter" data-level="4.3" data-path="missing-values.html"><a href="missing-values.html#summary"><i class="fa fa-check"></i><b>4.3</b> Summary</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a></li>
+<li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="results.html"><a href="results.html#related-factors"><i class="fa fa-check"></i><b>5.1</b> Related Factors</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="results.html"><a href="results.html#overview-by-all-factors"><i class="fa fa-check"></i><b>5.1.1</b> Overview (by all factors)</a></li>
+<li class="chapter" data-level="5.1.2" data-path="results.html"><a href="results.html#most-relevant"><i class="fa fa-check"></i><b>5.1.2</b> Most Relevant</a></li>
+<li class="chapter" data-level="5.1.3" data-path="results.html"><a href="results.html#least-relevant"><i class="fa fa-check"></i><b>5.1.3</b> Least Relevant</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="results.html"><a href="results.html#general-life-ladder-trend"><i class="fa fa-check"></i><b>5.2</b> General Life Ladder Trend</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="results.html"><a href="results.html#trend-by-time"><i class="fa fa-check"></i><b>5.2.1</b> Trend by Time</a></li>
+<li class="chapter" data-level="5.2.2" data-path="results.html"><a href="results.html#trend-by-geo"><i class="fa fa-check"></i><b>5.2.2</b> Trend by Geo</a></li>
+<li class="chapter" data-level="5.2.3" data-path="results.html"><a href="results.html#trend-by-development-level"><i class="fa fa-check"></i><b>5.2.3</b> Trend by Development Level</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="results.html"><a href="results.html#covid-19-impact"><i class="fa fa-check"></i><b>5.3</b> COVID-19 Impact</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="results.html"><a href="results.html#comparison-between-time-pre-and-post-pandemic"><i class="fa fa-check"></i><b>5.3.1</b> Comparison between Time (Pre and Post Pandemic)</a></li>
+<li class="chapter" data-level="5.3.2" data-path="results.html"><a href="results.html#comparison-between-geo"><i class="fa fa-check"></i><b>5.3.2</b> Comparison between Geo</a></li>
+<li class="chapter" data-level="5.3.3" data-path="results.html"><a href="results.html#comparison-between-development-level"><i class="fa fa-check"></i><b>5.3.3</b> Comparison between Development Level</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="6" data-path="interactive-component.html"><a href="interactive-component.html"><i class="fa fa-check"></i><b>6</b> Interactive component</a></li>
 <li class="chapter" data-level="7" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>7</b> Conclusion</a></li>
 <li class="divider"></li>
@@ -107,10 +127,19 @@
 <div id="header">
 <h1 class="title">World-Happiness-Analysis</h1>
 <p class="author"><em>Yanyun Chen, Siqin Shen, Yinghao Li</em></p>
-<p class="date"><em>2021-11-19</em></p>
+<p class="date"><em>2021-12-12</em></p>
 </div>
 <div id="introduction" class="section level1" number="1">
 <h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
+<p>One of the most direct ways to evaluate a country’s well-being is to survey citizens about how they feel about their life - are they really happy about how they live in society? Then one question remains, which is, that what factor on earth, in a macro perspective，say，the GDP or the Life Span Expectancy, shapes peoples recognition of happiness. Also, it is natural to further consider how people’s thoughts have changed over the past years. Is the life better or worse than years ago? Besides the subjective evaluation from every single person, we would also look at the external factors that have affected the happiness score performance. The lifestyle or culture generally varies from continent to continent, and the GDP also determines the development level for a country. Then, there should be some correlation between happiness score and continent/development level, and this correlation is await us to be solved. Moreover, we shall never neglect the influence of COVID-19. The COVID-19 pandemic has been the most consequential global event in the past few years, and it inevitably brings impact on every facet of life. Our misison is to explore the COVID-19 impact on the happiness score, whether it is good or bad, happy or sad.</p>
+<p>In this project, we gather life ladder data and other objective descriptions of a country’s welfare data mainly from the World Health Organization website. It includes data across the world over the past years, from 2008 to 2020. We will focus on visualizing the score changing trend and distribution among the world, as well as carrying out practical analysis about how COVID-19 has reshaped people’s recognition of happiness. To be more specific, we are going to explore the data both in time and in geographic perspectives, and figure out what aspect affects people’s feelings about happiness. Meanwhile, we shall also concentrate on the impact that COVID-19 brings to life. We will answer the following questions step by step in this project:</p>
+<ul>
+<li><p>What is the most important factor affecting the life ladder (i.e., the happiness score)? What about other factors?</p></li>
+<li><p>What is the trend of the life ladder? Would it be different across continents/development levels? How can we classify the countries by the trend?</p></li>
+<li><p>How did COVID-19 affect the life ladder? Would it be different across continents/development levels?</p></li>
+</ul>
+<p>In the next chapters, we will discuss the above questions in depth with direct visualizations.</p>
+<p>For more details of this project, click the link here or copy the url <a href="https://github.com/yinghao11/World-Happiness-Analysis" class="uri">https://github.com/yinghao11/World-Happiness-Analysis</a> and open it in browser to go to our Github repository and navigate code in .Rmd files.</p>
 
 </div>
             </section>
