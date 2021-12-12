@@ -46,7 +46,7 @@ library(RColorBrewer)
 
 - Alluvium data transformation
 
-```{r, fig.height=5}
+```{r, fig.height=10}
 library(ggalluvial)
 allu <- read.csv("2015-2020.csv")
 
@@ -87,7 +87,7 @@ averaged <- averaged %>% rename(region = Country.name)
 ### Comparison between Time (Pre and Post Pandemic)
 We decide to use data averaged from 2017 to 2019 to represent the general life happiness score before the COVID-19 pandemic, and compare it to the 2020 happiness score. The difference between happiness score is the following:
 
-```{r, fig.height=5}
+```{r, fig.height=10}
 
 theme_dotplot <- theme_bw(14) +
     theme(axis.text.y = element_text(size = rel(.75)),
