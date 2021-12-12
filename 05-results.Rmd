@@ -46,7 +46,7 @@ library(RColorBrewer)
 
 - Alluvium data transformation
 
-```{r, fig.height=10}
+```{r, fig.height=10, fig.width=15}
 library(ggalluvial)
 allu <- read.csv("2015-2020.csv")
 
@@ -87,7 +87,7 @@ averaged <- averaged %>% rename(region = Country.name)
 ### Comparison between Time (Pre and Post Pandemic)
 We decide to use data averaged from 2017 to 2019 to represent the general life happiness score before the COVID-19 pandemic, and compare it to the 2020 happiness score. The difference between happiness score is the following:
 
-```{r, fig.height=10}
+```{r, fig.height=10, fig.width=15}
 
 theme_dotplot <- theme_bw(14) +
     theme(axis.text.y = element_text(size = rel(.75)),
@@ -98,14 +98,14 @@ theme_dotplot <- theme_bw(14) +
         panel.grid.minor.x = element_blank())
 
 ggplot(averaged, aes(x = difference, y = reorder(region, difference)))+
-    geom_point(color = "light blue") +
+    geom_point(color = "red") +
     xlab("Happiness Score Difference") +
     theme_dotplot +
     ylab("Country Name") +
     ggtitle("Happiness Score Difference by Post-Pre Pandemic")
 ```
 
-```{r}
+```{r, fig.height=10, fig.width=15}
 mapdata <- map_data("world")
 mapdata$region <- replace(mapdata$region, mapdata$region == "USA", "United States")
 mapdata <- left_join(mapdata, averaged, by="region")
@@ -116,7 +116,7 @@ difference_map
 
 ### Comparison between Geo
 
-```{r}
+```{r, fig.height=10, fig.width=15}
 geo_covid <- ave1719 %>% group_by(Region) %>% summarise(pre_covid = mean(Life.Ladder)) %>% ungroup()
 temp_col2 <- score_2020 %>% group_by(Region) %>% summarise(post_covid = mean(Life.Ladder)) %>% ungroup
 
@@ -135,7 +135,7 @@ geo_covid %>%
 
 ### Comparison between Development Level
 
-```{r}
+```{r, fig.height=10, fig.width=15}
 dev_covid <- ave1719 %>% group_by(Development.Level) %>% summarise(pre_covid = mean(Life.Ladder)) %>% ungroup()
 temp_col3 <- score_2020 %>% group_by(Development.Level) %>% summarise(post_covid = mean(Life.Ladder)) %>% ungroup
 
@@ -153,7 +153,7 @@ dev_covid %>%
   hc_yAxis(opposite = FALSE) 
 ```
 
-```{r}
+```{r, fig.height=10, fig.width=15}
 box_dev_covid <- ave1719 %>% select(Country.name, Development.Level, Life.Ladder) %>% group_by(Country.name, Development.Level) %>% summarise( score = mean(Life.Ladder)) %>% ungroup()
 box_dev_covid$Development.Level <- replace(box_dev_covid$Development.Level, box_dev_covid$Development.Level == "#N/A", "Third World Countries")
 
