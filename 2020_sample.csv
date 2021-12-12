@@ -19,9 +19,9 @@ China,2020,5.771,9.702,0.808,69.9,0.891,-0.103,,0.789,0.245,Developing,Asia,Asia
 Colombia,2020,5.709,9.495,0.797,68.3,0.84,-0.085,0.808,0.795,0.34,Developing,South America,South/Latin America
 Croatia,2020,6.508,10.166,0.923,71.4,0.837,-0.063,0.961,0.743,0.286,Developed,Europe,Europe
 Cyprus,2020,6.26,,0.806,74.1,0.763,,0.816,0.759,0.284,Developed,Europe,Europe
-Czech Republic,2020,6.897,10.53,0.964,71.3,0.906,-0.127,0.884,0.832,0.29,#N/A,Europe,Europe
+Czech Republic,2020,6.897,10.53,0.964,71.3,0.906,-0.127,0.884,0.832,0.29,Developed,Europe,Europe
 Denmark,2020,7.515,10.91,0.947,73,0.938,0.052,0.214,0.818,0.227,Developed,Europe,Europe
-Dominican Republic,2020,5.168,9.802,0.806,66.4,0.835,-0.128,0.636,0.734,0.314,#N/A,North America,South/Latin America
+Dominican Republic,2020,5.168,9.802,0.806,66.4,0.835,-0.128,0.636,0.734,0.314,Developing,North America,South/Latin America
 Ecuador,2020,5.354,9.244,0.804,69.1,0.829,-0.157,0.855,0.79,0.416,Developing,South America,South/Latin America
 Egypt,2020,4.472,9.383,0.673,62.3,0.77,-0.112,,0.599,0.442,Developing,Africa,Middle east
 El Salvador,2020,5.462,9.019,0.696,66.7,0.924,-0.126,0.583,0.839,0.329,Developing,North America,South/Latin America
@@ -33,7 +33,7 @@ Georgia,2020,5.123,9.569,0.718,64.1,0.764,-0.221,0.583,0.611,0.295,Developing,Eu
 Germany,2020,7.312,10.833,0.905,72.8,0.864,-0.06,0.424,0.76,0.206,Developed,Europe,Europe
 Ghana,2020,5.319,8.59,0.643,58,0.824,0.2,0.847,0.713,0.253,Developing,Africa,Africa
 Greece,2020,5.788,10.215,0.779,72.8,0.565,-0.241,0.764,0.684,0.322,Developed,Europe,Europe
-Hong Kong S.A.R. of China,2020,5.295,,0.813,,0.705,,0.38,0.609,0.21,#N/A,Asia,Asia & Pacific
+Hong Kong S.A.R. of China,2020,5.295,,0.813,,0.705,,0.38,0.609,0.21,Developed,Asia,Asia & Pacific
 Hungary,2020,6.038,10.335,0.943,68.4,0.771,-0.12,0.836,0.735,0.24,Developed,Europe,Europe
 Iceland,2020,7.575,10.824,0.983,73,0.949,0.16,0.644,0.863,0.172,Developed,Europe,Europe
 India,2020,4.225,8.703,0.617,60.9,0.906,0.075,0.78,0.752,0.383,Developing,Asia,Asia & Pacific
@@ -61,25 +61,25 @@ Montenegro,2020,5.722,9.913,0.887,68.9,0.802,0.06,0.845,0.603,0.411,Developed,Eu
 Morocco,2020,4.803,8.871,0.553,66.5,0.819,-0.229,0.803,0.587,0.256,Developing,Africa,Arab States
 Myanmar,2020,4.431,8.554,0.796,59.6,0.825,0.47,0.647,0.8,0.289,Developing,Asia,Asia & Pacific
 Namibia,2020,4.451,9.104,0.741,57.1,0.666,-0.104,0.81,0.648,0.248,Developing,Africa,Africa
-Netherlands,2020,7.504,10.901,0.944,72.5,0.935,0.151,0.281,0.784,0.247,#N/A,Europe,Europe
+Netherlands,2020,7.504,10.901,0.944,72.5,0.935,0.151,0.281,0.784,0.247,Developed,Europe,Europe
 New Zealand,2020,7.257,10.6,0.952,73.6,0.918,0.125,0.283,0.849,0.209,Developed,Oceania,Asia & Pacific
 Nigeria,2020,5.503,8.484,0.739,50.5,0.713,0.099,0.913,0.744,0.316,Developing,Africa,Africa
 North Macedonia,2020,5.054,9.69,0.75,65.56,0.787,0.131,0.877,0.605,0.365,#N/A,Europe,Europe
 Norway,2020,7.29,11.042,0.956,73.4,0.965,0.075,0.271,0.823,0.216,Developed,Europe,Europe
-Philippines,2020,5.08,9.061,0.781,62.1,0.932,-0.116,0.744,0.804,0.327,#N/A,Asia,Asia & Pacific
+Philippines,2020,5.08,9.061,0.781,62.1,0.932,-0.116,0.744,0.804,0.327,Developing,Asia,Asia & Pacific
 Poland,2020,6.139,10.371,0.953,70.1,0.767,-0.007,0.787,0.76,0.329,Developed,Europe,Europe
 Portugal,2020,5.768,10.371,0.875,72.8,0.913,-0.238,0.867,0.648,0.383,Developed,Europe,Europe
-Russia,2020,5.495,10.162,0.887,65.1,0.714,-0.071,0.823,0.645,0.19,#N/A,Europe,Europe
+Russia,2020,5.495,10.162,0.887,65.1,0.714,-0.071,0.823,0.645,0.19,Developed,Europe,Europe
 Saudi Arabia,2020,6.56,10.701,0.89,66.9,0.884,-0.111,,0.754,0.251,Developing,Asia,Middle east
 Serbia,2020,6.042,9.788,0.852,69,0.843,0.149,0.824,0.603,0.358,Developed,Europe,Europe
 Slovakia,2020,6.519,10.332,0.954,69.5,0.762,-0.075,0.901,0.764,0.274,Developed,Europe,Europe
 Slovenia,2020,6.462,10.478,0.953,71.7,0.958,-0.081,0.797,0.61,0.314,Developed,Europe,Europe
 South Africa,2020,4.947,9.332,0.891,57.3,0.757,-0.015,0.912,0.82,0.294,Developing,Africa,Africa
-South Korea,2020,5.793,10.648,0.808,74.2,0.711,-0.106,0.665,0.64,0.247,#N/A,Asia,Asia & Pacific
+South Korea,2020,5.793,10.648,0.808,74.2,0.711,-0.106,0.665,0.64,0.247,Developed,Asia,Asia & Pacific
 Spain,2020,6.502,10.488,0.935,75,0.783,-0.121,0.73,0.686,0.317,Developed,Europe,Europe
 Sweden,2020,7.314,10.838,0.936,72.8,0.951,0.091,0.203,0.766,0.222,Developed,Europe,Europe
 Switzerland,2020,7.508,11.081,0.946,74.7,0.917,-0.064,0.28,0.769,0.193,Developed,Europe,Europe
-Taiwan Province of China,2020,6.751,,0.901,,0.799,,0.711,0.845,0.083,#N/A,Asia,Asia & Pacific
+Taiwan Province of China,2020,6.751,,0.901,,0.799,,0.711,0.845,0.083,Developed,Asia,Asia & Pacific
 Tajikistan,2020,5.373,8.08,0.79,64.7,,-0.04,0.55,0.749,0.344,Developing,Asia,Asia & Pacific
 Tanzania,2020,3.786,7.881,0.74,58.5,0.83,0.295,0.521,0.686,0.271,#N/A,Africa,Africa
 Thailand,2020,5.885,9.769,0.867,67.6,0.84,0.273,0.918,0.783,0.326,Developing,Asia,Asia & Pacific
@@ -87,9 +87,9 @@ Tunisia,2020,4.731,9.231,0.719,67.5,0.668,-0.202,0.877,0.585,0.439,Developing,Af
 Turkey,2020,4.862,10.219,0.857,67.6,0.51,-0.111,0.774,0.384,0.44,Developing,Asia,Europe
 Uganda,2020,4.641,7.684,0.8,56.5,0.687,0.147,0.878,0.699,0.425,Developing,Africa,Africa
 Ukraine,2020,5.27,9.428,0.885,65.2,0.784,0.126,0.946,0.688,0.285,Developed,Europe,Europe
-United Arab Emirates,2020,6.458,11.053,0.827,67.5,0.942,0.06,,0.752,0.298,#N/A,Asia,Middle east
-United Kingdom,2020,6.798,10.626,0.929,72.7,0.885,0.203,0.49,0.758,0.225,#N/A,Europe,Europe
-United States,2020,7.028,11.001,0.937,68.1,0.85,0.034,0.678,0.787,0.295,#N/A,North America,North America
+United Arab Emirates,2020,6.458,11.053,0.827,67.5,0.942,0.06,,0.752,0.298,Developed,Asia,Middle east
+United Kingdom,2020,6.798,10.626,0.929,72.7,0.885,0.203,0.49,0.758,0.225,Developed,Europe,Europe
+United States,2020,7.028,11.001,0.937,68.1,0.85,0.034,0.678,0.787,0.295,Developed,North America,North America
 Uruguay,2020,6.31,9.937,0.921,69.2,0.908,-0.084,0.491,0.807,0.265,Developing,South America,South/Latin America
 Venezuela,2020,4.574,,0.805,66.9,0.612,,0.811,0.722,0.396,#N/A,South America,South/Latin America
 Zambia,2020,4.838,8.117,0.767,56.3,0.75,0.056,0.81,0.691,0.345,Developing,Africa,Africa

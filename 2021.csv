@@ -436,18 +436,18 @@ Cyprus,2017,6.062,10.539,0.819,73.5,0.812,0.043,0.851,0.784,0.301,Developed,Euro
 Cyprus,2018,6.276,10.567,0.826,73.7,0.794,-0.022,0.848,0.75,0.298,Developed,Europe,Europe
 Cyprus,2019,6.137,10.585,0.776,73.9,0.74,-0.008,0.865,0.763,0.29,Developed,Europe,Europe
 Cyprus,2020,6.26,,0.806,74.1,0.763,,0.816,0.759,0.284,Developed,Europe,Europe
-Czech Republic,2005,6.439,10.324,0.919,67,0.865,,0.901,0.723,0.258,#N/A,Europe,Europe
-Czech Republic,2007,6.5,10.437,0.9,67.44,0.799,-0.063,0.928,0.736,0.277,#N/A,Europe,Europe
-Czech Republic,2010,6.25,10.419,0.934,68.1,0.779,-0.042,0.926,0.641,0.244,#N/A,Europe,Europe
-Czech Republic,2011,6.331,10.435,0.914,68.24,0.787,-0.106,0.95,0.601,0.253,#N/A,Europe,Europe
-Czech Republic,2012,6.334,10.426,0.912,68.38,0.74,-0.154,0.957,0.609,0.257,#N/A,Europe,Europe
-Czech Republic,2013,6.698,10.42,0.888,68.52,0.726,-0.156,0.916,0.72,0.253,#N/A,Europe,Europe
-Czech Republic,2014,6.484,10.446,0.878,68.66,0.8,-0.168,0.897,0.678,0.235,#N/A,Europe,Europe
-Czech Republic,2015,6.608,10.496,0.911,68.8,0.808,-0.146,0.886,0.751,0.206,#N/A,Europe,Europe
-Czech Republic,2016,6.736,10.518,0.931,69.3,0.85,-0.197,0.9,0.756,0.201,#N/A,Europe,Europe
-Czech Republic,2017,6.79,10.558,0.901,69.8,0.832,-0.177,0.867,0.739,0.227,#N/A,Europe,Europe
-Czech Republic,2018,7.034,10.583,0.929,70.3,0.79,-0.292,0.851,0.714,0.178,#N/A,Europe,Europe
-Czech Republic,2020,6.897,10.53,0.964,71.3,0.906,-0.127,0.884,0.832,0.29,#N/A,Europe,Europe
+Czech Republic,2005,6.439,10.324,0.919,67,0.865,,0.901,0.723,0.258,Developed,Europe,Europe
+Czech Republic,2007,6.5,10.437,0.9,67.44,0.799,-0.063,0.928,0.736,0.277,Developed,Europe,Europe
+Czech Republic,2010,6.25,10.419,0.934,68.1,0.779,-0.042,0.926,0.641,0.244,Developed,Europe,Europe
+Czech Republic,2011,6.331,10.435,0.914,68.24,0.787,-0.106,0.95,0.601,0.253,Developed,Europe,Europe
+Czech Republic,2012,6.334,10.426,0.912,68.38,0.74,-0.154,0.957,0.609,0.257,Developed,Europe,Europe
+Czech Republic,2013,6.698,10.42,0.888,68.52,0.726,-0.156,0.916,0.72,0.253,Developed,Europe,Europe
+Czech Republic,2014,6.484,10.446,0.878,68.66,0.8,-0.168,0.897,0.678,0.235,Developed,Europe,Europe
+Czech Republic,2015,6.608,10.496,0.911,68.8,0.808,-0.146,0.886,0.751,0.206,Developed,Europe,Europe
+Czech Republic,2016,6.736,10.518,0.931,69.3,0.85,-0.197,0.9,0.756,0.201,Developed,Europe,Europe
+Czech Republic,2017,6.79,10.558,0.901,69.8,0.832,-0.177,0.867,0.739,0.227,Developed,Europe,Europe
+Czech Republic,2018,7.034,10.583,0.929,70.3,0.79,-0.292,0.851,0.714,0.178,Developed,Europe,Europe
+Czech Republic,2020,6.897,10.53,0.964,71.3,0.906,-0.127,0.884,0.832,0.29,Developed,Europe,Europe
 Denmark,2005,8.019,10.851,0.972,69.6,0.971,,0.237,0.86,0.154,Developed,Europe,Europe
 Denmark,2007,7.834,10.891,0.954,69.92,0.932,0.24,0.206,0.828,0.194,Developed,Europe,Europe
 Denmark,2008,7.971,10.88,0.954,70.08,0.97,0.272,0.248,0.757,0.163,Developed,Europe,Europe
@@ -467,21 +467,21 @@ Djibouti,2008,5.009,8.111,0.69,53.26,0.773,0.129,0.576,0.755,0.12,Developing,Afr
 Djibouti,2009,4.906,7.927,0.901,53.78,0.649,0.005,0.634,0.662,0.232,Developing,Africa,Arab States
 Djibouti,2010,5.006,7.812,,54.3,0.764,-0.058,0.597,,,Developing,Africa,Arab States
 Djibouti,2011,4.369,7.88,0.633,54.7,0.746,-0.057,0.519,0.579,0.181,Developing,Africa,Arab States
-Dominican Republic,2006,5.088,9.314,0.919,62.68,0.858,0.038,0.755,0.748,0.274,#N/A,North America,South/Latin America
-Dominican Republic,2007,5.081,9.372,0.848,62.96,0.886,-0.008,0.772,0.767,0.26,#N/A,North America,South/Latin America
-Dominican Republic,2008,4.842,9.391,0.85,63.24,0.848,-0.045,0.728,0.732,0.329,#N/A,North America,South/Latin America
-Dominican Republic,2009,5.432,9.388,0.878,63.52,0.863,-0.053,0.806,0.785,0.28,#N/A,North America,South/Latin America
-Dominican Republic,2010,4.735,9.456,0.86,63.8,0.824,-0.075,0.78,0.787,0.282,#N/A,North America,South/Latin America
-Dominican Republic,2011,5.397,9.475,0.872,64.02,0.848,0.014,0.788,0.809,0.3,#N/A,North America,South/Latin America
-Dominican Republic,2012,4.753,9.489,0.879,64.24,0.84,-0.062,0.727,0.797,0.297,#N/A,North America,South/Latin America
-Dominican Republic,2013,5.016,9.525,0.878,64.46,0.889,0.021,0.752,0.793,0.295,#N/A,North America,South/Latin America
-Dominican Republic,2014,5.387,9.582,0.891,64.68,0.905,-0.02,0.76,0.798,0.3,#N/A,North America,South/Latin America
-Dominican Republic,2015,5.062,9.637,0.893,64.9,0.856,-0.065,0.755,0.714,0.295,#N/A,North America,South/Latin America
-Dominican Republic,2016,5.239,9.691,0.895,65.2,0.873,-0.08,0.737,0.76,0.278,#N/A,North America,South/Latin America
-Dominican Republic,2017,5.605,9.725,0.894,65.5,0.855,-0.121,0.76,0.739,0.275,#N/A,North America,South/Latin America
-Dominican Republic,2018,5.433,9.782,0.862,65.8,0.867,-0.15,0.762,0.745,0.291,#N/A,North America,South/Latin America
-Dominican Republic,2019,6.004,9.821,0.884,66.1,0.877,-0.123,0.746,0.784,0.264,#N/A,North America,South/Latin America
-Dominican Republic,2020,5.168,9.802,0.806,66.4,0.835,-0.128,0.636,0.734,0.314,#N/A,North America,South/Latin America
+Dominican Republic,2006,5.088,9.314,0.919,62.68,0.858,0.038,0.755,0.748,0.274,Developing,North America,South/Latin America
+Dominican Republic,2007,5.081,9.372,0.848,62.96,0.886,-0.008,0.772,0.767,0.26,Developing,North America,South/Latin America
+Dominican Republic,2008,4.842,9.391,0.85,63.24,0.848,-0.045,0.728,0.732,0.329,Developing,North America,South/Latin America
+Dominican Republic,2009,5.432,9.388,0.878,63.52,0.863,-0.053,0.806,0.785,0.28,Developing,North America,South/Latin America
+Dominican Republic,2010,4.735,9.456,0.86,63.8,0.824,-0.075,0.78,0.787,0.282,Developing,North America,South/Latin America
+Dominican Republic,2011,5.397,9.475,0.872,64.02,0.848,0.014,0.788,0.809,0.3,Developing,North America,South/Latin America
+Dominican Republic,2012,4.753,9.489,0.879,64.24,0.84,-0.062,0.727,0.797,0.297,Developing,North America,South/Latin America
+Dominican Republic,2013,5.016,9.525,0.878,64.46,0.889,0.021,0.752,0.793,0.295,Developing,North America,South/Latin America
+Dominican Republic,2014,5.387,9.582,0.891,64.68,0.905,-0.02,0.76,0.798,0.3,Developing,North America,South/Latin America
+Dominican Republic,2015,5.062,9.637,0.893,64.9,0.856,-0.065,0.755,0.714,0.295,Developing,North America,South/Latin America
+Dominican Republic,2016,5.239,9.691,0.895,65.2,0.873,-0.08,0.737,0.76,0.278,Developing,North America,South/Latin America
+Dominican Republic,2017,5.605,9.725,0.894,65.5,0.855,-0.121,0.76,0.739,0.275,Developing,North America,South/Latin America
+Dominican Republic,2018,5.433,9.782,0.862,65.8,0.867,-0.15,0.762,0.745,0.291,Developing,North America,South/Latin America
+Dominican Republic,2019,6.004,9.821,0.884,66.1,0.877,-0.123,0.746,0.784,0.264,Developing,North America,South/Latin America
+Dominican Republic,2020,5.168,9.802,0.806,66.4,0.835,-0.128,0.636,0.734,0.314,Developing,North America,South/Latin America
 Ecuador,2006,5.024,9.186,0.91,66.08,0.671,-0.091,0.901,0.825,0.357,Developing,South America,South/Latin America
 Ecuador,2007,4.996,9.191,0.839,66.26,0.67,-0.063,0.83,0.833,0.286,Developing,South America,South/Latin America
 Ecuador,2008,5.297,9.236,0.829,66.44,0.64,-0.094,0.801,0.843,0.283,Developing,South America,South/Latin America
@@ -698,17 +698,17 @@ Honduras,2016,5.648,8.593,0.774,66.8,0.85,0.08,0.793,0.832,0.297,Developing,Nort
 Honduras,2017,6.02,8.624,0.843,67,0.898,0.072,0.783,0.842,0.248,Developing,North America,South/Latin America
 Honduras,2018,5.908,8.643,0.827,67.2,0.872,0.099,0.804,0.872,0.287,Developing,North America,South/Latin America
 Honduras,2019,5.93,8.653,0.797,67.4,0.846,0.063,0.815,0.85,0.279,Developing,North America,South/Latin America
-Hong Kong S.A.R. of China,2006,5.511,10.746,0.812,,0.91,0.156,0.356,0.723,0.236,#N/A,Asia,Asia & Pacific
-Hong Kong S.A.R. of China,2008,5.137,10.816,0.84,,0.922,0.296,0.274,0.719,0.237,#N/A,Asia,Asia & Pacific
-Hong Kong S.A.R. of China,2009,5.397,10.788,0.835,,0.918,0.308,0.272,0.762,0.21,#N/A,Asia,Asia & Pacific
-Hong Kong S.A.R. of China,2010,5.643,10.847,0.857,,0.89,0.332,0.256,0.71,0.183,#N/A,Asia,Asia & Pacific
-Hong Kong S.A.R. of China,2011,5.474,10.887,0.846,,0.894,0.235,0.245,0.734,0.196,#N/A,Asia,Asia & Pacific
-Hong Kong S.A.R. of China,2012,5.484,10.893,0.826,,0.88,0.222,0.38,0.715,0.183,#N/A,Asia,Asia & Pacific
-Hong Kong S.A.R. of China,2014,5.458,10.94,0.834,,0.843,0.224,0.423,0.684,0.243,#N/A,Asia,Asia & Pacific
-Hong Kong S.A.R. of China,2016,5.498,10.97,0.832,,0.8,0.1,0.403,0.664,0.213,#N/A,Asia,Asia & Pacific
-Hong Kong S.A.R. of China,2017,5.362,11,0.831,,0.831,0.14,0.416,0.64,0.201,#N/A,Asia,Asia & Pacific
-Hong Kong S.A.R. of China,2019,5.659,11,0.856,,0.727,0.067,0.432,0.599,0.358,#N/A,Asia,Asia & Pacific
-Hong Kong S.A.R. of China,2020,5.295,,0.813,,0.705,,0.38,0.609,0.21,#N/A,Asia,Asia & Pacific
+Hong Kong S.A.R. of China,2006,5.511,10.746,0.812,,0.91,0.156,0.356,0.723,0.236,Developed,Asia,Asia & Pacific
+Hong Kong S.A.R. of China,2008,5.137,10.816,0.84,,0.922,0.296,0.274,0.719,0.237,Developed,Asia,Asia & Pacific
+Hong Kong S.A.R. of China,2009,5.397,10.788,0.835,,0.918,0.308,0.272,0.762,0.21,Developed,Asia,Asia & Pacific
+Hong Kong S.A.R. of China,2010,5.643,10.847,0.857,,0.89,0.332,0.256,0.71,0.183,Developed,Asia,Asia & Pacific
+Hong Kong S.A.R. of China,2011,5.474,10.887,0.846,,0.894,0.235,0.245,0.734,0.196,Developed,Asia,Asia & Pacific
+Hong Kong S.A.R. of China,2012,5.484,10.893,0.826,,0.88,0.222,0.38,0.715,0.183,Developed,Asia,Asia & Pacific
+Hong Kong S.A.R. of China,2014,5.458,10.94,0.834,,0.843,0.224,0.423,0.684,0.243,Developed,Asia,Asia & Pacific
+Hong Kong S.A.R. of China,2016,5.498,10.97,0.832,,0.8,0.1,0.403,0.664,0.213,Developed,Asia,Asia & Pacific
+Hong Kong S.A.R. of China,2017,5.362,11,0.831,,0.831,0.14,0.416,0.64,0.201,Developed,Asia,Asia & Pacific
+Hong Kong S.A.R. of China,2019,5.659,11,0.856,,0.727,0.067,0.432,0.599,0.358,Developed,Asia,Asia & Pacific
+Hong Kong S.A.R. of China,2020,5.295,,0.813,,0.705,,0.38,0.609,0.21,Developed,Asia,Asia & Pacific
 Hungary,2005,5.194,10.108,0.93,64.6,0.697,,0.903,0.675,0.29,Developed,Europe,Europe
 Hungary,2007,4.954,10.153,0.931,65,0.538,-0.161,0.895,0.701,0.23,Developed,Europe,Europe
 Hungary,2009,4.895,10.097,0.901,65.4,0.464,-0.125,0.915,0.664,0.228,Developed,Europe,Europe
@@ -1210,20 +1210,20 @@ Nepal,2016,5.1,7.973,0.837,61.3,0.839,0.168,0.817,0.627,0.37,Developing,Asia,Asi
 Nepal,2017,4.737,8.039,0.816,62.4,0.845,0.134,0.77,0.571,0.376,Developing,Asia,Asia & Pacific
 Nepal,2018,4.91,8.087,0.768,63.5,0.77,0.122,0.742,0.537,0.387,Developing,Asia,Asia & Pacific
 Nepal,2019,5.449,8.136,0.772,64.6,0.79,0.167,0.712,0.536,0.357,Developing,Asia,Asia & Pacific
-Netherlands,2005,7.464,10.814,0.947,70.4,0.901,,0.571,0.869,0.233,#N/A,Europe,Europe
-Netherlands,2007,7.452,10.881,0.944,70.8,0.896,0.344,0.445,0.818,0.213,#N/A,Europe,Europe
-Netherlands,2008,7.631,10.899,0.944,71,0.883,0.365,0.419,0.788,0.182,#N/A,Europe,Europe
-Netherlands,2010,7.502,10.864,0.957,71.4,0.921,0.349,0.399,0.853,0.206,#N/A,Europe,Europe
-Netherlands,2011,7.564,10.875,0.938,71.52,0.925,0.336,0.359,0.863,0.181,#N/A,Europe,Europe
-Netherlands,2012,7.471,10.861,0.939,71.64,0.877,0.288,0.434,0.861,0.226,#N/A,Europe,Europe
-Netherlands,2013,7.407,10.857,0.925,71.76,0.919,0.305,0.505,0.867,0.235,#N/A,Europe,Europe
-Netherlands,2014,7.321,10.867,0.909,71.88,0.91,0.331,0.457,0.868,0.221,#N/A,Europe,Europe
-Netherlands,2015,7.324,10.882,0.879,72,0.904,0.261,0.412,0.834,0.202,#N/A,Europe,Europe
-Netherlands,2016,7.541,10.899,0.926,72.1,0.907,0.239,0.433,0.838,0.215,#N/A,Europe,Europe
-Netherlands,2017,7.459,10.921,0.937,72.2,0.92,0.25,0.363,0.852,0.185,#N/A,Europe,Europe
-Netherlands,2018,7.463,10.941,0.939,72.3,0.92,0.161,0.371,0.862,0.205,#N/A,Europe,Europe
-Netherlands,2019,7.425,10.953,0.941,72.4,0.886,0.213,0.36,0.838,0.231,#N/A,Europe,Europe
-Netherlands,2020,7.504,10.901,0.944,72.5,0.935,0.151,0.281,0.784,0.247,#N/A,Europe,Europe
+Netherlands,2005,7.464,10.814,0.947,70.4,0.901,,0.571,0.869,0.233,Developed,Europe,Europe
+Netherlands,2007,7.452,10.881,0.944,70.8,0.896,0.344,0.445,0.818,0.213,Developed,Europe,Europe
+Netherlands,2008,7.631,10.899,0.944,71,0.883,0.365,0.419,0.788,0.182,Developed,Europe,Europe
+Netherlands,2010,7.502,10.864,0.957,71.4,0.921,0.349,0.399,0.853,0.206,Developed,Europe,Europe
+Netherlands,2011,7.564,10.875,0.938,71.52,0.925,0.336,0.359,0.863,0.181,Developed,Europe,Europe
+Netherlands,2012,7.471,10.861,0.939,71.64,0.877,0.288,0.434,0.861,0.226,Developed,Europe,Europe
+Netherlands,2013,7.407,10.857,0.925,71.76,0.919,0.305,0.505,0.867,0.235,Developed,Europe,Europe
+Netherlands,2014,7.321,10.867,0.909,71.88,0.91,0.331,0.457,0.868,0.221,Developed,Europe,Europe
+Netherlands,2015,7.324,10.882,0.879,72,0.904,0.261,0.412,0.834,0.202,Developed,Europe,Europe
+Netherlands,2016,7.541,10.899,0.926,72.1,0.907,0.239,0.433,0.838,0.215,Developed,Europe,Europe
+Netherlands,2017,7.459,10.921,0.937,72.2,0.92,0.25,0.363,0.852,0.185,Developed,Europe,Europe
+Netherlands,2018,7.463,10.941,0.939,72.3,0.92,0.161,0.371,0.862,0.205,Developed,Europe,Europe
+Netherlands,2019,7.425,10.953,0.941,72.4,0.886,0.213,0.36,0.838,0.231,Developed,Europe,Europe
+Netherlands,2020,7.504,10.901,0.944,72.5,0.935,0.151,0.281,0.784,0.247,Developed,Europe,Europe
 New Zealand,2006,7.305,10.526,0.946,71.2,0.932,0.312,0.224,0.88,0.219,Developed,Oceania,Asia & Pacific
 New Zealand,2007,7.604,10.546,0.967,71.4,0.878,0.279,0.295,0.854,0.238,Developed,Oceania,Asia & Pacific
 New Zealand,2008,7.381,10.528,0.944,71.6,0.893,0.298,0.334,0.854,0.232,Developed,Oceania,Asia & Pacific
@@ -1379,21 +1379,21 @@ Peru,2016,5.701,9.426,0.803,67.5,0.83,-0.134,0.866,0.822,0.338,Developing,South 
 Peru,2017,5.711,9.434,0.83,67.8,0.827,-0.154,0.895,0.789,0.394,Developing,South America,South/Latin America
 Peru,2018,5.68,9.456,0.845,68.1,0.83,-0.178,0.906,0.809,0.38,Developing,South America,South/Latin America
 Peru,2019,5.999,9.461,0.809,68.4,0.815,-0.13,0.874,0.82,0.375,Developing,South America,South/Latin America
-Philippines,2006,4.67,8.562,0.795,59.8,0.828,0.063,0.841,0.832,,#N/A,Asia,Asia & Pacific
-Philippines,2007,5.074,8.608,0.801,60,0.852,-0.022,0.88,0.784,0.378,#N/A,Asia,Asia & Pacific
-Philippines,2008,4.589,8.634,0.798,60.2,0.861,0.083,0.817,0.805,0.384,#N/A,Asia,Asia & Pacific
-Philippines,2009,4.88,8.632,0.775,60.4,0.874,0.004,0.805,0.846,0.311,#N/A,Asia,Asia & Pacific
-Philippines,2010,4.942,8.686,0.805,60.6,0.893,0.033,0.812,0.876,0.294,#N/A,Asia,Asia & Pacific
-Philippines,2011,4.994,8.707,0.789,60.8,0.883,0.073,0.783,0.851,0.358,#N/A,Asia,Asia & Pacific
-Philippines,2012,5.002,8.756,0.813,61,0.914,0.053,0.771,0.865,0.351,#N/A,Asia,Asia & Pacific
-Philippines,2013,4.977,8.805,0.846,61.2,0.907,0.021,0.756,0.799,0.332,#N/A,Asia,Asia & Pacific
-Philippines,2014,5.313,8.85,0.813,61.4,0.902,-0.015,0.787,0.813,0.334,#N/A,Asia,Asia & Pacific
-Philippines,2015,5.547,8.896,0.854,61.6,0.912,-0.051,0.755,0.805,0.351,#N/A,Asia,Asia & Pacific
-Philippines,2016,5.431,8.95,0.821,61.7,0.908,-0.071,0.792,0.821,0.29,#N/A,Asia,Asia & Pacific
-Philippines,2017,5.594,9.002,0.851,61.8,0.926,-0.141,0.711,0.769,0.341,#N/A,Asia,Asia & Pacific
-Philippines,2018,5.869,9.05,0.846,61.9,0.918,-0.108,0.726,0.773,0.393,#N/A,Asia,Asia & Pacific
-Philippines,2019,6.268,9.095,0.845,62,0.91,-0.083,0.748,0.781,0.341,#N/A,Asia,Asia & Pacific
-Philippines,2020,5.08,9.061,0.781,62.1,0.932,-0.116,0.744,0.804,0.327,#N/A,Asia,Asia & Pacific
+Philippines,2006,4.67,8.562,0.795,59.8,0.828,0.063,0.841,0.832,,Developing,Asia,Asia & Pacific
+Philippines,2007,5.074,8.608,0.801,60,0.852,-0.022,0.88,0.784,0.378,Developing,Asia,Asia & Pacific
+Philippines,2008,4.589,8.634,0.798,60.2,0.861,0.083,0.817,0.805,0.384,Developing,Asia,Asia & Pacific
+Philippines,2009,4.88,8.632,0.775,60.4,0.874,0.004,0.805,0.846,0.311,Developing,Asia,Asia & Pacific
+Philippines,2010,4.942,8.686,0.805,60.6,0.893,0.033,0.812,0.876,0.294,Developing,Asia,Asia & Pacific
+Philippines,2011,4.994,8.707,0.789,60.8,0.883,0.073,0.783,0.851,0.358,Developing,Asia,Asia & Pacific
+Philippines,2012,5.002,8.756,0.813,61,0.914,0.053,0.771,0.865,0.351,Developing,Asia,Asia & Pacific
+Philippines,2013,4.977,8.805,0.846,61.2,0.907,0.021,0.756,0.799,0.332,Developing,Asia,Asia & Pacific
+Philippines,2014,5.313,8.85,0.813,61.4,0.902,-0.015,0.787,0.813,0.334,Developing,Asia,Asia & Pacific
+Philippines,2015,5.547,8.896,0.854,61.6,0.912,-0.051,0.755,0.805,0.351,Developing,Asia,Asia & Pacific
+Philippines,2016,5.431,8.95,0.821,61.7,0.908,-0.071,0.792,0.821,0.29,Developing,Asia,Asia & Pacific
+Philippines,2017,5.594,9.002,0.851,61.8,0.926,-0.141,0.711,0.769,0.341,Developing,Asia,Asia & Pacific
+Philippines,2018,5.869,9.05,0.846,61.9,0.918,-0.108,0.726,0.773,0.393,Developing,Asia,Asia & Pacific
+Philippines,2019,6.268,9.095,0.845,62,0.91,-0.083,0.748,0.781,0.341,Developing,Asia,Asia & Pacific
+Philippines,2020,5.08,9.061,0.781,62.1,0.932,-0.116,0.744,0.804,0.327,Developing,Asia,Asia & Pacific
 Poland,2005,5.587,9.849,0.922,66.3,0.782,,0.983,0.715,0.282,Developed,Europe,Europe
 Poland,2007,5.886,9.978,0.913,66.7,0.772,-0.047,0.925,0.76,0.238,Developed,Europe,Europe
 Poland,2009,5.772,10.047,0.917,67.1,0.821,0.073,0.898,0.69,0.246,Developed,Europe,Europe
@@ -1439,21 +1439,21 @@ Romania,2016,5.969,10.136,0.809,66.6,0.822,-0.115,0.949,0.694,0.258,Developed,Eu
 Romania,2017,6.09,10.211,0.811,66.9,0.839,-0.16,0.926,0.734,0.231,Developed,Europe,Europe
 Romania,2018,6.151,10.26,0.818,67.2,0.845,-0.217,0.921,0.735,0.298,Developed,Europe,Europe
 Romania,2019,6.13,10.306,0.842,67.5,0.848,-0.221,0.954,0.697,0.244,Developed,Europe,Europe
-Russia,2006,4.964,9.991,0.895,58.68,0.643,-0.307,0.935,0.611,0.232,#N/A,Europe,Europe
-Russia,2007,5.223,10.074,0.885,59.26,0.593,-0.284,0.933,0.623,0.193,#N/A,Europe,Europe
-Russia,2008,5.619,10.125,0.882,59.84,0.643,-0.305,0.924,0.594,0.166,#N/A,Europe,Europe
-Russia,2009,5.158,10.044,0.908,60.42,0.617,-0.283,0.954,0.566,0.169,#N/A,Europe,Europe
-Russia,2010,5.385,10.087,0.909,61,0.613,-0.296,0.937,0.589,0.171,#N/A,Europe,Europe
-Russia,2011,5.389,10.129,0.883,61.42,0.626,-0.279,0.935,0.601,0.165,#N/A,Europe,Europe
-Russia,2012,5.621,10.166,0.901,61.84,0.609,-0.293,0.938,0.611,0.174,#N/A,Europe,Europe
-Russia,2013,5.537,10.182,0.881,62.26,0.661,-0.289,0.934,0.68,0.18,#N/A,Europe,Europe
-Russia,2014,6.037,10.171,0.932,62.68,0.744,-0.265,0.869,0.688,0.151,#N/A,Europe,Europe
-Russia,2015,5.996,10.149,0.924,63.1,0.685,-0.171,0.913,0.679,0.13,#N/A,Europe,Europe
-Russia,2016,5.855,10.149,0.911,63.5,0.714,-0.181,0.925,0.636,0.142,#N/A,Europe,Europe
-Russia,2017,5.579,10.166,0.896,63.9,0.731,-0.145,0.862,0.71,0.195,#N/A,Europe,Europe
-Russia,2018,5.514,10.191,0.909,64.3,0.729,-0.147,0.865,0.673,0.199,#N/A,Europe,Europe
-Russia,2019,5.441,10.205,0.91,64.7,0.715,-0.116,0.848,0.691,0.2,#N/A,Europe,Europe
-Russia,2020,5.495,10.162,0.887,65.1,0.714,-0.071,0.823,0.645,0.19,#N/A,Europe,Europe
+Russia,2006,4.964,9.991,0.895,58.68,0.643,-0.307,0.935,0.611,0.232,Developed,Europe,Europe
+Russia,2007,5.223,10.074,0.885,59.26,0.593,-0.284,0.933,0.623,0.193,Developed,Europe,Europe
+Russia,2008,5.619,10.125,0.882,59.84,0.643,-0.305,0.924,0.594,0.166,Developed,Europe,Europe
+Russia,2009,5.158,10.044,0.908,60.42,0.617,-0.283,0.954,0.566,0.169,Developed,Europe,Europe
+Russia,2010,5.385,10.087,0.909,61,0.613,-0.296,0.937,0.589,0.171,Developed,Europe,Europe
+Russia,2011,5.389,10.129,0.883,61.42,0.626,-0.279,0.935,0.601,0.165,Developed,Europe,Europe
+Russia,2012,5.621,10.166,0.901,61.84,0.609,-0.293,0.938,0.611,0.174,Developed,Europe,Europe
+Russia,2013,5.537,10.182,0.881,62.26,0.661,-0.289,0.934,0.68,0.18,Developed,Europe,Europe
+Russia,2014,6.037,10.171,0.932,62.68,0.744,-0.265,0.869,0.688,0.151,Developed,Europe,Europe
+Russia,2015,5.996,10.149,0.924,63.1,0.685,-0.171,0.913,0.679,0.13,Developed,Europe,Europe
+Russia,2016,5.855,10.149,0.911,63.5,0.714,-0.181,0.925,0.636,0.142,Developed,Europe,Europe
+Russia,2017,5.579,10.166,0.896,63.9,0.731,-0.145,0.862,0.71,0.195,Developed,Europe,Europe
+Russia,2018,5.514,10.191,0.909,64.3,0.729,-0.147,0.865,0.673,0.199,Developed,Europe,Europe
+Russia,2019,5.441,10.205,0.91,64.7,0.715,-0.116,0.848,0.691,0.2,Developed,Europe,Europe
+Russia,2020,5.495,10.162,0.887,65.1,0.714,-0.071,0.823,0.645,0.19,Developed,Europe,Europe
 Rwanda,2006,4.215,7.111,0.718,49.88,0.915,,0.299,0.735,0.189,Developing,Africa,Africa
 Rwanda,2008,4.363,7.239,0.486,53.04,0.752,0.017,0.286,0.643,0.221,Developing,Africa,Africa
 Rwanda,2009,4.03,7.273,0.559,54.62,0.766,-0.001,0.41,0.678,0.112,Developing,Africa,Africa
@@ -1580,21 +1580,21 @@ South Africa,2017,4.514,9.45,0.87,56.1,0.787,-0.129,0.865,0.785,0.268,Developing
 South Africa,2018,4.884,9.444,0.841,56.5,0.753,-0.05,0.841,0.812,0.283,Developing,Africa,Africa
 South Africa,2019,5.035,9.432,0.848,56.9,0.738,-0.134,0.82,0.801,0.268,Developing,Africa,Africa
 South Africa,2020,4.947,9.332,0.891,57.3,0.757,-0.015,0.912,0.82,0.294,Developing,Africa,Africa
-South Korea,2006,5.332,10.31,0.775,70.2,0.715,-0.052,0.799,0.651,0.338,#N/A,Asia,Asia & Pacific
-South Korea,2007,5.767,10.361,0.827,70.5,0.656,-0.059,0.803,0.69,0.226,#N/A,Asia,Asia & Pacific
-South Korea,2008,5.39,10.383,0.754,70.8,0.524,-0.102,0.771,0.643,0.239,#N/A,Asia,Asia & Pacific
-South Korea,2009,5.648,10.386,0.811,71.1,0.6,-0.096,0.787,0.697,0.209,#N/A,Asia,Asia & Pacific
-South Korea,2010,6.116,10.447,0.816,71.4,0.677,-0.033,0.752,0.662,0.13,#N/A,Asia,Asia & Pacific
-South Korea,2011,6.947,10.475,0.809,71.66,0.682,-0.048,0.827,0.656,0.168,#N/A,Asia,Asia & Pacific
-South Korea,2012,6.003,10.494,0.775,71.92,0.618,,0.844,0.664,0.206,#N/A,Asia,Asia & Pacific
-South Korea,2013,5.959,10.52,0.797,72.18,0.642,-0.05,0.832,0.676,0.189,#N/A,Asia,Asia & Pacific
-South Korea,2014,5.801,10.546,0.738,72.44,0.623,-0.043,0.834,0.653,0.283,#N/A,Asia,Asia & Pacific
-South Korea,2015,5.78,10.568,0.768,72.7,0.616,-0.036,0.841,0.65,0.244,#N/A,Asia,Asia & Pacific
-South Korea,2016,5.971,10.593,0.811,73,0.591,0.026,0.862,0.676,0.233,#N/A,Asia,Asia & Pacific
-South Korea,2017,5.874,10.621,0.807,73.3,0.538,0.014,0.851,0.623,0.235,#N/A,Asia,Asia & Pacific
-South Korea,2018,5.84,10.643,0.798,73.6,0.6,-0.089,0.797,0.661,0.217,#N/A,Asia,Asia & Pacific
-South Korea,2019,5.903,10.661,0.783,73.9,0.706,-0.055,0.718,0.684,0.236,#N/A,Asia,Asia & Pacific
-South Korea,2020,5.793,10.648,0.808,74.2,0.711,-0.106,0.665,0.64,0.247,#N/A,Asia,Asia & Pacific
+South Korea,2006,5.332,10.31,0.775,70.2,0.715,-0.052,0.799,0.651,0.338,Developed,Asia,Asia & Pacific
+South Korea,2007,5.767,10.361,0.827,70.5,0.656,-0.059,0.803,0.69,0.226,Developed,Asia,Asia & Pacific
+South Korea,2008,5.39,10.383,0.754,70.8,0.524,-0.102,0.771,0.643,0.239,Developed,Asia,Asia & Pacific
+South Korea,2009,5.648,10.386,0.811,71.1,0.6,-0.096,0.787,0.697,0.209,Developed,Asia,Asia & Pacific
+South Korea,2010,6.116,10.447,0.816,71.4,0.677,-0.033,0.752,0.662,0.13,Developed,Asia,Asia & Pacific
+South Korea,2011,6.947,10.475,0.809,71.66,0.682,-0.048,0.827,0.656,0.168,Developed,Asia,Asia & Pacific
+South Korea,2012,6.003,10.494,0.775,71.92,0.618,,0.844,0.664,0.206,Developed,Asia,Asia & Pacific
+South Korea,2013,5.959,10.52,0.797,72.18,0.642,-0.05,0.832,0.676,0.189,Developed,Asia,Asia & Pacific
+South Korea,2014,5.801,10.546,0.738,72.44,0.623,-0.043,0.834,0.653,0.283,Developed,Asia,Asia & Pacific
+South Korea,2015,5.78,10.568,0.768,72.7,0.616,-0.036,0.841,0.65,0.244,Developed,Asia,Asia & Pacific
+South Korea,2016,5.971,10.593,0.811,73,0.591,0.026,0.862,0.676,0.233,Developed,Asia,Asia & Pacific
+South Korea,2017,5.874,10.621,0.807,73.3,0.538,0.014,0.851,0.623,0.235,Developed,Asia,Asia & Pacific
+South Korea,2018,5.84,10.643,0.798,73.6,0.6,-0.089,0.797,0.661,0.217,Developed,Asia,Asia & Pacific
+South Korea,2019,5.903,10.661,0.783,73.9,0.706,-0.055,0.718,0.684,0.236,Developed,Asia,Asia & Pacific
+South Korea,2020,5.793,10.648,0.808,74.2,0.711,-0.106,0.665,0.64,0.247,Developed,Asia,Asia & Pacific
 South Sudan,2014,3.832,,0.545,49.84,0.567,,0.742,0.614,0.428,Developing,Africa,Africa
 South Sudan,2015,4.071,,0.585,50.2,0.512,,0.71,0.586,0.45,Developing,Africa,Africa
 South Sudan,2016,2.888,,0.532,50.6,0.44,,0.785,0.615,0.549,Developing,Africa,Africa
@@ -1668,19 +1668,19 @@ Syria,2011,4.038,8.727,0.576,62.32,0.53,0.131,0.741,0.599,0.496,#N/A,Asia,Asia &
 Syria,2012,3.164,8.563,0.588,60.54,0.467,0.316,0.673,0.464,0.705,#N/A,Asia,Asia & Pacific
 Syria,2013,2.688,8.396,0.585,58.76,0.455,0.225,0.663,0.387,0.622,#N/A,Asia,Asia & Pacific
 Syria,2015,3.462,8.442,0.464,55.2,0.448,0.045,0.685,0.369,0.643,#N/A,Asia,Asia & Pacific
-Taiwan Province of China,2006,6.189,10.613,0.882,68.68,0.63,-0.03,0.846,0.814,0.094,#N/A,Asia,Asia & Pacific
-Taiwan Province of China,2008,5.548,10.606,0.83,69.14,0.642,-0.017,0.785,0.794,0.169,#N/A,Asia,Asia & Pacific
-Taiwan Province of China,2010,6.229,10.691,0.831,69.6,0.677,0.005,0.821,0.845,0.136,#N/A,Asia,Asia & Pacific
-Taiwan Province of China,2011,6.309,10.705,0.863,,0.761,0.035,0.755,0.827,0.112,#N/A,Asia,Asia & Pacific
-Taiwan Province of China,2012,6.126,10.716,0.825,,0.698,0.022,0.803,0.821,0.14,#N/A,Asia,Asia & Pacific
-Taiwan Province of China,2013,6.34,10.75,0.817,,0.69,0.002,0.841,0.846,0.124,#N/A,Asia,Asia & Pacific
-Taiwan Province of China,2014,6.363,10.798,0.87,,0.693,0.092,0.866,0.849,0.108,#N/A,Asia,Asia & Pacific
-Taiwan Province of China,2015,6.45,10.842,0.885,,0.701,0.019,0.857,0.832,0.129,#N/A,Asia,Asia & Pacific
-Taiwan Province of China,2016,6.513,10.855,0.895,,0.719,-0.049,0.811,0.833,0.108,#N/A,Asia,Asia & Pacific
-Taiwan Province of China,2017,6.359,10.871,0.891,,0.76,-0.07,0.743,0.837,0.114,#N/A,Asia,Asia & Pacific
-Taiwan Province of China,2018,6.467,,0.896,,0.741,,0.736,0.848,0.093,#N/A,Asia,Asia & Pacific
-Taiwan Province of China,2019,6.537,,0.893,,0.814,,0.718,0.86,0.093,#N/A,Asia,Asia & Pacific
-Taiwan Province of China,2020,6.751,,0.901,,0.799,,0.711,0.845,0.083,#N/A,Asia,Asia & Pacific
+Taiwan Province of China,2006,6.189,10.613,0.882,68.68,0.63,-0.03,0.846,0.814,0.094,Developed,Asia,Asia & Pacific
+Taiwan Province of China,2008,5.548,10.606,0.83,69.14,0.642,-0.017,0.785,0.794,0.169,Developed,Asia,Asia & Pacific
+Taiwan Province of China,2010,6.229,10.691,0.831,69.6,0.677,0.005,0.821,0.845,0.136,Developed,Asia,Asia & Pacific
+Taiwan Province of China,2011,6.309,10.705,0.863,,0.761,0.035,0.755,0.827,0.112,Developed,Asia,Asia & Pacific
+Taiwan Province of China,2012,6.126,10.716,0.825,,0.698,0.022,0.803,0.821,0.14,Developed,Asia,Asia & Pacific
+Taiwan Province of China,2013,6.34,10.75,0.817,,0.69,0.002,0.841,0.846,0.124,Developed,Asia,Asia & Pacific
+Taiwan Province of China,2014,6.363,10.798,0.87,,0.693,0.092,0.866,0.849,0.108,Developed,Asia,Asia & Pacific
+Taiwan Province of China,2015,6.45,10.842,0.885,,0.701,0.019,0.857,0.832,0.129,Developed,Asia,Asia & Pacific
+Taiwan Province of China,2016,6.513,10.855,0.895,,0.719,-0.049,0.811,0.833,0.108,Developed,Asia,Asia & Pacific
+Taiwan Province of China,2017,6.359,10.871,0.891,,0.76,-0.07,0.743,0.837,0.114,Developed,Asia,Asia & Pacific
+Taiwan Province of China,2018,6.467,,0.896,,0.741,,0.736,0.848,0.093,Developed,Asia,Asia & Pacific
+Taiwan Province of China,2019,6.537,,0.893,,0.814,,0.718,0.86,0.093,Developed,Asia,Asia & Pacific
+Taiwan Province of China,2020,6.751,,0.901,,0.799,,0.711,0.845,0.083,Developed,Asia,Asia & Pacific
 Tajikistan,2006,4.613,7.554,0.724,60.64,0.702,-0.088,0.768,0.566,0.195,Developing,Asia,Asia & Pacific
 Tajikistan,2007,4.432,7.609,0.727,61.08,0.818,0,0.659,0.694,0.133,Developing,Asia,Asia & Pacific
 Tajikistan,2008,5.064,7.665,0.701,61.52,0.816,0.018,0.723,0.606,0.16,Developing,Asia,Asia & Pacific
@@ -1807,49 +1807,49 @@ Ukraine,2017,4.311,9.382,0.858,64.3,0.599,-0.002,0.937,0.597,0.235,Developed,Eur
 Ukraine,2018,4.662,9.42,0.901,64.6,0.663,-0.074,0.943,0.609,0.222,Developed,Europe,Europe
 Ukraine,2019,4.702,9.458,0.883,64.9,0.715,-0.081,0.885,0.634,0.201,Developed,Europe,Europe
 Ukraine,2020,5.27,9.428,0.885,65.2,0.784,0.126,0.946,0.688,0.285,Developed,Europe,Europe
-United Arab Emirates,2006,6.734,11.367,0.903,65.92,0.898,-0.033,0.203,0.746,0.275,#N/A,Asia,Middle east
-United Arab Emirates,2009,6.866,10.975,0.885,66.28,0.849,0.019,0.339,0.77,0.287,#N/A,Asia,Middle east
-United Arab Emirates,2010,7.097,10.914,0.912,66.4,0.878,0.057,0.355,0.763,0.233,#N/A,Asia,Middle east
-United Arab Emirates,2011,7.119,10.935,0.881,66.42,0.889,0.071,,0.763,0.216,#N/A,Asia,Middle east
-United Arab Emirates,2012,7.218,10.958,0.856,66.44,0.92,,,0.768,0.224,#N/A,Asia,Middle east
-United Arab Emirates,2013,6.621,11.001,0.864,66.46,0.936,,,,0.291,#N/A,Asia,Middle east
-United Arab Emirates,2014,6.54,11.041,,66.48,,,,,,#N/A,Asia,Middle east
-United Arab Emirates,2015,6.568,11.086,0.824,66.5,0.915,0.201,,0.761,0.296,#N/A,Asia,Middle east
-United Arab Emirates,2016,6.831,11.105,0.849,66.7,0.949,0.131,,0.775,0.245,#N/A,Asia,Middle east
-United Arab Emirates,2017,7.039,11.115,0.836,66.9,0.962,0.216,,0.795,0.208,#N/A,Asia,Middle east
-United Arab Emirates,2018,6.604,11.112,0.851,67.1,0.944,0.054,,0.787,0.302,#N/A,Asia,Middle east
-United Arab Emirates,2019,6.711,11.114,0.862,67.3,0.911,0.129,,0.793,0.284,#N/A,Asia,Middle east
-United Arab Emirates,2020,6.458,11.053,0.827,67.5,0.942,0.06,,0.752,0.298,#N/A,Asia,Middle east
-United Kingdom,2005,6.984,10.663,0.979,69.9,0.922,,0.398,0.864,0.262,#N/A,Europe,Europe
-United Kingdom,2007,6.802,10.699,0.97,70.46,0.838,0.336,0.498,0.782,0.241,#N/A,Europe,Europe
-United Kingdom,2008,6.986,10.689,0.954,70.74,0.759,0.331,0.548,0.819,0.218,#N/A,Europe,Europe
-United Kingdom,2009,6.907,10.638,0.964,71.02,0.816,0.341,0.559,0.846,0.231,#N/A,Europe,Europe
-United Kingdom,2010,7.029,10.649,0.955,71.3,0.841,0.403,0.587,0.863,0.176,#N/A,Europe,Europe
-United Kingdom,2011,6.869,10.657,0.949,71.38,0.9,0.336,0.438,0.844,0.174,#N/A,Europe,Europe
-United Kingdom,2012,6.881,10.664,0.935,71.46,0.889,0.371,0.425,0.844,0.184,#N/A,Europe,Europe
-United Kingdom,2013,6.918,10.679,0.937,71.54,0.905,0.346,0.568,0.776,0.252,#N/A,Europe,Europe
-United Kingdom,2014,6.758,10.697,0.91,71.62,0.857,0.355,0.484,0.794,0.251,#N/A,Europe,Europe
-United Kingdom,2015,6.515,10.712,0.936,71.7,0.833,0.3,0.456,0.798,0.219,#N/A,Europe,Europe
-United Kingdom,2016,6.824,10.724,0.954,71.9,0.821,0.25,0.458,0.776,0.23,#N/A,Europe,Europe
-United Kingdom,2017,7.103,10.736,0.937,72.1,0.813,0.291,0.419,0.759,0.21,#N/A,Europe,Europe
-United Kingdom,2018,7.233,10.743,0.928,72.3,0.838,0.226,0.404,0.783,0.228,#N/A,Europe,Europe
-United Kingdom,2019,7.157,10.751,0.943,72.5,0.854,0.271,0.485,0.775,0.251,#N/A,Europe,Europe
-United Kingdom,2020,6.798,10.626,0.929,72.7,0.885,0.203,0.49,0.758,0.225,#N/A,Europe,Europe
-United States,2006,7.182,10.924,0.965,68.06,0.911,,0.6,0.827,0.261,#N/A,North America,North America
-United States,2007,7.513,10.933,,68.22,0.872,0.197,0.633,0.829,0.232,#N/A,North America,North America
-United States,2008,7.28,10.922,0.953,68.38,0.878,0.255,0.668,0.872,0.227,#N/A,North America,North America
-United States,2009,7.158,10.888,0.912,68.54,0.831,0.201,0.665,0.843,0.262,#N/A,North America,North America
-United States,2010,7.164,10.905,0.926,68.7,0.828,0.244,0.69,0.861,0.231,#N/A,North America,North America
-United States,2011,7.115,10.913,0.922,68.68,0.863,0.161,0.697,0.836,0.273,#N/A,North America,North America
-United States,2012,7.026,10.928,0.903,68.66,0.823,0.215,0.71,0.834,0.26,#N/A,North America,North America
-United States,2013,7.249,10.939,0.925,68.64,0.792,0.274,0.747,0.814,0.26,#N/A,North America,North America
-United States,2014,7.151,10.956,0.902,68.62,0.866,0.221,0.702,0.834,0.281,#N/A,North America,North America
-United States,2015,6.864,10.977,0.904,68.6,0.849,0.219,0.698,0.814,0.275,#N/A,North America,North America
-United States,2016,6.804,10.986,0.897,68.5,0.758,0.144,0.739,0.806,0.264,#N/A,North America,North America
-United States,2017,6.992,11.001,0.921,68.4,0.868,0.197,0.681,0.827,0.268,#N/A,North America,North America
-United States,2018,6.883,11.025,0.904,68.3,0.825,0.116,0.71,0.815,0.292,#N/A,North America,North America
-United States,2019,6.944,11.043,0.917,68.2,0.836,0.144,0.707,0.815,0.244,#N/A,North America,North America
-United States,2020,7.028,11.001,0.937,68.1,0.85,0.034,0.678,0.787,0.295,#N/A,North America,North America
+United Arab Emirates,2006,6.734,11.367,0.903,65.92,0.898,-0.033,0.203,0.746,0.275,Developed,Asia,Middle east
+United Arab Emirates,2009,6.866,10.975,0.885,66.28,0.849,0.019,0.339,0.77,0.287,Developed,Asia,Middle east
+United Arab Emirates,2010,7.097,10.914,0.912,66.4,0.878,0.057,0.355,0.763,0.233,Developed,Asia,Middle east
+United Arab Emirates,2011,7.119,10.935,0.881,66.42,0.889,0.071,,0.763,0.216,Developed,Asia,Middle east
+United Arab Emirates,2012,7.218,10.958,0.856,66.44,0.92,,,0.768,0.224,Developed,Asia,Middle east
+United Arab Emirates,2013,6.621,11.001,0.864,66.46,0.936,,,,0.291,Developed,Asia,Middle east
+United Arab Emirates,2014,6.54,11.041,,66.48,,,,,,Developed,Asia,Middle east
+United Arab Emirates,2015,6.568,11.086,0.824,66.5,0.915,0.201,,0.761,0.296,Developed,Asia,Middle east
+United Arab Emirates,2016,6.831,11.105,0.849,66.7,0.949,0.131,,0.775,0.245,Developed,Asia,Middle east
+United Arab Emirates,2017,7.039,11.115,0.836,66.9,0.962,0.216,,0.795,0.208,Developed,Asia,Middle east
+United Arab Emirates,2018,6.604,11.112,0.851,67.1,0.944,0.054,,0.787,0.302,Developed,Asia,Middle east
+United Arab Emirates,2019,6.711,11.114,0.862,67.3,0.911,0.129,,0.793,0.284,Developed,Asia,Middle east
+United Arab Emirates,2020,6.458,11.053,0.827,67.5,0.942,0.06,,0.752,0.298,Developed,Asia,Middle east
+United Kingdom,2005,6.984,10.663,0.979,69.9,0.922,,0.398,0.864,0.262,Developed,Europe,Europe
+United Kingdom,2007,6.802,10.699,0.97,70.46,0.838,0.336,0.498,0.782,0.241,Developed,Europe,Europe
+United Kingdom,2008,6.986,10.689,0.954,70.74,0.759,0.331,0.548,0.819,0.218,Developed,Europe,Europe
+United Kingdom,2009,6.907,10.638,0.964,71.02,0.816,0.341,0.559,0.846,0.231,Developed,Europe,Europe
+United Kingdom,2010,7.029,10.649,0.955,71.3,0.841,0.403,0.587,0.863,0.176,Developed,Europe,Europe
+United Kingdom,2011,6.869,10.657,0.949,71.38,0.9,0.336,0.438,0.844,0.174,Developed,Europe,Europe
+United Kingdom,2012,6.881,10.664,0.935,71.46,0.889,0.371,0.425,0.844,0.184,Developed,Europe,Europe
+United Kingdom,2013,6.918,10.679,0.937,71.54,0.905,0.346,0.568,0.776,0.252,Developed,Europe,Europe
+United Kingdom,2014,6.758,10.697,0.91,71.62,0.857,0.355,0.484,0.794,0.251,Developed,Europe,Europe
+United Kingdom,2015,6.515,10.712,0.936,71.7,0.833,0.3,0.456,0.798,0.219,Developed,Europe,Europe
+United Kingdom,2016,6.824,10.724,0.954,71.9,0.821,0.25,0.458,0.776,0.23,Developed,Europe,Europe
+United Kingdom,2017,7.103,10.736,0.937,72.1,0.813,0.291,0.419,0.759,0.21,Developed,Europe,Europe
+United Kingdom,2018,7.233,10.743,0.928,72.3,0.838,0.226,0.404,0.783,0.228,Developed,Europe,Europe
+United Kingdom,2019,7.157,10.751,0.943,72.5,0.854,0.271,0.485,0.775,0.251,Developed,Europe,Europe
+United Kingdom,2020,6.798,10.626,0.929,72.7,0.885,0.203,0.49,0.758,0.225,Developed,Europe,Europe
+United States,2006,7.182,10.924,0.965,68.06,0.911,,0.6,0.827,0.261,Developed,North America,North America
+United States,2007,7.513,10.933,,68.22,0.872,0.197,0.633,0.829,0.232,Developed,North America,North America
+United States,2008,7.28,10.922,0.953,68.38,0.878,0.255,0.668,0.872,0.227,Developed,North America,North America
+United States,2009,7.158,10.888,0.912,68.54,0.831,0.201,0.665,0.843,0.262,Developed,North America,North America
+United States,2010,7.164,10.905,0.926,68.7,0.828,0.244,0.69,0.861,0.231,Developed,North America,North America
+United States,2011,7.115,10.913,0.922,68.68,0.863,0.161,0.697,0.836,0.273,Developed,North America,North America
+United States,2012,7.026,10.928,0.903,68.66,0.823,0.215,0.71,0.834,0.26,Developed,North America,North America
+United States,2013,7.249,10.939,0.925,68.64,0.792,0.274,0.747,0.814,0.26,Developed,North America,North America
+United States,2014,7.151,10.956,0.902,68.62,0.866,0.221,0.702,0.834,0.281,Developed,North America,North America
+United States,2015,6.864,10.977,0.904,68.6,0.849,0.219,0.698,0.814,0.275,Developed,North America,North America
+United States,2016,6.804,10.986,0.897,68.5,0.758,0.144,0.739,0.806,0.264,Developed,North America,North America
+United States,2017,6.992,11.001,0.921,68.4,0.868,0.197,0.681,0.827,0.268,Developed,North America,North America
+United States,2018,6.883,11.025,0.904,68.3,0.825,0.116,0.71,0.815,0.292,Developed,North America,North America
+United States,2019,6.944,11.043,0.917,68.2,0.836,0.144,0.707,0.815,0.244,Developed,North America,North America
+United States,2020,7.028,11.001,0.937,68.1,0.85,0.034,0.678,0.787,0.295,Developed,North America,North America
 Uruguay,2006,5.786,9.543,0.912,67.44,0.807,-0.113,0.477,0.784,0.306,Developing,South America,South/Latin America
 Uruguay,2007,5.694,9.604,0.875,67.58,0.786,-0.165,0.614,0.777,0.274,Developing,South America,South/Latin America
 Uruguay,2008,5.664,9.671,0.879,67.72,0.808,-0.143,0.597,0.751,0.264,Developing,South America,South/Latin America

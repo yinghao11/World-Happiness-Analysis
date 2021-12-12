@@ -6,14 +6,14 @@ Iceland,2015,7.498,10.854,0.98,73,0.94,0.301,0.639,0.849,0.18,Developed,Europe,E
 Finland,2015,7.448,10.716,0.948,71.6,0.93,0.111,0.223,0.751,0.191,Developed,Europe,Europe,5
 New Zealand,2015,7.418,10.608,0.987,72.6,0.942,0.329,0.186,0.834,0.16,Developed,Oceania,Asia & Pacific,6
 Canada,2015,7.413,10.774,0.939,73,0.931,0.253,0.427,0.845,0.286,Developed,North America,North America,7
-Netherlands,2015,7.324,10.882,0.879,72,0.904,0.261,0.412,0.834,0.202,#N/A,Europe,Europe,8
+Netherlands,2015,7.324,10.882,0.879,72,0.904,0.261,0.412,0.834,0.202,Developed,Europe,Europe,8
 Australia,2015,7.309,10.779,0.952,72.7,0.922,0.332,0.357,0.79,0.21,Developed,Oceania,Asia & Pacific,9
 Sweden,2015,7.289,10.853,0.929,72.3,0.935,0.211,0.232,0.818,0.191,Developed,Europe,Europe,10
 Israel,2015,7.079,10.536,0.864,72.7,0.753,0.108,0.789,0.697,0.256,Developed,Asia,Europe,11
 Austria,2015,7.076,10.881,0.928,72.1,0.9,0.099,0.557,0.798,0.164,Developed,Europe,Europe,12
 Germany,2015,7.037,10.844,0.926,71.3,0.889,0.178,0.412,0.765,0.203,Developed,Europe,Europe,13
 Belgium,2015,6.904,10.81,0.885,71.4,0.869,0.062,0.469,0.805,0.24,Developed,Europe,Europe,14
-United States,2015,6.864,10.977,0.904,68.6,0.849,0.219,0.698,0.814,0.275,#N/A,North America,North America,15
+United States,2015,6.864,10.977,0.904,68.6,0.849,0.219,0.698,0.814,0.275,Developed,North America,North America,15
 Costa Rica,2015,6.854,9.799,0.878,70.7,0.907,-0.059,0.761,0.85,0.286,Developing,North America,South/Latin America,16
 Ireland,2015,6.83,11.174,0.953,72,0.892,0.233,0.409,0.799,0.225,Developed,Europe,Europe,17
 Luxembourg,2015,6.702,11.617,0.934,72.6,0.932,0.052,0.375,0.757,0.193,Developed,Europe,Europe,18
@@ -21,14 +21,14 @@ Argentina,2015,6.697,10.083,0.926,68.2,0.881,-0.174,0.851,0.859,0.305,Developing
 Uruguay,2015,6.628,9.932,0.891,68.7,0.917,-0.032,0.673,0.893,0.3,Developing,South America,South/Latin America,20
 Singapore,2015,6.62,11.4,0.866,75.9,0.887,0.15,0.099,0.803,0.142,Developing,Asia,Asia & Pacific,21
 Malta,2015,6.613,10.566,0.919,72.2,0.912,0.347,0.664,0.68,0.355,Developed,Europe,Europe,22
-Czech Republic,2015,6.608,10.496,0.911,68.8,0.808,-0.146,0.886,0.751,0.206,#N/A,Europe,Europe,23
+Czech Republic,2015,6.608,10.496,0.911,68.8,0.808,-0.146,0.886,0.751,0.206,Developed,Europe,Europe,23
 Panama,2015,6.606,10.255,0.883,69.3,0.847,-0.007,0.81,0.801,0.264,Developing,North America,South/Latin America,24
-United Arab Emirates,2015,6.568,11.086,0.824,66.5,0.915,0.201,,0.761,0.296,#N/A,Asia,Middle east,25
+United Arab Emirates,2015,6.568,11.086,0.824,66.5,0.915,0.201,,0.761,0.296,Developed,Asia,Middle east,25
 Brazil,2015,6.547,9.62,0.907,65.8,0.799,-0.016,0.771,0.755,0.325,Developing,South America,South/Latin America,26
 Chile,2015,6.533,10.07,0.827,69.6,0.769,0.041,0.812,0.803,0.333,Developing,South America,South/Latin America,27
-United Kingdom,2015,6.515,10.712,0.936,71.7,0.833,0.3,0.456,0.798,0.219,#N/A,Europe,Europe,28
+United Kingdom,2015,6.515,10.712,0.936,71.7,0.833,0.3,0.456,0.798,0.219,Developed,Europe,Europe,28
 Guatemala,2015,6.465,9.003,0.823,63.9,0.869,0.051,0.822,0.851,0.311,Developing,North America,South/Latin America,29
-Taiwan Province of China,2015,6.45,10.842,0.885,,0.701,0.019,0.857,0.832,0.129,#N/A,Asia,Asia & Pacific,30
+Taiwan Province of China,2015,6.45,10.842,0.885,,0.701,0.019,0.857,0.832,0.129,Developed,Asia,Asia & Pacific,30
 Colombia,2015,6.388,9.564,0.89,66.8,0.791,-0.1,0.843,0.839,0.292,Developing,South America,South/Latin America,31
 Spain,2015,6.381,10.531,0.956,73.5,0.732,-0.072,0.822,0.732,0.285,Developed,Europe,Europe,32
 Qatar,2015,6.375,11.486,,68.3,,,,,,Developing,Asia,Middle east,33
@@ -43,7 +43,7 @@ El Salvador,2015,6.018,9.005,0.791,65.2,0.733,-0.156,0.805,0.826,0.333,Developin
 Moldova,2015,6.017,9.246,0.84,62.9,0.595,-0.09,0.943,0.59,0.281,#N/A,Europe,Europe,42
 Bahrain,2015,6.007,10.785,0.853,67.7,0.85,0.112,,0.716,0.303,Developing,Asia,Arab States,43
 Poland,2015,6.007,10.235,0.893,68.1,0.793,-0.093,0.81,0.734,0.24,Developed,Europe,Europe,44
-Russia,2015,5.996,10.149,0.924,63.1,0.685,-0.171,0.913,0.679,0.13,#N/A,Europe,Europe,45
+Russia,2015,5.996,10.149,0.924,63.1,0.685,-0.171,0.913,0.679,0.13,Developed,Europe,Europe,45
 Uzbekistan,2015,5.972,8.714,0.968,64.2,0.98,0.375,0.471,0.84,0.103,Developing,Asia,Asia & Pacific,46
 Ecuador,2015,5.964,9.384,0.856,67.6,0.801,-0.114,0.666,0.851,0.323,Developing,South America,South/Latin America,47
 Kazakhstan,2015,5.95,10.098,0.931,62.8,0.74,-0.037,0.714,0.73,0.174,Developing,Asia,Asia & Pacific,48
@@ -52,7 +52,7 @@ Latvia,2015,5.881,10.185,0.879,65.9,0.656,-0.077,0.808,0.608,0.228,Developed,Eur
 Finland,2016,7.66,10.74,0.954,71.7,0.948,-0.027,0.25,0.797,0.182,Developed,Europe,Europe,1
 Norway,2016,7.596,11.035,0.96,73,0.954,0.133,0.41,0.85,0.209,Developed,Europe,Europe,2
 Denmark,2016,7.558,10.903,0.954,71.8,0.948,0.138,0.21,0.836,0.208,Developed,Europe,Europe,3
-Netherlands,2016,7.541,10.899,0.926,72.1,0.907,0.239,0.433,0.838,0.215,#N/A,Europe,Europe,4
+Netherlands,2016,7.541,10.899,0.926,72.1,0.907,0.239,0.433,0.838,0.215,Developed,Europe,Europe,4
 Iceland,2016,7.51,10.904,0.985,73,0.952,0.281,0.719,0.874,0.158,Developed,Europe,Europe,5
 Switzerland,2016,7.459,11.106,0.928,73.5,0.934,0.088,0.302,0.779,0.206,Developed,Europe,Europe,6
 Sweden,2016,7.369,10.861,0.912,72.4,0.918,0.146,0.246,0.816,0.201,Developed,Europe,Europe,7
@@ -66,14 +66,14 @@ Ireland,2016,7.041,11.199,0.958,72.1,0.875,0.174,0.399,0.809,0.211,Developed,Eur
 Luxembourg,2016,6.967,11.64,0.941,72.6,0.882,0.019,0.356,0.758,0.192,Developed,Europe,Europe,15
 Belgium,2016,6.949,10.819,0.929,71.6,0.866,-0.056,0.497,0.765,0.26,Developed,Europe,Europe,16
 Germany,2016,6.874,10.858,0.906,71.6,0.871,0.148,0.446,0.738,0.187,Developed,Europe,Europe,17
-United Arab Emirates,2016,6.831,11.105,0.849,66.7,0.949,0.131,,0.775,0.245,#N/A,Asia,Middle east,18
+United Arab Emirates,2016,6.831,11.105,0.849,66.7,0.949,0.131,,0.775,0.245,Developed,Asia,Middle east,18
 Mexico,2016,6.824,9.884,0.893,67.7,0.752,-0.153,0.809,0.859,0.22,Developing,North America,South/Latin America,19
-United Kingdom,2016,6.824,10.724,0.954,71.9,0.821,0.25,0.458,0.776,0.23,#N/A,Europe,Europe,20
-United States,2016,6.804,10.986,0.897,68.5,0.758,0.144,0.739,0.806,0.264,#N/A,North America,North America,21
-Czech Republic,2016,6.736,10.518,0.931,69.3,0.85,-0.197,0.9,0.756,0.201,#N/A,Europe,Europe,22
+United Kingdom,2016,6.824,10.724,0.954,71.9,0.821,0.25,0.458,0.776,0.23,Developed,Europe,Europe,20
+United States,2016,6.804,10.986,0.897,68.5,0.758,0.144,0.739,0.806,0.264,Developed,North America,North America,21
+Czech Republic,2016,6.736,10.518,0.931,69.3,0.85,-0.197,0.9,0.756,0.201,Developed,Europe,Europe,22
 Malta,2016,6.591,10.599,0.93,72.2,0.916,0.345,0.696,0.687,0.355,Developed,Europe,Europe,23
 Chile,2016,6.579,10.074,0.841,69.7,0.652,0.102,0.858,0.869,0.283,Developing,South America,South/Latin America,24
-Taiwan Province of China,2016,6.513,10.855,0.895,,0.719,-0.049,0.811,0.833,0.108,#N/A,Asia,Asia & Pacific,25
+Taiwan Province of China,2016,6.513,10.855,0.895,,0.719,-0.049,0.811,0.833,0.108,Developed,Asia,Asia & Pacific,25
 France,2016,6.475,10.69,0.885,73.4,0.787,-0.091,0.623,0.773,0.27,Developed,Europe,Europe,26
 Saudi Arabia,2016,6.474,10.792,0.89,65.7,0.774,-0.132,,0.793,0.266,Developing,Asia,Middle east,27
 Argentina,2016,6.427,10.051,0.883,68.4,0.848,-0.192,0.851,0.842,0.312,Developing,South America,South/Latin America,28
@@ -91,7 +91,7 @@ Thailand,2016,6.074,9.729,0.908,66.8,0.924,0.356,0.878,0.835,0.218,Developing,As
 Singapore,2016,6.033,11.419,0.925,76.2,0.904,0.143,0.047,0.824,0.111,Developing,Asia,Asia & Pacific,40
 Nicaragua,2016,6.013,8.668,0.853,66.9,0.717,0.039,0.731,0.805,0.38,Developing,North America,South/Latin America,41
 Slovakia,2016,5.993,10.31,0.945,68.3,0.7,-0.061,0.917,0.774,0.232,Developed,Europe,Europe,42
-South Korea,2016,5.971,10.593,0.811,73,0.591,0.026,0.862,0.676,0.233,#N/A,Asia,Asia & Pacific,43
+South Korea,2016,5.971,10.593,0.811,73,0.591,0.026,0.862,0.676,0.233,Developed,Asia,Asia & Pacific,43
 Romania,2016,5.969,10.136,0.809,66.6,0.822,-0.115,0.949,0.694,0.258,Developed,Europe,Europe,44
 Italy,2016,5.955,10.622,0.927,73.2,0.624,-0.081,0.903,0.685,0.339,Developed,Europe,Europe,45
 Japan,2016,5.955,10.595,0.9,74.8,0.836,-0.062,0.698,0.76,0.192,Developed,Asia,Asia & Pacific,46
@@ -104,78 +104,78 @@ Denmark,2017,7.594,10.916,0.952,72.1,0.955,0.155,0.181,0.824,0.206,Developed,Eur
 Norway,2017,7.579,11.05,0.95,73.1,0.953,0.236,0.25,0.849,0.203,Developed,Europe,Europe,3
 Iceland,2017,7.476,10.925,0.967,73,0.939,0.246,0.727,0.895,0.148,Developed,Europe,Europe,4
 Switzerland,2017,7.474,11.115,0.95,73.8,0.925,0.18,0.316,0.774,0.196,Developed,Europe,Europe,5
-Netherlands,2017,7.459,10.921,0.937,72.2,0.92,0.25,0.363,0.852,0.185,#N/A,Europe,Europe,6
+Netherlands,2017,7.459,10.921,0.937,72.2,0.92,0.25,0.363,0.852,0.185,Developed,Europe,Europe,6
 Canada,2017,7.415,10.792,0.934,73.4,0.945,0.163,0.362,0.863,0.218,Developed,North America,North America,7
 Israel,2017,7.331,10.57,0.916,73.1,0.768,0.145,0.793,0.674,0.276,Developed,Asia,Europe,8
 New Zealand,2017,7.327,10.633,0.955,73,0.942,0.294,0.222,0.817,0.172,Developed,Oceania,Asia & Pacific,9
 Austria,2017,7.294,10.908,0.906,72.7,0.89,0.133,0.518,0.748,0.18,Developed,Europe,Europe,10
 Sweden,2017,7.287,10.873,0.914,72.5,0.935,0.17,0.239,0.814,0.175,Developed,Europe,Europe,11
-Australia,2017,7.257,10.798,0.95,73.3,0.911,0.317,0.411,0.78,0.225,Developed,Oceania,Asia & Pacific,12
-Costa Rica,2017,7.225,9.858,0.922,71.1,0.936,-0.076,0.742,0.874,0.275,Developing,North America,South/Latin America,13
-United Kingdom,2017,7.103,10.736,0.937,72.1,0.813,0.291,0.419,0.759,0.21,#N/A,Europe,Europe,14
+Australia,2017,7.257,10.798,0.95,73.3,0.911,0.317,0.411,0.78,0.225,Developing,Oceania,Asia & Pacific,12
+Costa Rica,2017,7.225,9.858,0.922,71.1,0.936,-0.076,0.742,0.874,0.275,Developed,North America,South/Latin America,13
+United Kingdom,2017,7.103,10.736,0.937,72.1,0.813,0.291,0.419,0.759,0.21,Developed,Europe,Europe,14
 Germany,2017,7.074,10.878,0.892,71.9,0.841,0.145,0.414,0.737,0.196,Developed,Europe,Europe,15
 Luxembourg,2017,7.061,11.634,0.905,72.6,0.903,0.044,0.33,0.766,0.184,Developed,Europe,Europe,16
 Ireland,2017,7.06,11.266,0.943,72.2,0.905,0.216,0.337,0.833,0.213,Developed,Europe,Europe,17
-United Arab Emirates,2017,7.039,11.115,0.836,66.9,0.962,0.216,,0.795,0.208,#N/A,Asia,Middle east,18
-United States,2017,6.992,11.001,0.921,68.4,0.868,0.197,0.681,0.827,0.268,#N/A,North America,North America,19
+United Arab Emirates,2017,7.039,11.115,0.836,66.9,0.962,0.216,,0.795,0.208,Developed,Asia,Middle east,18
+United States,2017,6.992,11.001,0.921,68.4,0.868,0.197,0.681,0.827,0.268,Developing,North America,North America,19
 Belgium,2017,6.928,10.834,0.922,71.8,0.857,0.054,0.543,0.786,0.234,Developed,Europe,Europe,20
-Czech Republic,2017,6.79,10.558,0.901,69.8,0.832,-0.177,0.867,0.739,0.227,#N/A,Europe,Europe,21
+Czech Republic,2017,6.79,10.558,0.901,69.8,0.832,-0.177,0.867,0.739,0.227,Developed,Europe,Europe,21
 Malta,2017,6.676,10.635,0.937,72.2,0.924,0.253,0.69,0.721,0.302,Developed,Europe,Europe,22
 France,2017,6.635,10.711,0.931,73.6,0.834,-0.123,0.601,0.762,0.242,Developed,Europe,Europe,23
 Panama,2017,6.568,10.324,0.912,69.5,0.9,-0.17,0.841,0.833,0.242,Developing,North America,South/Latin America,24
-Nicaragua,2017,6.476,8.7,0.838,67.2,0.922,0.01,0.673,0.85,0.308,Developing,North America,South/Latin America,25
-Uzbekistan,2017,6.421,8.782,0.942,64.8,0.985,0.123,0.465,0.839,0.203,Developing,Asia,Asia & Pacific,26
+Nicaragua,2017,6.476,8.7,0.838,67.2,0.922,0.01,0.673,0.85,0.308,Developed,North America,South/Latin America,25
+Uzbekistan,2017,6.421,8.782,0.942,64.8,0.985,0.123,0.465,0.839,0.203,Developed,Asia,Asia & Pacific,26
 Mexico,2017,6.41,9.893,0.8,68,0.861,-0.202,0.801,0.843,0.231,Developing,North America,South/Latin America,27
 Singapore,2017,6.378,11.461,0.897,76.5,0.926,0.136,0.162,0.8,0.179,Developing,Asia,Asia & Pacific,28
-Slovakia,2017,6.366,10.339,0.913,68.6,0.714,-0.055,0.92,0.788,0.213,Developed,Europe,Europe,29
-Taiwan Province of China,2017,6.359,10.871,0.891,,0.76,-0.07,0.743,0.837,0.114,#N/A,Asia,Asia & Pacific,30
-El Salvador,2017,6.339,9.042,0.829,65.8,0.758,-0.172,0.778,0.849,0.268,Developing,North America,South/Latin America,31
+Slovakia,2017,6.366,10.339,0.913,68.6,0.714,-0.055,0.92,0.788,0.213,Developing,Europe,Europe,29
+Taiwan Province of China,2017,6.359,10.871,0.891,,0.76,-0.07,0.743,0.837,0.114,Developing,Asia,Asia & Pacific,30
+El Salvador,2017,6.339,9.042,0.829,65.8,0.758,-0.172,0.778,0.849,0.268,Developed,North America,South/Latin America,31
 Uruguay,2017,6.336,9.968,0.914,68.9,0.898,-0.091,0.627,0.836,0.28,Developing,South America,South/Latin America,32
 Brazil,2017,6.333,9.583,0.905,66.2,0.765,-0.175,0.794,0.716,0.308,Developing,South America,South/Latin America,33
 Guatemala,2017,6.325,9.026,0.826,64.5,0.915,-0.059,0.8,0.846,0.308,Developing,North America,South/Latin America,34
-Chile,2017,6.32,10.072,0.88,69.8,0.79,-0.02,0.836,0.838,0.291,Developing,South America,South/Latin America,35
+Chile,2017,6.32,10.072,0.88,69.8,0.79,-0.02,0.836,0.838,0.291,Developed,South America,South/Latin America,35
 Saudi Arabia,2017,6.294,10.764,0.84,66,0.814,-0.131,,0.775,0.306,Developing,Asia,Middle east,36
-Lithuania,2017,6.273,10.429,0.926,66.7,0.749,-0.174,0.79,0.608,0.195,Developed,Europe,Europe,37
-Spain,2017,6.23,10.586,0.903,74.1,0.756,-0.032,0.791,0.625,0.302,Developed,Europe,Europe,38
+Lithuania,2017,6.273,10.429,0.926,66.7,0.749,-0.174,0.79,0.608,0.195,Developing,Europe,Europe,37
+Spain,2017,6.23,10.586,0.903,74.1,0.756,-0.032,0.791,0.625,0.302,Developing,Europe,Europe,38
 Bahrain,2017,6.227,10.771,0.876,68.5,0.906,0.136,,0.814,0.29,Developing,Asia,Arab States,39
-Poland,2017,6.201,10.314,0.882,68.9,0.831,-0.122,0.639,0.677,0.203,Developed,Europe,Europe,40
-Italy,2017,6.199,10.64,0.92,73.4,0.633,-0.035,0.867,0.661,0.323,Developed,Europe,Europe,41
-Trinidad and Tobago,2017,6.192,10.183,0.916,63.5,0.859,0.015,0.911,0.846,0.248,Developing,North America,South/Latin America,42
-Mauritius,2017,6.174,9.972,0.91,66.1,0.912,0.087,0.818,0.748,0.169,Developing,Africa,Africa,43
+Poland,2017,6.201,10.314,0.882,68.9,0.831,-0.122,0.639,0.677,0.203,Developing,Europe,Europe,40
+Italy,2017,6.199,10.64,0.92,73.4,0.633,-0.035,0.867,0.661,0.323,Developing,Europe,Europe,41
+Trinidad and Tobago,2017,6.192,10.183,0.916,63.5,0.859,0.015,0.911,0.846,0.248,Developed,North America,South/Latin America,42
+Mauritius,2017,6.174,9.972,0.91,66.1,0.912,0.087,0.818,0.748,0.169,Developed,Africa,Africa,43
 Slovenia,2017,6.167,10.509,0.928,70.8,0.921,-0.025,0.829,0.615,0.286,Developed,Europe,Europe,44
-Colombia,2017,6.157,9.569,0.909,67.4,0.838,-0.157,0.875,0.837,0.299,Developing,South America,South/Latin America,45
-Kosovo,2017,6.149,9.262,0.792,,0.858,0.117,0.925,0.738,0.186,#N/A,Europe,Europe,46
+Colombia,2017,6.157,9.569,0.909,67.4,0.838,-0.157,0.875,0.837,0.299,Developed,South America,South/Latin America,45
+Kosovo,2017,6.149,9.262,0.792,,0.858,0.117,0.925,0.738,0.186,Developed,Europe,Europe,46
 Kuwait,2017,6.094,10.837,0.853,66.5,0.884,-0.005,,0.692,0.307,Developing,Asia,Middle east,47
 Romania,2017,6.09,10.211,0.811,66.9,0.839,-0.16,0.926,0.734,0.231,Developed,Europe,Europe,48
 Hungary,2017,6.065,10.293,0.877,67.2,0.661,-0.139,0.886,0.735,0.181,Developed,Europe,Europe,49
-Cyprus,2017,6.062,10.539,0.819,73.5,0.812,0.043,0.851,0.784,0.301,Developed,Europe,Europe,50
+Cyprus,2017,6.062,10.539,0.819,73.5,0.812,0.043,0.851,0.784,0.301,Developing,Europe,Europe,50
 Finland,2018,7.858,10.783,0.962,71.9,0.938,-0.127,0.199,0.782,0.182,Developed,Europe,Europe,1
 Denmark,2018,7.649,10.935,0.958,72.4,0.935,0.018,0.151,0.821,0.206,Developed,Europe,Europe,2
 Switzerland,2018,7.509,11.134,0.93,74.1,0.926,0.101,0.301,0.792,0.192,Developed,Europe,Europe,3
-Netherlands,2018,7.463,10.941,0.939,72.3,0.92,0.161,0.371,0.862,0.205,#N/A,Europe,Europe,4
+Netherlands,2018,7.463,10.941,0.939,72.3,0.92,0.161,0.371,0.862,0.205,Developed,Europe,Europe,4
 Norway,2018,7.444,11.056,0.966,73.2,0.96,0.094,0.268,0.827,0.212,Developed,Europe,Europe,5
 Austria,2018,7.396,10.928,0.912,73,0.904,0.053,0.523,0.752,0.226,Developed,Europe,Europe,6
 Sweden,2018,7.375,10.881,0.931,72.6,0.942,0.077,0.263,0.823,0.161,Developed,Europe,Europe,7
 New Zealand,2018,7.37,10.66,0.954,73.2,0.949,0.12,0.207,0.845,0.168,Developed,Oceania,Asia & Pacific,8
 Luxembourg,2018,7.243,11.645,0.902,72.6,0.884,-0.022,0.385,0.75,0.202,Developed,Europe,Europe,9
-United Kingdom,2018,7.233,10.743,0.928,72.3,0.838,0.226,0.404,0.783,0.228,#N/A,Europe,Europe,10
+United Kingdom,2018,7.233,10.743,0.928,72.3,0.838,0.226,0.404,0.783,0.228,Developed,Europe,Europe,10
 Australia,2018,7.177,10.811,0.94,73.6,0.916,0.146,0.405,0.759,0.187,Developed,Oceania,Asia & Pacific,11
 Canada,2018,7.175,10.798,0.923,73.6,0.946,0.106,0.372,0.824,0.259,Developed,North America,North America,12
 Costa Rica,2018,7.141,9.874,0.876,71.3,0.942,-0.107,0.781,0.87,0.326,Developing,North America,South/Latin America,13
 Germany,2018,7.118,10.89,0.92,72.2,0.877,0.034,0.496,0.78,0.243,Developed,Europe,Europe,14
-Czech Republic,2018,7.034,10.583,0.929,70.3,0.79,-0.292,0.851,0.714,0.178,#N/A,Europe,Europe,15
+Czech Republic,2018,7.034,10.583,0.929,70.3,0.79,-0.292,0.851,0.714,0.178,Developed,Europe,Europe,15
 Ireland,2018,6.962,11.332,0.938,72.3,0.861,0.144,0.362,0.811,0.213,Developed,Europe,Europe,16
 Israel,2018,6.927,10.585,0.91,73.3,0.725,0.055,0.77,0.663,0.282,Developed,Asia,Europe,17
 Malta,2018,6.91,10.67,0.932,72.2,0.927,0.179,0.595,0.721,0.296,Developed,Europe,Europe,18
 Belgium,2018,6.892,10.844,0.93,72,0.808,-0.125,0.63,0.75,0.25,Developed,Europe,Europe,19
-United States,2018,6.883,11.025,0.904,68.3,0.825,0.116,0.71,0.815,0.292,#N/A,North America,North America,20
+United States,2018,6.883,11.025,0.904,68.3,0.825,0.116,0.71,0.815,0.292,Developed,North America,North America,20
 France,2018,6.666,10.727,0.921,73.8,0.816,-0.138,0.582,0.767,0.282,Developed,Europe,Europe,21
 Guatemala,2018,6.627,9.042,0.841,64.8,0.91,-0.01,0.765,0.871,0.262,Developing,North America,South/Latin America,22
-United Arab Emirates,2018,6.604,11.112,0.851,67.1,0.944,0.054,,0.787,0.302,#N/A,Asia,Middle east,23
+United Arab Emirates,2018,6.604,11.112,0.851,67.1,0.944,0.054,,0.787,0.302,Developed,Asia,Middle east,23
 Mexico,2018,6.55,9.903,0.858,68.3,0.816,-0.179,0.809,0.882,0.213,Developing,North America,South/Latin America,24
 Italy,2018,6.517,10.65,0.913,73.6,0.65,-0.021,0.888,0.649,0.403,Developed,Europe,Europe,25
 Spain,2018,6.513,10.605,0.91,74.4,0.722,-0.075,0.777,0.659,0.357,Developed,Europe,Europe,26
-Taiwan Province of China,2018,6.467,,0.896,,0.741,,0.736,0.848,0.093,#N/A,Asia,Asia & Pacific,27
+Taiwan Province of China,2018,6.467,,0.896,,0.741,,0.736,0.848,0.093,Developed,Asia,Asia & Pacific,27
 Chile,2018,6.436,10.097,0.89,69.9,0.789,-0.06,0.816,0.833,0.276,Developing,South America,South/Latin America,28
 Kosovo,2018,6.392,9.296,0.822,,0.89,0.269,0.922,0.778,0.17,#N/A,Europe,Europe,29
 Singapore,2018,6.375,11.49,0.903,76.8,0.916,-0.066,0.097,0.787,0.107,Developing,Asia,Asia & Pacific,30
@@ -204,7 +204,7 @@ Switzerland,2019,7.694,11.136,0.949,74.4,0.913,0.036,0.294,0.798,0.171,Developed
 Denmark,2019,7.693,10.954,0.958,72.7,0.963,0.02,0.174,0.862,0.181,Developed,Europe,Europe,3
 Iceland,2019,7.533,10.931,0.982,73,0.959,,0.699,0.836,0.178,Developed,Europe,Europe,4
 Norway,2019,7.442,11.061,0.942,73.3,0.954,0.111,0.271,0.823,0.195,Developed,Europe,Europe,5
-Netherlands,2019,7.425,10.953,0.941,72.4,0.886,0.213,0.36,0.838,0.231,#N/A,Europe,Europe,6
+Netherlands,2019,7.425,10.953,0.941,72.4,0.886,0.213,0.36,0.838,0.231,Developed,Europe,Europe,6
 Luxembourg,2019,7.404,11.648,0.912,72.6,0.93,-0.045,0.39,0.789,0.212,Developed,Europe,Europe,7
 Sweden,2019,7.398,10.882,0.934,72.7,0.942,0.091,0.25,0.826,0.202,Developed,Europe,Europe,8
 Israel,2019,7.332,10.601,0.946,73.5,0.834,0.085,0.743,0.635,0.266,Developed,Asia,Europe,9
@@ -212,20 +212,20 @@ Ireland,2019,7.255,11.371,0.944,72.4,0.892,0.074,0.373,0.807,0.223,Developed,Eur
 Australia,2019,7.234,10.815,0.943,73.9,0.918,0.121,0.43,0.77,0.202,Developed,Oceania,Asia & Pacific,11
 New Zealand,2019,7.205,10.666,0.939,73.4,0.912,0.157,0.234,0.816,0.191,Developed,Oceania,Asia & Pacific,12
 Austria,2019,7.195,10.939,0.964,73.3,0.903,0.06,0.457,0.774,0.205,Developed,Europe,Europe,13
-United Kingdom,2019,7.157,10.751,0.943,72.5,0.854,0.271,0.485,0.775,0.251,#N/A,Europe,Europe,14
+United Kingdom,2019,7.157,10.751,0.943,72.5,0.854,0.271,0.485,0.775,0.251,Developed,Europe,Europe,14
 Canada,2019,7.109,10.8,0.925,73.8,0.912,0.112,0.436,0.822,0.285,Developed,North America,North America,15
 Bahrain,2019,7.098,10.715,0.878,69.3,0.907,0.048,,0.762,0.317,Developing,Asia,Arab States,16
 Germany,2019,7.035,10.893,0.886,72.5,0.885,0.057,0.462,0.751,0.226,Developed,Europe,Europe,17
 Costa Rica,2019,6.998,9.885,0.906,71.5,0.927,-0.146,0.836,0.848,0.303,Developing,North America,South/Latin America,18
-United States,2019,6.944,11.043,0.917,68.2,0.836,0.144,0.707,0.815,0.244,#N/A,North America,North America,19
+United States,2019,6.944,11.043,0.917,68.2,0.836,0.144,0.707,0.815,0.244,Developed,North America,North America,19
 Belgium,2019,6.772,10.853,0.884,72.2,0.776,-0.172,0.672,0.733,0.244,Developed,Europe,Europe,20
 Malta,2019,6.733,10.677,0.922,72.2,0.924,0.087,0.689,0.707,0.356,Developed,Europe,Europe,21
-United Arab Emirates,2019,6.711,11.114,0.862,67.3,0.911,0.129,,0.793,0.284,#N/A,Asia,Middle east,22
+United Arab Emirates,2019,6.711,11.114,0.862,67.3,0.911,0.129,,0.793,0.284,Developed,Asia,Middle east,22
 France,2019,6.69,10.74,0.958,74,0.827,-0.133,0.568,0.735,0.25,Developed,Europe,Europe,23
 Slovenia,2019,6.665,10.563,0.949,71.4,0.945,-0.102,0.785,0.679,0.228,Developed,Europe,Europe,24
 Uruguay,2019,6.6,9.979,0.933,69.1,0.903,-0.095,0.599,0.889,0.222,Developing,South America,South/Latin America,25
 Saudi Arabia,2019,6.561,10.757,0.912,66.6,0.891,-0.147,,0.732,0.238,Developing,Asia,Middle east,26
-Taiwan Province of China,2019,6.537,,0.893,,0.814,,0.718,0.86,0.093,#N/A,Asia,Asia & Pacific,27
+Taiwan Province of China,2019,6.537,,0.893,,0.814,,0.718,0.86,0.093,Developed,Asia,Asia & Pacific,27
 Spain,2019,6.457,10.618,0.949,74.7,0.778,-0.049,0.73,0.663,0.316,Developed,Europe,Europe,28
 El Salvador,2019,6.455,9.08,0.764,66.4,0.877,-0.109,0.682,0.871,0.271,Developing,North America,South/Latin America,29
 Brazil,2019,6.451,9.592,0.899,66.6,0.83,-0.062,0.762,0.761,0.337,Developing,South America,South/Latin America,30
@@ -236,7 +236,7 @@ Singapore,2019,6.378,11.486,0.925,77.1,0.938,0.027,0.07,0.723,0.138,Developing,A
 Colombia,2019,6.35,9.598,0.873,68,0.822,-0.172,0.854,0.822,0.322,Developing,South America,South/Latin America,35
 Jamaica,2019,6.309,9.186,0.878,67.5,0.891,-0.137,0.885,0.752,0.195,Developing,North America,South/Latin America,36
 Kazakhstan,2019,6.272,10.179,0.951,65.2,0.852,-0.055,0.708,0.787,0.139,Developing,Asia,Asia & Pacific,37
-Philippines,2019,6.268,9.095,0.845,62,0.91,-0.083,0.748,0.781,0.341,#N/A,Asia,Asia & Pacific,38
+Philippines,2019,6.268,9.095,0.845,62,0.91,-0.083,0.748,0.781,0.341,Developing,Asia,Asia & Pacific,38
 Guatemala,2019,6.262,9.064,0.774,65.1,0.901,-0.062,0.773,0.859,0.311,Developing,North America,South/Latin America,39
 Slovakia,2019,6.243,10.398,0.933,69.2,0.771,-0.129,0.926,0.75,0.252,Developed,Europe,Europe,40
 Poland,2019,6.242,10.407,0.878,69.7,0.883,-0.231,0.696,0.725,0.168,Developed,Europe,Europe,41
@@ -253,7 +253,7 @@ Finland,2020,7.889,10.75,0.962,72.1,0.962,-0.116,0.164,0.744,0.193,Developed,Eur
 Iceland,2020,7.575,10.824,0.983,73,0.949,0.16,0.644,0.863,0.172,Developed,Europe,Europe,2
 Denmark,2020,7.515,10.91,0.947,73,0.938,0.052,0.214,0.818,0.227,Developed,Europe,Europe,3
 Switzerland,2020,7.508,11.081,0.946,74.7,0.917,-0.064,0.28,0.769,0.193,Developed,Europe,Europe,4
-Netherlands,2020,7.504,10.901,0.944,72.5,0.935,0.151,0.281,0.784,0.247,#N/A,Europe,Europe,5
+Netherlands,2020,7.504,10.901,0.944,72.5,0.935,0.151,0.281,0.784,0.247,Developed,Europe,Europe,5
 Sweden,2020,7.314,10.838,0.936,72.8,0.951,0.091,0.203,0.766,0.222,Developed,Europe,Europe,6
 Germany,2020,7.312,10.833,0.905,72.8,0.864,-0.06,0.424,0.76,0.206,Developed,Europe,Europe,7
 Norway,2020,7.29,11.042,0.956,73.4,0.965,0.075,0.271,0.823,0.216,Developed,Europe,Europe,8
@@ -262,12 +262,12 @@ Austria,2020,7.213,10.851,0.925,73.6,0.912,0.011,0.464,0.769,0.206,Developed,Eur
 Israel,2020,7.195,10.538,0.959,73.7,0.831,-0.049,0.748,0.621,0.243,Developed,Asia,Europe,11
 Australia,2020,7.137,10.76,0.937,74.2,0.905,0.21,0.491,0.769,0.205,Developed,Oceania,Asia & Pacific,12
 Ireland,2020,7.035,11.323,0.96,72.5,0.882,0.014,0.356,0.797,0.246,Developed,Europe,Europe,13
-United States,2020,7.028,11.001,0.937,68.1,0.85,0.034,0.678,0.787,0.295,#N/A,North America,North America,14
+United States,2020,7.028,11.001,0.937,68.1,0.85,0.034,0.678,0.787,0.295,Developed,North America,North America,14
 Canada,2020,7.025,10.73,0.931,74,0.887,0.05,0.434,0.796,0.307,Developed,North America,North America,15
-Czech Republic,2020,6.897,10.53,0.964,71.3,0.906,-0.127,0.884,0.832,0.29,#N/A,Europe,Europe,16
+Czech Republic,2020,6.897,10.53,0.964,71.3,0.906,-0.127,0.884,0.832,0.29,Developed,Europe,Europe,16
 Belgium,2020,6.839,10.771,0.904,72.4,0.767,-0.164,0.634,0.647,0.26,Developed,Europe,Europe,17
-United Kingdom,2020,6.798,10.626,0.929,72.7,0.885,0.203,0.49,0.758,0.225,#N/A,Europe,Europe,18
-Taiwan Province of China,2020,6.751,,0.901,,0.799,,0.711,0.845,0.083,#N/A,Asia,Asia & Pacific,19
+United Kingdom,2020,6.798,10.626,0.929,72.7,0.885,0.203,0.49,0.758,0.225,Developed,Europe,Europe,18
+Taiwan Province of China,2020,6.751,,0.901,,0.799,,0.711,0.845,0.083,Developed,Asia,Asia & Pacific,19
 France,2020,6.714,10.643,0.947,74.2,0.823,-0.169,0.565,0.732,0.231,Developed,Europe,Europe,20
 Saudi Arabia,2020,6.56,10.701,0.89,66.9,0.884,-0.111,,0.754,0.251,Developing,Asia,Middle east,21
 Slovakia,2020,6.519,10.332,0.954,69.5,0.762,-0.075,0.901,0.764,0.274,Developed,Europe,Europe,22
@@ -275,7 +275,7 @@ Croatia,2020,6.508,10.166,0.923,71.4,0.837,-0.063,0.961,0.743,0.286,Developed,Eu
 Spain,2020,6.502,10.488,0.935,75,0.783,-0.121,0.73,0.686,0.317,Developed,Europe,Europe,24
 Italy,2020,6.488,10.563,0.89,74,0.718,-0.15,0.844,0.67,0.311,Developed,Europe,Europe,25
 Slovenia,2020,6.462,10.478,0.953,71.7,0.958,-0.081,0.797,0.61,0.314,Developed,Europe,Europe,26
-United Arab Emirates,2020,6.458,11.053,0.827,67.5,0.942,0.06,,0.752,0.298,#N/A,Asia,Middle east,27
+United Arab Emirates,2020,6.458,11.053,0.827,67.5,0.942,0.06,,0.752,0.298,Developed,Asia,Middle east,27
 Estonia,2020,6.453,10.459,0.958,69,0.954,-0.082,0.398,0.807,0.188,Developed,Europe,Europe,28
 Lithuania,2020,6.391,10.504,0.953,68.5,0.824,-0.122,0.829,0.66,0.202,Developed,Europe,Europe,29
 Uruguay,2020,6.31,9.937,0.921,69.2,0.908,-0.084,0.491,0.807,0.265,Developing,South America,South/Latin America,30
@@ -298,4 +298,4 @@ Mexico,2020,5.964,9.782,0.779,68.9,0.873,-0.119,0.778,0.81,0.292,Developing,Nort
 Argentina,2020,5.901,9.85,0.897,69.2,0.823,-0.122,0.816,0.764,0.342,Developing,South America,South/Latin America,47
 Thailand,2020,5.885,9.769,0.867,67.6,0.84,0.273,0.918,0.783,0.326,Developing,Asia,Asia & Pacific,48
 Moldova,2020,5.812,9.462,0.874,66.4,0.859,-0.058,0.941,0.727,0.268,#N/A,Europe,Europe,49
-South Korea,2020,5.793,10.648,0.808,74.2,0.711,-0.106,0.665,0.64,0.247,#N/A,Asia,Asia & Pacific,50
+South Korea,2020,5.793,10.648,0.808,74.2,0.711,-0.106,0.665,0.64,0.247,Developed,Asia,Asia & Pacific,50
