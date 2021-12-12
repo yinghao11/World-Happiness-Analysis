@@ -42,9 +42,23 @@ library(RColorBrewer)
 
 ## General Life Ladder Trend
 
-### Trend by Time
-```{r}
+### Trend by Time 
 
+- Alluvium data transformation
+
+```{r, fig.height=5}
+library(ggalluvial)
+allu <- read.csv("2015-2020.csv")
+
+allu <- allu %>% mutate(Rank = factor(Rank, levels = c(1:50)))
+
+ggplot(allu, aes(alluvium = Country.name, x = year, stratum = Rank, fill = Region)) +
+  geom_alluvium(color = "blue") +
+  geom_stratum(color = "black", fill = "light grey") +
+  scale_fill_brewer(type = "qual", palette = "Paired") +
+  geom_text(stat = "stratum", aes(label = paste(after_stat(stratum)))) +
+  ggtitle("Happiness Score Rank Movements")+
+  geom_flow(stat = "alluvium", color = "black")
 
 ```
 
