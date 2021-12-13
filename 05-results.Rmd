@@ -47,7 +47,7 @@ Focusing on the first line of this correlation matrix plot that shows correlatio
 
 ### Beta Comparison
 
-To further study if importance of these factors change over time, we plot the value of standardized beta coefficients from running regression of life ladder on all the variables. To this end, we selected seven most  
+To further study if importance of these factors change over time, we plot the value of standardized beta coefficients from running regression of life ladder on all the variables. To this end, we selected seven variables that are present for most countries throughout the years.
 ```{r}
 GDP_b <- list()
 social_support_b <- list()
@@ -76,20 +76,19 @@ for (x in (2008:2020)) {
   nega_affect <- append(nega_affect,summary(lm_std)$coefficients[9])
 }
 year_list<-list(2008:2020)
-beta_df <- data.frame(unlist(year_list), unlist(GDP_b),unlist(social_support_b),unlist(freedom_b),
-                      unlist(generosity_b),unlist(percp_corrup_b),unlist(pos_affect),unlist(nega_affect))
-names(beta_df) <- c("year","LogGDP","SocialSupp","Freedom","Generosity","PercepCorrup","Positive","Negative")
+beta_df <- data.frame(unlist(year_list), unlist(GDP_b),unlist(social_support_b),unlist(pos_affect),unlist(freedom_b),unlist(generosity_b),unlist(percp_corrup_b),unlist(nega_affect))
+names(beta_df) <- c("year","LogGDP","SocialSupp","Positive","Freedom","Generosity","PercepCorrup","Negative")
 
 #betaplot
 library(dygraphs)
-dygraph(beta_df) %>%
-  dyLegend(show = "always", hideOnMouseOut = FALSE,width=500) %>%
+dygraph(beta_df,main="Standardized ") %>%
+  dyLegend(show = "always", hideOnMouseOut = FALSE,width=800) %>%
   dyAxis("x", label = "Year", valueRange = c(2008, 2020)) %>%
   dyOptions(colors = RColorBrewer::brewer.pal(8, "Dark2"))
 
 ```
 
-
+Hover your cursor over the lines to explore the values at different years. 
 ## General Happiness Score Distribution
 
 ### Distribution by Country
