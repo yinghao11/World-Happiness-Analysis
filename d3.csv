@@ -1,0 +1,158 @@
+﻿type,Year,mean
+Africa,2006,4.074181818
+Africa,2007,4.392789474
+Africa,2008,4.254625
+Africa,2009,4.339555556
+Africa,2010,4.141
+Africa,2011,4.455580645
+Africa,2012,4.27292
+Africa,2013,4.021925926
+Africa,2014,4.0269375
+Africa,2015,4.178933333
+Africa,2016,4.08990625
+Africa,2017,4.344
+Africa,2018,4.557454545
+Africa,2019,4.506484848
+Africa,2020,4.761571429
+Arab States,2007,4.149
+Arab States,2008,4.6285
+Arab States,2009,4.722
+Arab States,2010,4.844111111
+Arab States,2011,4.704333333
+Arab States,2012,4.78775
+Arab States,2013,5.31925
+Arab States,2014,5.239
+Arab States,2015,5.1158
+Arab States,2016,5.093
+Arab States,2017,5.118
+Arab States,2018,4.5936
+Arab States,2019,4.996166667
+Arab States,2020,5.235666667
+Asia & Pacific,2005,6.0975
+Asia & Pacific,2006,5.165130435
+Asia & Pacific,2007,5.34848
+Asia & Pacific,2008,5.209866667
+Asia & Pacific,2009,5.0936
+Asia & Pacific,2010,5.293321429
+Asia & Pacific,2011,5.318258065
+Asia & Pacific,2012,5.175322581
+Asia & Pacific,2013,5.250258065
+Asia & Pacific,2014,5.395290323
+Asia & Pacific,2015,5.303322581
+Asia & Pacific,2016,5.405642857
+Asia & Pacific,2017,5.315833333
+Asia & Pacific,2018,5.307129032
+Asia & Pacific,2019,5.395032258
+Asia & Pacific,2020,5.650052632
+Europe,2005,6.521266667
+Europe,2006,5.89145
+Europe,2007,5.69953125
+Europe,2008,6.374037037
+Europe,2009,5.787114286
+Europe,2010,5.8858
+Europe,2011,5.895214286
+Europe,2012,6.004586957
+Europe,2013,5.908727273
+Europe,2014,5.9818
+Europe,2015,6.008869565
+Europe,2016,6.082978261
+Europe,2017,6.1876
+Europe,2018,6.258844444
+Europe,2019,6.317133333
+Europe,2020,6.401292683
+Middle east,2005,6.0085
+Middle east,2006,5.821
+Middle east,2007,5.72075
+Middle east,2008,5.1116
+Middle east,2009,5.763666667
+Middle east,2010,5.748666667
+Middle east,2011,5.7014
+Middle east,2012,5.483
+Middle east,2013,5.281625
+Middle east,2014,5.369875
+Middle east,2015,5.3865
+Middle east,2016,5.336
+Middle east,2017,5.186777778
+Middle east,2018,5.026125
+Middle east,2019,5.21375
+Middle east,2020,5.2738
+North America,2005,7.418
+North America,2006,7.182
+North America,2007,7.4975
+North America,2008,7.383
+North America,2009,7.323
+North America,2010,7.407
+North America,2011,7.2705
+North America,2012,7.2205
+North America,2013,7.4215
+North America,2014,7.2275
+North America,2015,7.1385
+North America,2016,7.0245
+North America,2017,7.2035
+North America,2018,7.029
+North America,2019,7.0265
+North America,2020,7.0265
+South/Latin America,2005,6.796
+South/Latin America,2006,5.581
+South/Latin America,2007,5.846157895
+South/Latin America,2008,5.79745
+South/Latin America,2009,6.366666667
+South/Latin America,2010,6.179631579
+South/Latin America,2011,6.068285714
+South/Latin America,2012,6.09855
+South/Latin America,2013,6.159428571
+South/Latin America,2014,6.060142857
+South/Latin America,2015,5.940894737
+South/Latin America,2016,5.897
+South/Latin America,2017,6.002142857
+South/Latin America,2018,5.951166667
+South/Latin America,2019,6.117578947
+South/Latin America,2020,5.660181818
+Developed,2005,6.727941176
+Developed,2006,6.218086957
+Developed,2007,6.11528125
+Developed,2008,6.617833333
+Developed,2009,6.053885714
+Developed,2010,6.212906977
+Developed,2011,6.212533333
+Developed,2012,6.255729167
+Developed,2013,6.182244444
+Developed,2014,6.214638298
+Developed,2015,6.259425532
+Developed,2016,6.302104167
+Developed,2017,6.394229167
+Developed,2018,6.459326087
+Developed,2019,6.500404255
+Developed,2020,6.537111111
+Developing,2005,5.8995
+Developing,2006,4.823482759
+Developing,2007,5.151627119
+Developing,2008,4.957602941
+Developing,2009,5.275140625
+Developing,2010,5.193686567
+Developing,2011,5.135731707
+Developing,2012,5.067842105
+Developing,2013,5.04474026
+Developing,2014,5.025060241
+Developing,2015,5.02362963
+Developing,2016,4.990721519
+Developing,2017,5.052927711
+Developing,2018,5.044139241
+Developing,2019,5.120625
+Developing,2020,5.224439024
+Third World,2005,6.239
+Third World,2006,4.96825
+Third World,2007,4.820818182
+Third World,2008,5.032
+Third World,2009,4.845266667
+Third World,2010,4.748
+Third World,2011,4.801157895
+Third World,2012,4.865666667
+Third World,2013,4.827266667
+Third World,2014,4.816
+Third World,2015,4.778
+Third World,2016,4.663866667
+Third World,2017,4.77275
+Third World,2018,5.017941176
+Third World,2019,5.119764706
+Third World,2020,5.165
