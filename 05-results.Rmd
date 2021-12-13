@@ -49,7 +49,7 @@ Focusing on the first line of this correlation matrix plot that shows correlatio
 ### Beta Comparison
 
 To further study if importance of these factors change over time, we plot the value of standardized beta coefficients from running regression of life ladder on all the variables after standardization (note: beta coefficients should not be interpreted as factor importance unless variables are all standardized to the same scale). To this end, we selected seven variables that are present for most countries throughout the years.
-```{r}
+```{r, fig.width=15}
 GDP_b <- list()
 social_support_b <- list()
 expect_b <- list()
@@ -99,6 +99,7 @@ Freedom to make choices and generosity remain weakly correlated with life ladder
 ## General Happiness Score Distribution
 
 For this part, we are also using baseline data from 2018.
+
 ### Distribution by Country
 ```{r}
 mapdata<-map_data("world")
@@ -106,10 +107,15 @@ data18 <- complete2021 %>% filter(year==2018)
 colnames(data18)[1] <- "region" 
 mapdata<-left_join(mapdata,data18,by="region")
 mapdata1 <- mapdata %>% filter(!is.na(mapdata$Life.Ladder))
-map1<-ggplot(mapdata1,aes(x=long,y=lat,group=group)) + geom_polygon(aes(fill=Life.Ladder),color="black")
-map2 <- map1 + scale_fill_gradient(name="Life Ladder",low="#C6DBEF",high="#08306B")
-map2
+ggplot(mapdata1,aes(x=long,y=lat,group=group)) + geom_polygon(aes(fill=Life.Ladder),color="black") +
+  scale_fill_gradient(name="Life Ladder",low="#C6DBEF",high="#08306B") +
+  ggtitle("Life Ladder Distribution by Country Map")+
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+panel.background = element_blank(),  axis.title = element_blank(), plot.title = element_text(size = 30, hjust = 0.5), axis.text = element_blank(), axis.ticks = element_blank())
 ```
+
+From the map, it is not hard to tell that the life ladder score is generally higher for European, North America and Oceanian countries. Colors are lighter, thus lower happiness score,  
+
 ### Distribution by Region
 
 ### Distribution across Time
