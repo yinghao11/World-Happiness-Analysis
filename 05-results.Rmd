@@ -112,7 +112,7 @@ mapdata<-left_join(mapdata,data18,by="region")
 mapdata <- mapdata %>% filter(lat > -65)
 #mapdata1 <- mapdata %>% filter(!is.na(mapdata$Life.Ladder))
 ggplot(mapdata,aes(x=long,y=lat,group=group)) + geom_polygon(aes(fill=Life.Ladder),color="black") +
-  scale_fill_gradient(name="Life Ladder",low="#e5f5f9",high="#2ca25f") +
+  scale_fill_gradient(name="Life Ladder",low="#e5f5f9",high="seagreen") +
   ggtitle("Life Ladder Distribution by Country Map")+
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
 panel.background = element_blank(),  axis.title = element_blank(), plot.title = element_text(size = 30, hjust = 0.5), axis.text = element_blank(), axis.ticks = element_blank())
@@ -186,7 +186,7 @@ ggplot(averaged, aes(x = difference, y = reorder(region, difference)))+
     theme_dotplot +
     ylab("Country Name") +
     ggtitle("Life Ladder Difference by Post-Pre Pandemic")+
-    theme(axis.title = element_text(size = 20), plot.title = element_text(size = 30, hjust = 0.5)) 
+    theme(axis.title = element_text(size = 30), axis.text = element_text(size = 20), plot.title = element_text(size = 30, hjust = 0.5)) 
 
 ```
 The Cleveland plot here is capturing the score difference between the average score from 2017 to 2019 and the score from the single year of 2020. We plot every country and its score difference, and we reorder it from the highest difference, i.e., Life Ladder in 2020 is higher than that of previous years, to the lowest. And Zambia has the surprisingly highest score difference, followed by Croatia, Kyrgyzstan, and Ukraine. The score difference in Zambia is about 1.07, which means that people in Zambia feel much better during 2020 than before. However, when check back the original dataset, we found that Zambia has a very low average Life Ladder at 3.76 before the pandemic, and it increased to 4.838 in 2020. Also, according to the research [Mental health and wellbeing implications of the COVID-19 quarantine for disabled and disadvantaged children and young people: evidence from a cross-cultural study in Zambia and Sierra Leone](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8123096/), it shows that people in Zambia and other countries in Africa still have low levels of life satisfaction. 
@@ -200,7 +200,7 @@ mapdata <- left_join(mapdata, averaged, by="region")
 mapdata <- mapdata %>% filter(lat > -65)
 
 difference_map <- 
-  ggplot(mapdata, aes(x = long, y = lat, group = group)) + geom_polygon(aes(fill = difference)) +
+  ggplot(mapdata, aes(x = long, y = lat, group = group)) + geom_polygon(aes(fill = difference), color = "black") +
     scale_fill_gradient(name = "Difference", low = "brown2", high = "seagreen") +
     ggtitle("Life Ladder Difference Distribution by Country Map")+
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
@@ -229,9 +229,10 @@ geo_covid <- geo_covid %>% pivot_longer(!Region, names_to = "year", values_to = 
 geo_covid %>%
   hchart(., type = "column", 
        hcaes(x = Region, 
-             y = score, 
+             y = round(score,2), 
              group = year)) %>% 
   hc_yAxis(opposite = FALSE) %>%
+  hc_xAxis(categories = list("North America", "Europe", "South/Latin America", "Asia & Pacific", "Arab States", "Africa" ))%>%
   hc_title(
   text = "Life Ladder Difference by Region",
   align = "center",
@@ -261,9 +262,10 @@ dev_covid <- dev_covid %>% pivot_longer(!Development.Level, names_to = "year", v
 dev_covid %>%
   hchart(., type = "column", 
        hcaes(x = Development.Level, 
-             y = score, 
+             y = round(score,2), 
              group = year)) %>% 
   hc_yAxis(opposite = FALSE) %>%
+  hc_xAxis(categories = list("Dveloped", "Developing", "Third World Countries" ))%>%
   hc_title(
   text = "Life Ladder Difference by Development Level",
   align = "center",
@@ -292,7 +294,7 @@ ggplot(allu, aes(alluvium = Country.name, x = year, stratum = Rank, fill = Regio
   ggtitle("Life Ladder Rank Movements")+
   geom_flow(stat = "alluvium", color = "black")+
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-panel.background = element_blank(), axis.title = element_text(size = 20), plot.title = element_text(size = 30, hjust = 0.5), axis.text.y = element_blank(), axis.ticks.y = element_blank())
+panel.background = element_blank(), axis.title = element_text(size = 30), plot.title = element_text(size = 30, hjust = 0.5), axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_text(size = 20))
 
 ```
 To achieve this feature, we manually ranked all countries in each year, and select the top 50 countries to show the change in rankings. And the color coding discriminates the different economic regions. Based on the graph, we would see that the top countries with the highest Life Ladders remains relatively stable, they would go back and forth within the nearby rankings but will hardly go very up or down. However, the countries in the lower rankings have a higher volatility, they well suddenly go up or down, on a large scale.
