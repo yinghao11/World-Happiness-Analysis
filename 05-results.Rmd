@@ -30,45 +30,27 @@ library(jsonlite)
 library(RColorBrewer)
 ```
 
-## Related Factors
+## Related Factors Affecting Happiness Score
 
-### Overview (by all factors)
+### Overview (Correlation Matrix for All Possible Factors)
 
-### Most Relevant
-
-### Least Relevant
+### Beta Comparison
 
 
 
-## General Life Ladder Trend
+## General Happiness Score Distribution
 
-### Trend by Time 
+### Distribution by Country
 
-- Alluvium data transformation
+### Distribution by Region
 
-```{r, fig.height=10, fig.width=15}
-library(ggalluvial)
-allu <- read.csv("2015-2020.csv")
+### Distribution by Time
 
-allu <- allu %>% mutate(Rank = factor(Rank, levels = c(1:50)))
-
-ggplot(allu, aes(alluvium = Country.name, x = year, stratum = Rank, fill = Region)) +
-  geom_alluvium(color = "blue") +
-  geom_stratum(color = "black", fill = "light grey") +
-  scale_fill_brewer(type = "qual", palette = "Paired") +
-  geom_text(stat = "stratum", aes(label = paste(after_stat(stratum)))) +
-  ggtitle("Happiness Score Rank Movements")+
-  geom_flow(stat = "alluvium", color = "black")
-
-```
-
-### Trend by Geo
-
-### Trend by Development Level
+Will be discussed in Chapter 6, the Interactive Component.
 
 
 
-## COVID-19 Impact
+## COVID-19 Impact on Happiness Score
 ```{r}
 ave1719 <- read.csv("17_19_sample.csv")
 averaged <- ave1719 %>% group_by(Country.name)  %>% summarise(score_1719 = mean(Life.Ladder)) %>% ungroup()
@@ -114,7 +96,7 @@ difference_map <- ggplot(mapdata, aes(x = long, y = lat, group = group)) + geom_
 difference_map
 ```
 
-### Comparison between Geo
+### Comparison between Region
 
 ```{r, fig.height=10, fig.width=15}
 geo_covid <- ave1719 %>% group_by(Region) %>% summarise(pre_covid = mean(Life.Ladder)) %>% ungroup()
@@ -152,4 +134,20 @@ dev_covid %>%
              group = year)) %>% 
   hc_yAxis(opposite = FALSE) 
 ```
+## Happiness Score Rank Analysis
 
+```{r, fig.height=10, fig.width=15}
+library(ggalluvial)
+allu <- read.csv("2015-2020.csv")
+
+allu <- allu %>% mutate(Rank = factor(Rank, levels = c(1:50)))
+
+ggplot(allu, aes(alluvium = Country.name, x = year, stratum = Rank, fill = Region)) +
+  geom_alluvium(color = "blue") +
+  geom_stratum(color = "black", fill = "light grey") +
+  scale_fill_brewer(type = "qual", palette = "Paired") +
+  geom_text(stat = "stratum", aes(label = paste(after_stat(stratum)))) +
+  ggtitle("Happiness Score Rank Movements")+
+  geom_flow(stat = "alluvium", color = "black")
+
+```

@@ -20,3 +20,13 @@ covid-19-impact
 comparison-between-time-pre-and-post-pandemic
 comparison-between-geo
 comparison-between-development-level
+related-factors-affecting-happiness-score
+overview-correlation-matrix-for-all-possible-factors
+beta-comparison
+general-happiness-score-distribution
+distribution-by-country
+distribution-by-region
+distribution-by-time
+covid-19-impact-on-happiness-score
+comparison-between-region
+happiness-score-rank-analysis
