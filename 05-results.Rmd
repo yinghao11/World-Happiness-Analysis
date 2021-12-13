@@ -134,6 +134,7 @@ averaged <- averaged %>% arrange(desc(averaged$difference))
 averaged <- subset(averaged, !is.na(averaged$difference))
 averaged <- averaged %>% rename(region = Country.name)
 ```
+
 ### Comparison between Time (Pre and Post Pandemic)
 We decide to use data averaged from 2017 to 2019 to represent the general life happiness score before the COVID-19 pandemic, and compare it to the 2020 happiness score. The difference between happiness score is the following:
 
