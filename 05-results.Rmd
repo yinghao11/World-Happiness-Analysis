@@ -231,8 +231,8 @@ geo_covid %>%
        hcaes(x = Region, 
              y = round(score,2), 
              group = year)) %>% 
-  hc_yAxis(opposite = FALSE) %>%
-  hc_xAxis(categories = list("North America", "Europe", "South/Latin America", "Asia & Pacific", "Arab States", "Africa" ))%>%
+  hc_yAxis(opposite = FALSE, title = list(text = "Life Ladder")) %>%
+  hc_xAxis(categories = list("North America", "Europe", "South/Latin America", "Asia & Pacific", "Arab States", "Africa" ), title = "region")%>%
   hc_title(
   text = "Life Ladder Difference by Region",
   align = "center",
@@ -264,8 +264,8 @@ dev_covid %>%
        hcaes(x = Development.Level, 
              y = round(score,2), 
              group = year)) %>% 
-  hc_yAxis(opposite = FALSE) %>%
-  hc_xAxis(categories = list("Dveloped", "Developing", "Third World Countries" ))%>%
+  hc_yAxis(opposite = FALSE, title = list(text = "Life Ladder")) %>%
+  hc_xAxis(categories = list("Dveloped", "Developing", "Third World Countries" ), title = "Development Level")%>%
   hc_title(
   text = "Life Ladder Difference by Development Level",
   align = "center",
