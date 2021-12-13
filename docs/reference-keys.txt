@@ -11,6 +11,8 @@ related-factors-affecting-life-ladder
 overview-of-one-baseline-year
 beta-comparison
 general-life-ladder-distribution
+distribution-by-country
+distribution-by-region
 distribution-across-time
 covid-19-impact-on-life-ladder
 comparison-between-time-pre-and-post-pandemic
