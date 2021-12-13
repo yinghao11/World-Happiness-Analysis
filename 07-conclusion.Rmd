@@ -1,2 +1,17 @@
 # Conclusion
 
+- **Findings**
+
+From our visualization and analysis, we found that the most decisive factor of a country’s happiness is GDP, followed by social support. This insight reconciles with our regional distribution analysis of European and North American countries having relatively higher scores and African countries having lower scores. We also found that over time the world average life ladder score has been stable around 5.5 over the past two decades. 
+
+From our COVID-19 Impact on Life Ladder Section, we found that countries with Life Ladder increased during the COVID-19 pandemic can be attributed to the relatively low pre-covid Life Ladder Score and successful suppression of the pandemic. Meanwhile, one possible explanation for countries with the sharpest decrease in their Life Ladder is that they were experiencing insufficient public health support. Besides that, Asia & Pacific region has the highest density of countries with increasing Life Ladder, while most other regions are experiencing a decrease in Life Ladder on different scales. The Comparison between Region section tells us that North America has the highest Life Ladder both before and after the pandemic while Africa is the opposite. And only North America and South/Latin America have a decrease in Life Ladder during the pandemic while others do not. This is understood as a disturbance of the pandemic and an increase in social support. Finally, according to the development levels, we see that the developed countries have the highest Life Ladder and all of them have a decrease in the score after the pandemic.
+
+
+- **Limitation and Future Direction**
+
+Throughout our analysis, we often relied on subjective perception of correlation and common sense without rigorous econometric analysis. With that being said, the focus of this project is not to carry out sophisticated model analysis, rather to observe patterns from the data. Another limitation we have is lack of complete data, which is inevitable for survey data on such a large scale. One possible future improvement is to search for other suitable indicators of people’s happiness and perform comparisons.
+
+- **Lessons Learned**
+
+The fact that the average scores remain around 5.5 on a scale of 10 is an indication that people around the globe only see them half as happy as possible. Our study has shed light on an often overlooked issue for governments worldwide -- there is still a lot of space for improvement when it comes to people’s happiness. While economic improvement is one aspect to work on, by no means can any government neglect the significance of ethical care.  
+
