@@ -1,3 +1,17 @@
 # Interactive component
 
+## Link to Interactive Plot
 
+You can access our interactive line chart using this link: https://vizhub.com/yinghao11/03a3b6fa3615436a91bd22aa5e3ac127?edit=files&file=1.js&mode=full
+
+## Description
+
+The interactive plot was built with D3 version 6 using the same dataset. It shows the trend of world average life ladder score from 2005 to 2020, with interactive options to show a breakdown by groups (development level or region). Detailed distributional statistics are also provided when you use cursor to hover over the lines.
+
+The world average score remains stable around 5.5 for 15 years with slight increase in recent years, despite the substantial technological development in the 21st century. 
+
+On showing different groups breakdown, most relative magnitudes conform our factor analysis of GDP being the most significant driver of people's happiness, as well as the regional distribution in 2018. North America, Europe and South/Latin America remain the three regions above world average across time, with the exception of 2020 where Asia & Pacific has caught up with South/Latin America. This also complies with our pre and post-covid analysis in section 5.3.2. Moreover, we can observe a convergence trend of developing and third world countries in recent years.
+
+## Instruction for using
+
+By default, only the world average is shown. You can click on the three gray circle to show the desired group. Moreover, you can click on any specific subgroups (colored squares) to explore more patterns. Hover your cursor over each line to read distribution statistics of any year. 
