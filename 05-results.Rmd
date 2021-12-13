@@ -43,11 +43,12 @@ colnames(corr_data_2018) <- c("Life Ladder","GDP","Social Supp","Life Exp","Free
 M<-cor(na.omit(corr_data_2018))
 corrplot(M, type="upper", tl.col="black", tl.srt=45)
 ```
+
 Focusing on the first line of this correlation matrix plot that shows correlations between life ladder and all other variables, we can observe high positive correlation with GDP, social support, life expectancy, democratic and delivery. Moderate negative correlations are present between life ladder and perception of corruption as well as negative affects, which is reasonable since these are considered as adversity to happiness. Almost all directions make sense except for confidence of government, the magnitude of which is trivial however. 
 
 ### Beta Comparison
 
-To further study if importance of these factors change over time, we plot the value of standardized beta coefficients from running regression of life ladder on all the variables. To this end, we selected seven variables that are present for most countries throughout the years.
+To further study if importance of these factors change over time, we plot the value of standardized beta coefficients from running regression of life ladder on all the variables after standardization (note: beta coefficients should not be interpreted as factor importance unless variables are all standardized to the same scale). To this end, we selected seven variables that are present for most countries throughout the years.
 ```{r}
 GDP_b <- list()
 social_support_b <- list()
@@ -88,17 +89,32 @@ dygraph(beta_df,main='Standardized Beta, 2008-2020 <small>from regressing life l
 
 ```
 
-Hover your cursor over the lines to explore the values at different years. 
+
+**Hover your cursor over the lines to explore the values at different years.** It's clear that GDP, social support and positive affects remain the top three factors affecting life ladder across time. The importance of GDP outweighs all other, with the only exception in 2019, which suggests that, from a global perspective, people's happiness is always most closely related with economic prosperity for material satisfaction. 
+
+Perception of corruption always remains the most negatively correlated, which signals that people around the world do take government corruption seriously.
+
+Freedom to make choices and generosity remain weakly correlated with life ladder throughout the years, which implies that the global society is prioritizing materials over mental wellness when it comes to happiness. 
 
 ## General Happiness Score Distribution
 
+For this part, we are also using baseline data from 2018.
 ### Distribution by Country
-
+```{r}
+mapdata<-map_data("world")
+data18 <- complete2021 %>% filter(year==2018)
+colnames(data18)[1] <- "region" 
+mapdata<-left_join(mapdata,data18,by="region")
+mapdata1 <- mapdata %>% filter(!is.na(mapdata$Life.Ladder))
+map1<-ggplot(mapdata1,aes(x=long,y=lat,group=group)) + geom_polygon(aes(fill=Life.Ladder),color="black")
+map2 <- map1 + scale_fill_gradient(name="Life Ladder",low="#C6DBEF",high="#08306B")
+map2
+```
 ### Distribution by Region
 
-### Distribution by Time
+### Distribution across Time
 
-Will be discussed in Chapter 6, the Interactive Component.
+To be discussed in Chapter 6, the Interactive Component.
 
 
 
@@ -146,7 +162,7 @@ mapdata <- map_data("world")
 mapdata$region <- replace(mapdata$region, mapdata$region == "USA", "United States")
 mapdata <- left_join(mapdata, averaged, by="region")
 mapdata <- mapdata %>% filter(lat > -65)
-difference_map <- ggplot(mapdata, aes(x = long, y = lat, group = group)) + geom_polygon(aes(fill = difference)) + scale_fill_gradient(name = "Difference", low = "brown2", high = "seagreen")
+difference_map <- ggplot(mapdata, aes(x = long, y = lat, group = group)) + geom_polygon(aes(fill = difference)) + scale_fill_gradient(name = "Difference", low = "red", high = "green")
 difference_map
 ```
 The above world map of happiness score provide a geographic perspective of how this incident has impacted the world. In this map, the green area represents a positive change in the happiness score difference, and the red region shows the countries with negative happiness score difference. And it is clear that the Asia & Pacific region has the most concentrated positive score change countries. This situation can be deciphered as generally speaking, people in Asia & Pacific region are not detrimentally bothered by the pandemic. Since [this region has successfully suppressed COVID-19](https://worldhappiness.report/ed/2021/reasons-for-asia-pacific-success-in-suppressing-covid-19/), people would feel a sense of safety and cohesion within the society to resist the intrude of the pandemic. South America and some region in North America and Europe have some kind of substantial decrease in happiness score before pandemic and post pandemic. This situation can be understood as a disbelief from people to the society or even the government, and they just don’t feel safe and receive enough public health support during the pandemic. Or, they might have experienced a big drawdown in life quality and mentally feel very uneasy during this special time.
