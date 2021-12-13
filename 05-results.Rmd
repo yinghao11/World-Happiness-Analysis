@@ -43,7 +43,7 @@ data2018 <- read.csv("2018_Sample.csv")
 corr_data_2018 <- data2018[,3:14] 
 colnames(corr_data_2018) <- c("Life Ladder","GDP","Social Supp","Life Exp","Freedom","Generosity","Perc Corrup","Positive","Negative","Conf Gov","Democratic","Delivery")
 M<-cor(na.omit(corr_data_2018))
-corrplot(M, type="upper", tl.col="black", tl.srt=45)
+corrplot(M, type="upper", tl.col="black", tl.srt=45,title="Correlation Matrix 2018",mar=c(0,0,1,0),tl.cex = 0.8)
 ```
 
 Focusing on the first line of this correlation matrix plot that shows correlations between life ladder and all other variables, we can observe high positive correlation with GDP, social support, life expectancy, democratic and delivery. Moderate negative correlations are present between life ladder and perception of corruption as well as negative affects, which is reasonable since these are considered as adversity to happiness. Almost all directions make sense except for confidence of government, the magnitude of which is trivial however. 
@@ -87,6 +87,7 @@ library(dygraphs)
 dygraph(beta_df,main='Standardized Beta, 2008-2020 <small>from regressing life ladder on all variables</small>') %>%
   dyLegend(show = "always", hideOnMouseOut = TRUE,width=650) %>%
   dyAxis("x", label = "Year", valueRange = c(2008, 2020)) %>%
+  dyAxis("y",label="Standardized Beta") %>%
   dyOptions(colors = RColorBrewer::brewer.pal(8, "Dark2"))
 
 ```
@@ -115,7 +116,11 @@ ggplot(mapdata,aes(x=long,y=lat,group=group)) + geom_polygon(aes(fill=Life.Ladde
   scale_fill_gradient(name="Life Ladder",low="#e5f5f9",high="seagreen") +
   ggtitle("Life Ladder Distribution by Country Map")+
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-panel.background = element_blank(),  axis.title = element_blank(), plot.title = element_text(size = 30, hjust = 0.5), axis.text = element_blank(), axis.ticks = element_blank())
+panel.background = element_blank(),  axis.title = element_blank(), plot.title = element_text(size = 30, hjust = 0.5), axis.text = element_blank(), axis.ticks = element_blank(),legend.key.size = unit(1, 'cm'),
+        legend.key.height = unit(1, 'cm'),
+        legend.key.width = unit(1, 'cm'),
+        legend.title = element_text(size=16), 
+        legend.text = element_text(size=13))
 ```
 
 From the map, it is not hard to tell that the life ladder score is higher for European, North America and Oceanian countries. These are also countries generally deemed more developed. Colors are lighter, signifying lower happiness scores, for African, Middle East and Southeast Asia countries, mostly countries of middle and lower income. This corresponds to our analysis of GDP being the most important factor.
@@ -131,10 +136,13 @@ hcboxplot(
   outliers = FALSE,
   x = data18$Life.Ladder,
   var = reorder(data18$Region, -data18$Life.Ladder, median),
-  name = "Life Ladder") %>% hc_title(
+  name = "Life Ladder") %>% 
+  hc_title(
   text = "Life Ladder by Region",
   align = "center",
-  style = list(color = "black", useHTML = TRUE))
+  style = list(color = "black", useHTML = TRUE)) %>%
+  hc_yAxis(title=list(text="Region")) %>%
+  hc_xAxis(title=list(text="Life Ladder"))     
 ```
 
 
@@ -193,7 +201,7 @@ The Cleveland plot here is capturing the score difference between the average sc
 
 Meanwhile, El Salvador has the lowest score difference, with -0.883, followed by Philippine, Benin, and Malta. A negative score difference means that people in those countries would generally think life during 2020 is much worse than the years before the pandemic. And it could represent a sense of severe social chaos and an acute public health situation. Also, when checking back ib the original dataset, El Salvador has 6.345 pre-pandemic, which is close to Saudi Arabia. This phenomenally low score difference could also be explained as that people lived in a relatively better life before and COVID-19 disturbed the peace at a large scale.
 
-```{r, fig.height=10, fig.width=15}
+```{r, fig.height=8, fig.width=15}
 mapdata <- map_data("world")
 mapdata$region <- replace(mapdata$region, mapdata$region == "USA", "United States")
 mapdata <- left_join(mapdata, averaged, by="region")
@@ -204,7 +212,11 @@ difference_map <-
     scale_fill_gradient(name = "Difference", low = "brown2", high = "seagreen") +
     ggtitle("Life Ladder Difference Distribution by Country Map")+
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-panel.background = element_blank(),  axis.title = element_blank(), plot.title = element_text(size = 30, hjust = 0.5), axis.text = element_blank(), axis.ticks = element_blank())
+panel.background = element_blank(),  axis.title = element_blank(), plot.title = element_text(size = 30, hjust = 0.5), axis.text = element_blank(), axis.ticks = element_blank(),legend.key.size = unit(1, 'cm'),
+        legend.key.height = unit(1, 'cm'),
+        legend.key.width = unit(1, 'cm'),
+        legend.title = element_text(size=16), 
+        legend.text = element_text(size=13))
 
 difference_map
 ```
