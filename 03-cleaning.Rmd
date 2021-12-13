@@ -1,3 +1,16 @@
 # Data transformation
 
-Data downloaded from our source are quite well-organized. The only addition we made is simple join operations on countries' development level and region classification. All of our analysis can be carried our accordingly with group by and filtering operation in R.
+The primary data source of out project is the [data panel]( https://worldhappiness.report/ed/2021/) from United Nations Sustainable Development Solutions Network. 
+For our project purpose, we appended three columns to the original dataset to implement our need for:
+
+- Append a column of Development Levels, [Developed]( https://worldpopulationreview.com/country-rankings/developed-countries), [Developing]( https://worldpopulationreview.com/country-rankings/developing-countries), and [Third World Countries]( https://worldpopulationreview.com/country-rankings/third-world-countries) as `Development.Levels`. 
+- Append a column for [Continent]( https://worldpopulationreview.com/country-rankings/list-of-countries-by-continent) as `Continent`. 
+- Append a column of [Regional Classification]( https://meta.wikimedia.org/wiki/List_of_countries_by_regional_classification) for each country as `Region`. 
+
+Next, we created four different subsets for the raw dataset – 2018 Sample, 2017-2019 Sample, 2020 Sample, and 2015-2020 Sample to serve the needs.  
+
+- 2018 Sample is data subset that represents a most recent and typical year of World Happiness Report survey without disturbance like the pandemic. We choose this sample to explore how each factor like GDP and Life Expectancy have influenced the Life Ladder.
+- 2017-2019 Sample is used to compare the change in Life Ladder before and after COVID-19. We then manually define **pre-covid average** for each factor as averaging each score across the three years.
+- 2020 Sample is used to display the outcome of the pandemic.
+- 2015-2020 Sample is primarily used to rank the Life Ladder for each country across the years, and to explore the change in rankings of each country.
+
