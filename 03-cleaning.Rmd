@@ -1,1 +1,3 @@
 # Data transformation
+
+Data downloaded from our source are quite well-organized. The only addition we made is simple join operations on countries' development level and region classification. All of our analysis can be carried our accordingly with group by and filtering operation in R.

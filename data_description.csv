@@ -1,0 +1,12 @@
+﻿Variable Name,Type,Description,Source
+Log GDP per capita,Numeric,GDP per capita in purchasing power parity at constant 2017 international dollar prices,World Development Indicators (WDI)
+GINI index,Numeric,GINI index based on primary household survey data,World Bank
+Healthy life expectancy at birth,Numeric,"Average number of years that a person can expect to live in ""full health""",WHO and WDI
+Social Support,Numeric,National average of responses to GWP questions,GWP
+Freedom to make life choices,Numeric,National average of responses to GWP questions,GWP
+Generosity,Numeric,National average of responses to GWP questions,GWP
+Corruption Perception,Numeric,National average of responses to GWP questions,GWP
+Positive Affect,Numeric,National average of responses to GWP questions,GWP
+Negative Affect,Numeric,National average of responses to GWP questions,GWP
+Confidence in national government,Numeric,National average of responses to GWP questions,GWP
+Trust,Numeric,National average of responses to GWP questions,GWP

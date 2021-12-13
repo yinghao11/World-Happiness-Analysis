@@ -1,0 +1,410 @@
+--- 
+title: "World-Happiness-Analysis"
+author: "Yanyun Chen, Siqin Shen, Yinghao Li"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+---
+```{r include=FALSE, cache=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
+)
+```
+
+# Introduction
+
+With the ongoing COVID-19 pandemic, people's mental health deserves attention more than ever. One of the most direct ways to evaluate a country's well-being is to survey citizens about how they feel about their life - are they happy about how their life? Then one question emerges, which is that what factor, in a macro perspective, such as GDP or life expectancy, shapes peoples' perception of happiness. Also, it is natural to further think about how people's happiness have changed over the past years. Is life getting better or worse than 10 years ago? Besides the subjective evaluation from every single person, we also look at the external factors that have affected the happiness score performance. 
+The lifestyle or culture generally varies from continent to continent, and the GDP also determines the development level for a country. Then, there should be some correlation between happiness score and continent/development level, and this correlation is awaiting to be solved. Moreover, we shall never neglect the influence of COVID-19. The COVID-19 pandemic has been the most consequential global event in the past few years, and it inevitably brings impact on every facet of our daily life. Our mission is to explore the COVID-19 impact on the happiness score, whether it is good or bad, happy or sad. 
+
+In this project, we gather life ladder data and other objective measurements of a country's welfare data mainly from the World Health Organization (WHO). It includes data across the world over the past years. We will focus on visualizing the score changing trend and distribution among the world, as well as carrying out practical analysis about how COVID-19 has reshaped people's perception of happiness. To be more specific, we are going to explore the data both from time and from geographic perspectives, and figure out what aspect affects people's feelings about happiness. Meanwhile, we shall also concentrate on the impact that COVID-19 brings to life. We will answer the following questions step by step in this project:
+
+- What is the most important factor affecting the life ladder (i.e., the happiness score)? Do importance of these factors change over time?
+
+- How did COVID-19 affect the life ladder? Would it be different across continents/development levels?
+
+- What is the trend of the life ladder? Would it be different across continents/development levels? 
+
+In the following chapters, we will discuss the above questions in depth with comprehensible visualizations.
+
+For more details of this project, click the link here or copy the url https://github.com/yinghao11/World-Happiness-Analysis and open it in browser to go to our Github repository and navigate code in .Rmd files.
+
+<!--chapter:end:index.Rmd-->
+
+```{r include=FALSE, cache=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
+)
+```
+# Data sources
+
+World Happiness Report is a publication of the United Nations Sustainable Development Solutions Network. Our dataset is taken from their latest release in March, 2021 (https://worldhappiness.report/ed/2021/#appendices-and-data). 
+
+Life Ladder is used as the measurement of happiness in our analysis. It is the national average response to the question of life evaluations collected by the Gallup World Poll, covering years from 2008 to 2020, which is a numerical value ranging from 0 to 10 with 0 being at the bottom and 10 at the top. Values are missing for several countries from time to time due to inability to collect. We’ve landed with 1732 records in total and an average of 133 countries’ records per year. 
+
+Below are some factors related to happiness for later analysis. More detailed descriptions of the specific wording of survey questions can be found from our source's appendix (https://happiness-report.s3.amazonaws.com/2021/Appendix1WHR2021C2.pdf). 
+```{r, echo=FALSE, results='asis'}
+DataDescription<- readr::read_csv(here::here("./data_description.csv"))
+knitr::kable(DataDescription[1:11,1:3 ], caption = "Factors Related to Happiness",
+             row.names = F,font_size = 12)
+```
+
+
+
+For group analysis, we also obtained data from the World Bank (https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups) for classifications of countries as developing or developed; as well as data from International Telecommunications Union (https://www.itu.int/en/ITU-D/Statistics/Pages/definitions/regions.aspx) that classifies the world into eight regions: Europe, Middle east, Asia & Pacific, South/Latin America, Africa, North America, Arab States.
+
+<!--chapter:end:02-data.Rmd-->
+
+```{r include=FALSE, cache=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
+)
+```
+# Data transformation
+
+Data downloaded from our source are quite well-organized. The only addition we made is simple join operations on countries' development level and region classification. All of our analysis can be carried our accordingly with group by and filtering operation in R.
+
+<!--chapter:end:03-cleaning.Rmd-->
+
+```{r include=FALSE, cache=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
+)
+```
+# Missing values
+
+
+```{r}
+plot_missing <- function(data, percent) {
+  numvar <- length((colnames(data)))
+  numrows <- nrow(data)
+  missing_patterns <- data.frame(is.na(data)) %>%
+                      group_by_all() %>%
+                      count(name = "count", sort = TRUE) %>%
+                      ungroup()
+  
+  missing_patterns$count_per <- missing_patterns$count / sum(missing_patterns$count) * 100
+  na_count <-sapply(data, function(y) sum(length(which(is.na(y)))))
+  na_count <- data.frame(na_count)
+  na_count$features <- row.names(na_count)
+  colnames(na_count) <- c('count','features')
+  
+  na_count$na_per <- na_count$count / numrows * 100
+  p1 <- ggplot(data=na_count, aes(x=reorder(features,-count), y=count))+
+            geom_bar(stat="identity", fill="cornflowerblue", alpha=0.7)+
+            ylab(expression(paste("num rows \n missing:"))) +
+            scale_y_continuous(expand = c(0,0)) +
+            theme_bw() +
+            theme(axis.title.x=element_blank(), panel.grid.major.x = element_blank(),panel.grid.minor.x = element_blank())
+  missing_patterns["Pattern"] <- rownames(missing_patterns)
+  missing_patterns[1:numvar] <- missing_patterns[1:numvar]*1
+  
+  numrow <- length(rownames(missing_patterns))
+  
+  mp_temp <- missing_patterns[1:numvar]
+  unique_temp <- apply(mp_temp,1,function(x) length(unique(x)))
+  
+  for (i in 1:nrow(mp_temp)) {
+    if (unique_temp[i] == 1){
+      mp_temp[i, ] <- -1
+    }
+  }
+    
+  mp_temp["Pattern"] <- missing_patterns["Pattern"]
+  mp_gathered <- mp_temp %>% select(1:(numvar+1)) %>% gather(key = "Variable", value = "Missing", 1:numvar)
+  
+  mp_gathered <- mp_gathered %>% mutate(Pattern = factor(Pattern , levels = c(1:numrow)))
+  missing_patterns <- missing_patterns %>% mutate(Pattern = factor(Pattern , levels = c(1:numrow)))
+  
+  temp <- levels(reorder(na_count$features,-na_count$count))
+  
+  p2 <- ggplot(mp_gathered, aes(x = factor(Variable, levels=temp), y = fct_rev(Pattern), fill = factor(Missing))) +
+    geom_tile(colour = 'dark gray') +
+    scale_fill_manual(values = c('0' = 'snow3', '1' = 'plum3', '-1' = 'gray'))+
+    ylab("Pattern")+
+    xlab("Variable")+
+    theme_bw()+
+    theme(legend.position="none") 
+  
+  p3 <- ggplot(missing_patterns, aes(x = count, y = fct_rev(Pattern))) +
+  geom_bar(stat="identity", fill="cornflowerblue", aes(alpha = Pattern)) +
+  scale_alpha_manual(values = (1/unique_temp)) +
+  scale_x_continuous(expand = c(0,0)) +
+  xlab("row count")+
+  theme_bw() +
+  theme(legend.position="none", axis.title.y=element_blank(), panel.grid.major.y = element_blank(), panel.grid.minor.y = element_blank())
+  
+  p4 <- ggplot(data=na_count, aes(x=reorder(features,-na_per), y=na_per))+
+            geom_bar(stat="identity", fill="cornflowerblue", alpha=0.7)+
+            ylab(expression(paste("% rows \n missing:"))) +
+            scale_y_continuous(expand = c(0,0), limits = c(0,100)) +
+            theme_bw() +
+            theme(axis.title.x=element_blank(), panel.grid.major.x = element_blank(),panel.grid.minor.x = element_blank())
+  
+  p5 <- ggplot(missing_patterns, aes(x = count_per, y = fct_rev(Pattern))) +
+  geom_bar(stat="identity", fill="cornflowerblue", aes(alpha = Pattern)) +
+  scale_alpha_manual(values = (1/unique_temp)) +
+  scale_x_continuous(expand = c(0,0), limits = c(0,100)) +
+  xlab("% rows")+
+  theme_bw() +
+  theme(legend.position="none", axis.title.y=element_blank(), panel.grid.major.y = element_blank(), panel.grid.minor.y = element_blank())
+  
+  
+  if (percent == TRUE){
+    p4 + plot_spacer()+  p2 + p5 + plot_layout(ncol = 2,widths = c(15, 5),heights=c(5,20)) + plot_annotation(title = 'Missing Value Pattern', caption = 'Note: darker colors indicate the complete case')
+  }
+  else{
+    p1 + plot_spacer()+  p2 + p3 + plot_layout(ncol = 2,widths = c(15, 5),heights=c(5,20)) + plot_annotation(title = 'Missing Value Pattern', caption = 'Note: darker colors indicate the complete case')
+}
+  }
+
+```
+
+
+## Load Data
+
+```{r}
+library(tidyverse)
+library(patchwork)
+library(ggplot2)
+X2018_Sample <- read.csv("2018_Sample.csv")
+X2018_Sample <- X2018_Sample[,2:length((colnames(X2018_Sample)))]
+numvar <- length((colnames(X2018_Sample)))
+numrows <- nrow(X2018_Sample)
+
+cat("Number of variables", numvar,".  Num of observations", numrows )
+
+
+```
+We start with a subset of our data, the year 2018, to analyze missing patterns. Notice the data set has 25 variables and 142 observations.
+
+## Explore Missing Patterns
+
+```{r}
+colSums(is.na(X2018_Sample)) %>%
+  sort(decreasing = TRUE)
+```
+
+
+"Gini index" and "Trust of Gallup" are missing for all observations. It is possible that these columns are placeholders saved for future use. 
+
+We notice that a large percentage of observations are missing the "Trust" data (i.e., "Most people can be trusted"). These are survey data collected by GWP and it is noted in our source's appendix that "this indicator has a limited coverage", which makes sense since survey data is hard to be gathered all over the world. We also find that the number of missing "Trust" data is decreasing over time. We think this is a sign that with the development of technology, this survey is carried in more countries. 
+
+As for "Average Gini between 2000 and 2017", countries missing this indicator are usually those still in a state of war or instability, such as Afghanistan and Libya. So it is difficult to collect data.
+
+And "Confidence in government" is another survey data from GWP. Missing this variable may be due to political and religious reasons (e.g., China, Libya).
+
+
+```{r, fig.height=20,  fig.width=20}
+plot_missing(X2018_Sample, percent = FALSE)
+plot_missing(X2018_Sample, percent = TRUE)
+
+```
+
+We found 51 missing patterns. And from the patterns we observe that:
+
+1. The most representative one is the first pattern where all six of "Most People can be trusted" variables, as well as "Gini index" and "Trust of Gallup" are missing. Over 25% of observations are of this pattern.
+2. It's clear from the graph that many patterns emerge because of different levels of missing the six "Trust" survey data.
+3. "Log of GDP" and "Generosity quality" are always missing at the same time.
+4. For several patterns, "Confidence in government" and "Perception of Corruption" are missing at the same time.
+5. Another interesting insight is that there is no observation missing "average Gini between 2000 and 2017" and "Gini of household income" at the same time.
+
+## Summary
+
+Based on the above analysis, we definitely should drop the "Gini index" and "Trust of Gallup" columns since these are essentially empty columns. As for the six "Trust" columns, there are two reasons why we should also drop them. First, even the most complete pattern would have over 50% missing in "Trust", so the information provided is very limited. Second, it shows a clear decreasing pattern of missing percentage for the "Trust" column as time goes by, but it is difficult for us to judge whether the survey standards of the questionnaire are consistent, so these columns may even provide noise or misleading information.
+
+<!--chapter:end:04-missing.Rmd-->
+
+```{r include=FALSE, cache=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
+)
+```
+
+# Results
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(GGally)
+library(gridExtra)
+library(highcharter)
+library(MASS)
+library(parcoords)
+library(plotly)
+library(readr)
+library(scales)
+library(stringr)
+library(tidyverse)
+library(usdata)
+library(statebins)
+library(usmap)
+library(dplyr)
+library(socviz)
+library(ggrepel)
+library(ggthemes)
+library(grid)
+library(lubridate)
+library(tidytext)
+library(mapdata)
+#library(devtools)
+#devtools::install_github("lchiffon/wordcloud2")
+library(wordcloud2)
+library(jsonlite)
+library(RColorBrewer)
+```
+
+## Related Factors Affecting Happiness Score
+
+### Overview (Correlation Matrix for All Possible Factors)
+
+### Beta Comparison
+
+
+
+## General Happiness Score Distribution
+
+### Distribution by Country
+
+### Distribution by Region
+
+### Distribution by Time
+
+Will be discussed in Chapter 6, the Interactive Component.
+
+
+
+## COVID-19 Impact on Happiness Score
+```{r}
+ave1719 <- read.csv("17_19_sample.csv")
+averaged <- ave1719 %>% group_by(Country.name)  %>% summarise(score_1719 = mean(Life.Ladder)) %>% ungroup()
+
+score_2020 <- read.csv("2020_sample.csv")
+
+temp_col <- score_2020$Life.Ladder[match(averaged$Country.name, score_2020$Country.name)]
+averaged$score_2020 <- temp_col
+
+averaged$difference <- ifelse(!is.na(averaged$score_2020), averaged$score_2020-averaged$score_1719, NA)
+
+averaged <- averaged %>% arrange(desc(averaged$difference))
+averaged <- subset(averaged, !is.na(averaged$difference))
+averaged <- averaged %>% rename(region = Country.name)
+```
+### Comparison between Time (Pre and Post Pandemic)
+We decide to use data averaged from 2017 to 2019 to represent the general life happiness score before the COVID-19 pandemic, and compare it to the 2020 happiness score. The difference between happiness score is the following:
+
+```{r, fig.height=10, fig.width=15}
+theme_dotplot <- theme_bw(14) +
+    theme(axis.text.y = element_text(size = rel(.75)),
+        axis.ticks.y = element_blank(),
+        axis.title.x = element_text(size = rel(.75)),
+        panel.grid.major.x = element_blank(),
+        panel.grid.major.y = element_line(size = 0.5),
+        panel.grid.minor.x = element_blank())
+
+ggplot(averaged, aes(x = difference, y = reorder(region, difference)))+
+    geom_point(color = "red") +
+    xlab("Happiness Score Difference") +
+    theme_dotplot +
+    ylab("Country Name") +
+    ggtitle("Happiness Score Difference by Post-Pre Pandemic")
+```
+
+```{r, fig.height=10, fig.width=15}
+mapdata <- map_data("world")
+mapdata$region <- replace(mapdata$region, mapdata$region == "USA", "United States")
+mapdata <- left_join(mapdata, averaged, by="region")
+mapdata <- mapdata %>% filter(lat > -65)
+difference_map <- ggplot(mapdata, aes(x = long, y = lat, group = group)) + geom_polygon(aes(fill = difference)) + scale_fill_gradient(name = "Difference", low = "red", high = "green")
+difference_map
+```
+
+### Comparison between Region
+
+```{r, fig.height=10, fig.width=15}
+geo_covid <- ave1719 %>% group_by(Region) %>% summarise(pre_covid = mean(Life.Ladder)) %>% ungroup()
+temp_col2 <- score_2020 %>% group_by(Region) %>% summarise(post_covid = mean(Life.Ladder)) %>% ungroup
+
+temp_col2 <- temp_col2$post_covid[match(geo_covid$Region, temp_col2$Region)]
+geo_covid$post_covid <- temp_col2
+
+geo_covid <- geo_covid %>% pivot_longer(!Region, names_to = "year", values_to = "score")
+
+geo_covid %>%
+  hchart(., type = "column", 
+       hcaes(x = Region, 
+             y = score, 
+             group = year)) %>% 
+  hc_yAxis(opposite = FALSE) 
+```
+
+### Comparison between Development Level
+
+```{r, fig.height=10, fig.width=15}
+dev_covid <- ave1719 %>% group_by(Development.Level) %>% summarise(pre_covid = mean(Life.Ladder)) %>% ungroup()
+temp_col3 <- score_2020 %>% group_by(Development.Level) %>% summarise(post_covid = mean(Life.Ladder)) %>% ungroup
+
+temp_col3 <- temp_col3$post_covid[match(dev_covid$Development.Level, temp_col3$Development.Level)]
+dev_covid$post_covid <- temp_col3
+dev_covid$Development.Level <- replace(dev_covid$Development.Level, dev_covid$Development.Level == "#N/A", "Third World Countries")
+
+dev_covid <- dev_covid %>% pivot_longer(!Development.Level, names_to = "year", values_to = "score")
+
+dev_covid %>%
+  hchart(., type = "column", 
+       hcaes(x = Development.Level, 
+             y = score, 
+             group = year)) %>% 
+  hc_yAxis(opposite = FALSE) 
+```
+## Happiness Score Rank Analysis
+
+```{r, fig.height=10, fig.width=15}
+library(ggalluvial)
+allu <- read.csv("2015-2020.csv")
+
+allu <- allu %>% mutate(Rank = factor(Rank, levels = c(1:50)))
+
+ggplot(allu, aes(alluvium = Country.name, x = year, stratum = Rank, fill = Region)) +
+  geom_alluvium(color = "blue") +
+  geom_stratum(color = "black", fill = "light grey") +
+  scale_fill_brewer(type = "qual", palette = "Paired") +
+  geom_text(stat = "stratum", aes(label = paste(after_stat(stratum)))) +
+  ggtitle("Happiness Score Rank Movements")+
+  geom_flow(stat = "alluvium", color = "black")
+
+```
+
+<!--chapter:end:05-results.Rmd-->
+
+```{r include=FALSE, cache=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
+)
+```
+# Interactive component
+
+
+
+<!--chapter:end:06-interactive.Rmd-->
+
+```{r include=FALSE, cache=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE
+)
+```
+# Conclusion
+
+
+<!--chapter:end:07-conclusion.Rmd-->
+
