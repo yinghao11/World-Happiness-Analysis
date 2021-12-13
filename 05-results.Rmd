@@ -32,10 +32,62 @@ library(RColorBrewer)
 
 ## Related Factors Affecting Happiness Score
 
-### Overview (Correlation Matrix for All Possible Factors)
+### Overview of one baseline year
+
+We've chosen 2018 as our baseline year for this analysis since it's a normal year before COVID-19. In accordance with the missing value chapter, we've removed some variables.
+```{r}
+library(corrplot)
+data2018 <- read.csv("2018_Sample.csv")
+corr_data_2018 <- data2018[,3:14] 
+colnames(corr_data_2018) <- c("Life Ladder","GDP","Social Supp","Life Exp","Freedom","Generosity","Perc Corrup","Positive","Negative","Conf Gov","Democratic","Delivery")
+M<-cor(na.omit(corr_data_2018))
+corrplot(M, type="upper", tl.col="black", tl.srt=45)
+```
+Focusing on the first line of this correlation matrix plot that shows correlations between life ladder and all other variables, we can observe high positive correlation with GDP, social support, life expectancy, democratic and delivery. Moderate negative correlations are present between life ladder and perception of corruption as well as negative affects, which is reasonable since these are considered as adversity to happiness. Almost all directions make sense except for confidence of government, the magnitude of which is trivial however. 
 
 ### Beta Comparison
 
+To further study if importance of these factors change over time, we plot the value of standardized beta coefficients from running regression of life ladder on all the variables. To this end, we selected seven most  
+```{r}
+GDP_b <- list()
+social_support_b <- list()
+expect_b <- list()
+freedom_b <- list()
+generosity_b <- list()
+percp_corrup_b <- list()
+pos_affect <- list()
+nega_affect <- list()
+
+complete2021 <- read.csv("2021.csv")
+colnames(complete2021)[1] <- "Country"
+for (x in (2008:2020)) {
+  data <- complete2021 %>% filter(year==x)
+  num_data <- select(data,c("Life.Ladder","Log.GDP.per.capita","Social.support","Healthy.life.expectancy.at.birth","Freedom.to.make.life.choices"                           ,"Generosity","Perceptions.of.corruption","Positive.affect","Negative.affect"))
+  data_std <- data.frame(scale(num_data))
+  lm_std <- lm(Life.Ladder ~  Log.GDP.per.capita+ Social.support+Healthy.life.expectancy.at.birth+Freedom.to.make.life.choices+Generosity+Perceptions.of.corruption+
+       Positive.affect+Negative.affect, data=data_std)
+  GDP_b <- append(GDP_b,summary(lm_std)$coefficients[2])
+  social_support_b <- append(social_support_b,summary(lm_std)$coefficients[3])
+  expect_b <- append(expect_b,summary(lm_std)$coefficients[4])
+  freedom_b <- append(freedom_b,summary(lm_std)$coefficients[5])
+  generosity_b <- append(generosity_b,summary(lm_std)$coefficients[6])
+  percp_corrup_b <- append(percp_corrup_b,summary(lm_std)$coefficients[7])
+  pos_affect <- append(pos_affect,summary(lm_std)$coefficients[8])
+  nega_affect <- append(nega_affect,summary(lm_std)$coefficients[9])
+}
+year_list<-list(2008:2020)
+beta_df <- data.frame(unlist(year_list), unlist(GDP_b),unlist(social_support_b),unlist(freedom_b),
+                      unlist(generosity_b),unlist(percp_corrup_b),unlist(pos_affect),unlist(nega_affect))
+names(beta_df) <- c("year","LogGDP","SocialSupp","Freedom","Generosity","PercepCorrup","Positive","Negative")
+
+#betaplot
+library(dygraphs)
+dygraph(beta_df) %>%
+  dyLegend(show = "always", hideOnMouseOut = FALSE,width=500) %>%
+  dyAxis("x", label = "Year", valueRange = c(2008, 2020)) %>%
+  dyOptions(colors = RColorBrewer::brewer.pal(8, "Dark2"))
+
+```
 
 
 ## General Happiness Score Distribution
