@@ -49,7 +49,7 @@ Focusing on the first line of this correlation matrix plot that shows correlatio
 ### Beta Comparison
 
 To further study if importance of these factors change over time, we plot the value of standardized beta coefficients from running regression of life ladder on all the variables after standardization (note: beta coefficients should not be interpreted as factor importance unless variables are all standardized to the same scale). To this end, we selected seven variables that are present for most countries throughout the years.
-```{r, fig.width=15}
+```{r}
 GDP_b <- list()
 social_support_b <- list()
 expect_b <- list()
@@ -83,11 +83,12 @@ names(beta_df) <- c("year","LogGDP","SocialSupp","Positive","Freedom","Generosit
 #betaplot
 library(dygraphs)
 dygraph(beta_df,main='Standardized Beta, 2008-2020 <small>from regressing life ladder on all variables</small>') %>%
-  dyLegend(show = "always", hideOnMouseOut = TRUE,width=700) %>%
+  dyLegend(show = "always", hideOnMouseOut = TRUE,width=650) %>%
   dyAxis("x", label = "Year", valueRange = c(2008, 2020)) %>%
   dyOptions(colors = RColorBrewer::brewer.pal(8, "Dark2"))
 
 ```
+
 
 
 **Hover your cursor over the lines to explore the values at different years.** It's clear that GDP, social support and positive affects remain the top three factors affecting life ladder across time. The importance of GDP outweighs all other, with the only exception in 2019, which suggests that, from a global perspective, people's happiness is always most closely related with economic prosperity for material satisfaction. 
