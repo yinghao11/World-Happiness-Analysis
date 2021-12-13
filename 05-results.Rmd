@@ -119,8 +119,8 @@ ggplot(mapdata,aes(x=long,y=lat,group=group)) + geom_polygon(aes(fill=Life.Ladde
 panel.background = element_blank(),  axis.title = element_blank(), plot.title = element_text(size = 30, hjust = 0.5), axis.text = element_blank(), axis.ticks = element_blank(),legend.key.size = unit(1, 'cm'),
         legend.key.height = unit(1, 'cm'),
         legend.key.width = unit(1, 'cm'),
-        legend.title = element_text(size=16), 
-        legend.text = element_text(size=13))
+        legend.title = element_text(size=18), 
+        legend.text = element_text(size=14))
 ```
 
 From the map, it is not hard to tell that the life ladder score is higher for European, North America and Oceanian countries. These are also countries generally deemed more developed. Colors are lighter, signifying lower happiness scores, for African, Middle East and Southeast Asia countries, mostly countries of middle and lower income. This corresponds to our analysis of GDP being the most important factor.
@@ -215,8 +215,8 @@ difference_map <-
 panel.background = element_blank(),  axis.title = element_blank(), plot.title = element_text(size = 30, hjust = 0.5), axis.text = element_blank(), axis.ticks = element_blank(),legend.key.size = unit(1, 'cm'),
         legend.key.height = unit(1, 'cm'),
         legend.key.width = unit(1, 'cm'),
-        legend.title = element_text(size=16), 
-        legend.text = element_text(size=13))
+        legend.title = element_text(size=18), 
+        legend.text = element_text(size=14))
 
 difference_map
 ```
@@ -243,8 +243,8 @@ geo_covid %>%
        hcaes(x = Region, 
              y = round(score,2), 
              group = year)) %>% 
-  hc_yAxis(opposite = FALSE, title = list(text = "Life Ladder")) %>%
-  hc_xAxis(categories = list("North America", "Europe", "South/Latin America", "Asia & Pacific", "Arab States", "Africa" ), title = "region")%>%
+  hc_yAxis(opposite = FALSE) %>%
+  hc_xAxis(categories = list("North America", "Europe", "South/Latin America", "Asia & Pacific", "Arab States", "Africa" ))%>%
   hc_title(
   text = "Life Ladder Difference by Region",
   align = "center",
@@ -276,8 +276,8 @@ dev_covid %>%
        hcaes(x = Development.Level, 
              y = round(score,2), 
              group = year)) %>% 
-  hc_yAxis(opposite = FALSE, title = list(text = "Life Ladder")) %>%
-  hc_xAxis(categories = list("Dveloped", "Developing", "Third World Countries" ), title = "Development Level")%>%
+  hc_yAxis(opposite = FALSE) %>%
+  hc_xAxis(categories = list("Dveloped", "Developing", "Third World Countries" ))%>%
   hc_title(
   text = "Life Ladder Difference by Development Level",
   align = "center",
