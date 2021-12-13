@@ -1,7 +1,7 @@
 # Missing values
 
 
-```{r 2}
+```{r}
 plot_missing <- function(data, percent) {
   numvar <- length((colnames(data)))
   numrows <- nrow(data)

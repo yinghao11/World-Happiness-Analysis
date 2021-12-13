@@ -70,7 +70,6 @@ averaged <- averaged %>% rename(region = Country.name)
 We decide to use data averaged from 2017 to 2019 to represent the general life happiness score before the COVID-19 pandemic, and compare it to the 2020 happiness score. The difference between happiness score is the following:
 
 ```{r, fig.height=10, fig.width=15}
-
 theme_dotplot <- theme_bw(14) +
     theme(axis.text.y = element_text(size = rel(.75)),
         axis.ticks.y = element_blank(),
