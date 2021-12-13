@@ -306,7 +306,11 @@ ggplot(allu, aes(alluvium = Country.name, x = year, stratum = Rank, fill = Regio
   ggtitle("Life Ladder Rank Movements")+
   geom_flow(stat = "alluvium", color = "black")+
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-panel.background = element_blank(), axis.title = element_text(size = 30), plot.title = element_text(size = 30, hjust = 0.5), axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_text(size = 20))
+panel.background = element_blank(), axis.title = element_text(size = 30), plot.title = element_text(size = 30, hjust = 0.5), axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_text(size = 20),
+        legend.key.height = unit(1, 'cm'),
+        legend.key.width = unit(1, 'cm'),
+        legend.title = element_text(size=18), 
+        legend.text = element_text(size=14))
 
 ```
 To achieve this feature, we manually ranked all countries in each year, and select the top 50 countries to show the change in rankings. And the color coding discriminates the different economic regions. Based on the graph, we would see that the top countries with the highest Life Ladders remains relatively stable, they would go back and forth within the nearby rankings but will hardly go very up or down. However, the countries in the lower rankings have a higher volatility, they well suddenly go up or down, on a large scale.
