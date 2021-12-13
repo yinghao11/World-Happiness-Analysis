@@ -153,31 +153,3 @@ dev_covid %>%
   hc_yAxis(opposite = FALSE) 
 ```
 
-```{r, fig.height=10, fig.width=15}
-box_dev_covid <- ave1719 %>% select(Country.name, Development.Level, Life.Ladder) %>% group_by(Country.name, Development.Level) %>% summarise( score = mean(Life.Ladder)) %>% ungroup()
-box_dev_covid$Development.Level <- replace(box_dev_covid$Development.Level, box_dev_covid$Development.Level == "#N/A", "Third World Countries")
-
-box_dev_covid$Development.Level <- replace(box_dev_covid$Development.Level, box_dev_covid$Development.Level == "Third World Countries", "Third World Countries pre-covid")
-box_dev_covid$Development.Level <- replace(box_dev_covid$Development.Level, box_dev_covid$Development.Level == "Developing", "Developing pre-covid")
-box_dev_covid$Development.Level <- replace(box_dev_covid$Development.Level, box_dev_covid$Development.Level == "Developed", "Developed pre-covid")
-box_dev_covid <- box_dev_covid %>% select(Development.Level, score)
-
-temp_col4 <- score_2020 %>% select(Development.Level, Life.Ladder) 
-
-temp_col4$Development.Level <- replace(temp_col4$Development.Level, temp_col4$Development.Level == "#N/A", "Third World Countries")
-colnames(temp_col4)[2] <- "score"
-temp_col4$Development.Level <- replace(temp_col4$Development.Level, temp_col4$Development.Level == "Third World Countries", "Third World Countries post-covid")
-temp_col4$Development.Level <- replace(temp_col4$Development.Level, temp_col4$Development.Level == "Developing", "Developing post-covid")
-temp_col4$Development.Level <- replace(temp_col4$Development.Level, temp_col4$Development.Level == "Developed", "Developed post-covid")
-
-box_dev_covid <- rbind(box_dev_covid, temp_col4)
-
-colnames(temp_col4)[2] <- "post_covid"
-
-
-hcboxplot(
-  outliers = FALSE,
-  x = box_dev_covid$score,
-  var = box_dev_covid$Development.Level
-) 
-```
