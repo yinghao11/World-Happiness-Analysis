@@ -227,9 +227,10 @@ There are also missing values in 2020 Life Ladder when we conduct this project, 
 ### Comparison between Region
 
 This section is to address the comparison of the Life Ladder across economic regions. 
-**The graph is interactive and when you move the mouse to the bar, you will see the exact average Life Ladder for the region from different time.**
 
-Move your cursor over the bars for detailed statistics. In addition, you can click on the legend to change the bars.
+**The graph is interactive and when you move your cursor over the bars for detailed statistics. In addition, you can click on the legend to change the bars.**
+
+
 
 ```{r, fig.height=30, fig.width=15}
 geo_covid <- ave1719 %>% group_by(Region) %>% summarise(pre_covid = mean(Life.Ladder)) %>% ungroup()
@@ -262,9 +263,7 @@ In addition, the Life Ladder does increase after pandemic compared to pre-pandem
 
 This section is to address the comparison of the Life Ladder across country development levels – Developed, Developing, and The Third World countries. 
 
-**The graph is interactive and when you move the mouse to the bar, you will see the exact average Life Ladder for the different development levels from different time.**
-
-Move your cursor over the bars for detailed statistics. In addition, you can click on the legend to change the bars.
+**The graph is interactive and when you move your cursor over the bars for detailed statistics. In addition, you can click on the legend to change the bars.**
 
 ```{r, fig.height=10, fig.width=15}
 dev_covid <- ave1719 %>% group_by(Development.Level) %>% summarise(pre_covid = mean(Life.Ladder)) %>% ungroup()
